@@ -46,7 +46,6 @@ if (age >= 18 && hasID) {              //Returns true only if both conditions ar
     console.log("You cannot enter.")
 }
 
-
 let isWeekend = true;
 let isHoliday = false;
 

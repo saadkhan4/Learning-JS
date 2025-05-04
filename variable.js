@@ -79,11 +79,11 @@ greet();
 // console.log(h==j)
 // console.log(f==g)
 
-function greet() {
-  const a = 2;
+// function greet() {
+//   const a = 2;
   
-    console.log(a);
-}
-greet()
-const a = 4
-console.log(a);
+//     console.log(a);
+// }
+// greet()
+// const a = 4
+// console.log(a);
