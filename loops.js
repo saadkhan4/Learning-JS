@@ -20,7 +20,7 @@ for (const x of "Programming") {             //Loops through values in arrays, s
 // 3. FOR IN-LOOP
 let obj = {                                  
 
-    name: "Jess",
+    name: "Maria",
     age: "20",
     company : "Apple INC"
 }
