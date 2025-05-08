@@ -4,6 +4,7 @@
 // 3. FOR IN_LOOP
 // 4. WHILE LOOP
 // 5. DO WHILE LOOP
+// 6. FOR EACH LOOP
 
 
 // 1. FOR LOOP
@@ -16,6 +17,7 @@ for (let i = 0; i < 3; i++){
 for (const x of "Programming") {             //Loops through values in arrays, strings, etc.
     console.log(x)    
 }
+
 
 // 3. FOR IN-LOOP
 let obj = {                                  
@@ -40,4 +42,12 @@ do {
     console.log("Hello world!")
     p++;
 } while (p<5);                              //Runs code at least once, then checks condition
+
+
+// 6. FOR EACH LOOP
+let x = [1, 2, 3, 4, 5, 6, 7]
+
+x.forEach(element => {                       // efficient loop for using array.
+    console.log(element)
+});
 
