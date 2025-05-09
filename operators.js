@@ -59,3 +59,4 @@ if (!isOnline) {
   console.log("User is offline.");         //! flips the value: true → false, false → true.
 }
 
+
