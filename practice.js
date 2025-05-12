@@ -1,38 +1,31 @@
 // Practice file of JS.
 
-// let age = 30;
+// let age = 12;
 
-// if (age > 25) {
-//     console.log("you can enter.")
+// if (age >= 20) {
+//     console.log("you can drink.")
 // }
 
-// let age = 45;
-
-// if (age >= 50) {
-//     console.log("you can eat burger.")
-// } else {
-//     console.log("you can't eat burger.")
-// }
-
-// let temperature = 45;
+// let temperature = 2;
 
 // if (temperature >= 40) {
-//     console.log("It's very hot today.")
-// } else if (temperature >= 25) {
-//     console.log("It's moderate today.")
+//     console.log("It's very hot today!🥵")
+// } else if (temperature >= 20) {
+//     console.log("It's moderate today!")
 // } else {
-//     console.log("It's cold today.")
+//     console.log("It's cold today!")
 // }
 
-// let signal = "yellow";
+// let signal = "red";
 
 // if (signal === "red") {
-//   console.log("STOP!");
+//     console.log("STOP!")
 // } else if (signal === "yellow") {
-//   console.log("Start your engines.");
+//     console.log("Start your engines.")
 // } else {
-//   console.log("GO!");
+//     console.log("GO!")
 // }
+
 
 // let day = 2;
 
@@ -48,27 +41,39 @@
 //         break;
 //     default:
 //         console.log("Another day")
+        
 // }
 
-// let c = 2;
-// c += 2;
-// console.log(c)
-
-// let age = 18;
+// let age = 20;
 // let hasID = true;
 
 // if (age >= 18 && hasID) {
-//     console.log("you can enter.")
+//     console.log("you can vote!")
 // } else {
-//     console.log("you cannot enter.")
+//     console.log("you can't drive.")
 // }
 
-// let isWeekend = false;
-// let isHoliday = true;
+// let isWeekend = true;
+// let isHoliday = false;
 
 // if (isWeekend || isHoliday) {
 //     console.log("you can relax.")
+// } else {
+//     console.log("you can't relax.")
 // }
+
+// let condition = true
+
+// if (condition !== true) {
+//     console.log("that's true.");
+// } else {
+//     console.log("that's not true."); 
+// }
+
+// function greet() {
+//     console.log("hello there!")
+// }
+// greet()
 
 // let isOnline = false;
 
@@ -76,59 +81,54 @@
 //     console.log("user is offline.")
 // }
 
-// function greet() {
-//   console.log("hello");
-// }
-// greet();
-
-// let age = 39;
 // let firstName = "Charlotte";
 // let lastName = "Flair";
+// let age = 39;
 
-// console.log(`I'm ${firstName} ${lastName} and I'm ${age} years old.`);
+// console.log(`I'am ${firstName} ${lastName} and I'am ${age} years old!`)
 
 // for (i = 0; i < 3; i++){
-//     console.log("this is for loop.")
+//     console.log("this is while loop.")
 // }
 
-// for (const x of "Programming") {
-//     console.log(x)
+// for (const element of "Recursion") {
+//     console.log(element)
 // }
 
-// let fruits = ["apple", "banana", "pear"];
+// let e = [1, 3, 2, 4, 1];
 
-// for (fruit in fruits) {
-//     console.log(fruit)
+// for (const element of e) {
+//     console.log(element)
 // }
 
 // let obj = {
-//     age: 39,
-//     name: "Charlotte",
+//     name: "Walker",
+//     age: 20,
 //     company : "Apple INC"
-
 // }
+
 // for (const key in obj) {
 //     const element = obj[key];
-//     console.log(key,element)
+//     console.log(element,key)
         
 // }
 
 // let i = 0;
 
 // while (i < 5) {
-//     console.log("this is while loop.")
+//     console.log("this is while loop")
 //     i++;
 // }
 
-// let p = 0;
+// let i = 5;
 
 // do {
-//     console.log(p)
-//     p++;
-// } while (p < 3);
+//     console.log("this is do-while loop")
+// } while (i<=3);
 
-x = [1, 3, 4, 5, 8, 2, 7, 0];
+let x = [1, 4, 4, 5, 7, 2, 6, 3];
 
 x.forEach(element => {
-    console.log(element)
+  console.log(element)  
 });
+
