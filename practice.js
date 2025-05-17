@@ -1,134 +1,134 @@
 // Practice file of JS.
 
-let age = 12;
+// let age = 18;
 
-if (age >= 20) {
-    console.log("you can drink.")
-}
+// if (age >= 18) {
+//     console.log("You can go!")
+// }
 
-let temperature = 2;
+// let age = 20;
 
-if (temperature >= 40) {
-    console.log("It's very hot today!🥵")
-} else if (temperature >= 20) {
-    console.log("It's moderate today!")
-} else {
-    console.log("It's cold today!")
-}
+// if (age >= 18) {
+//     console.log("You can vote!")
+// } else {
+//     console.log("You cannot vote!")
+// }
 
-let signal = "red";
+// let temperature = 10;
 
-if (signal === "red") {
-    console.log("STOP!")
-} else if (signal === "yellow") {
-    console.log("Start your engines.")
-} else {
-    console.log("GO!")
-}
+// if (temperature >= 40) {
+//     console.log("It's hot today.")
+// } else if (temperature >= 25) {
+//     console.log("It's moderate today.")
+// } else {
+//     console.log("It's cold today.")
+// }
 
+// let day = 3;
 
-let day = 2;
+// switch (day) {
+//     case 1:
+//         console.log("It's Monday.");
+//         break;
+//     case 2:
+//         console.log("It's Friday.");
+//         break;
+//     case 3:
+//         console.log("It's Sunday.");
+//         break
+//     default:
+//         console.log("Random day.");
+// } 
 
-switch (day) {
-    case 1:
-        console.log("Monday")
-        break;
-    case 2:
-        console.log("Tuesday")
-        break;
-    case 3:
-        console.log("Wednesday")
-        break;
-    default:
-        console.log("Another day")
+// let age = 22;
+// let hasID = false;
+
+// if (age >= 18 && hasID) {
+//     console.log("You can go.");
+// } else {
+//     console.log("You can't go.")
+// }
+
+// let isWeekend = true;
+// let isHoliday = false;
+
+// if (isWeekend || isHoliday) {
+//     console.log("You can relax.")
+// } else {
+//     console.log("You can't relax.")
+// }
+
+// let condition = true;
+
+// if (condition !== true) {
+//     console.log("that's true.");
+// } else {
+//     console.log("that's not true.")
+// }
+
+// function greet() {
+//     console.log("Hello there!");
+// }
+// greet()
+
+// let isRaining = true;
+
+// if (!isRaining) {
+//     console.log("You'll need an umbrella.");
+// } else {
+//     console.log("There is no need of umbrella.")
+// }
+
+// let firstName = "Charlotte";
+// let lastName = "flair";
+// let age = 39;
+
+// console.log(`I'am ${firstName} ${lastName} and I'am ${age} years old.`);
+
+// for (i = 0; i < 3; i++){
+//     console.log("this is for loop.")
+// }
+
+// for (const element of "Specified") {
+//     console.log(element)
+// }
+
+// const p = [1, 3, 4, 54, 234, 22, 0];
+
+// for (const element of p) {
+//     console.log(element)
+    
+// }
+
+// let obj = {
+//     Name: "Miller",
+//     Age: 35,
+//     Company : "Apple INC"
+// }
+
+// for (const key in obj) {
+//     const element = obj[key];
+//     console.log(element,key)
         
-}
+// }
 
-let age = 20;
-let hasID = true;
+// let i = 0;
 
-if (age >= 18 && hasID) {
-    console.log("you can vote!")
-} else {
-    console.log("you can't drive.")
-}
+// while (i < 3) {
+//     console.log("this is while loop.");
+//     i++;
+// }
 
-let isWeekend = true;
-let isHoliday = false;
+// let p = 0;
 
-if (isWeekend || isHoliday) {
-    console.log("you can relax.")
-} else {
-    console.log("you can't relax.")
-}
+// do {
+//     console.log("this is do while loop");
+//     p++;
+// } while (p < 3);
 
-let condition = true
 
-if (condition !== true) {
-    console.log("that's true.");
-} else {
-    console.log("that's not true."); 
-}
+let a = [32, 43, 65, 12, 87, 9, 1];
 
-function greet() {
-    console.log("hello there!")
-}
-greet()
-
-let isOnline = false;
-
-if (!isOnline) {
-    console.log("user is offline.")
-}
-
-let firstName = "Charlotte";
-let lastName = "Flair";
-let age = 39;
-
-console.log(`I'am ${firstName} ${lastName} and I'am ${age} years old!`)
-
-for (i = 0; i < 3; i++){
-    console.log("this is while loop.")
-}
-
-for (const element of "Recursion") {
-    console.log(element)
-}
-
-let e = [1, 3, 2, 4, 1];
-
-for (const element of e) {
-    console.log(element)
-}
-
-let obj = {
-    name: "Walker",
-    age: 20,
-    company : "Apple INC"
-}
-
-for (const key in obj) {
-    const element = obj[key];
-    console.log(element,key)
-        
-}
-
-let i = 0;
-
-while (i < 5) {
-    console.log("this is while loop")
-    i++;
-}
-
-let i = 5;
-
-do {
-    console.log("this is do-while loop")
-} while (i<=3);
-
-let x = [1, 4, 4, 5, 7, 2, 6, 3];
-
-x.forEach(element => {
+a.forEach(element => {
   console.log(element)  
 });
-
