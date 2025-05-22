@@ -1,6 +1,6 @@
-// Making functions using callback.
+// // Making functions using callback.
 
-// Callback function
+// // Callback function
 // function sayHello() {
 //     console.log("Hello!");
 // }
@@ -16,15 +16,32 @@
 // greetUser(sayHello);
 
 
-function sayHi() {
-  console.log("hi.");
+// function sayHi() {
+//   console.log("hi.");
+// }
+
+// function sayBye(callback) {
+//   console.log("bye.");
+//   callback();
+// }
+
+// setTimeout(() => {
+//   sayBye(sayHi);
+// }, 2000);
+
+
+
+
+
+function wait(name, callback) {
+  setTimeout(() => {
+    console.log("Hey your confirmation has been received successfully " + name);
+    callback();
+  }, 2000);
 }
 
-function sayBye(callback) {
-  console.log("bye.");
-  callback();
+function afterConfirmation() {
+  console.log("Now you may proceed. ✅");
 }
 
-setTimeout(() => {
-  sayBye(sayHi);
-}, 2000);
+wait("Saad", afterConfirmation); 
