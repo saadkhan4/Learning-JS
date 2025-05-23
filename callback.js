@@ -31,17 +31,3 @@
 
 
 
-
-
-function wait(name, callback) {
-  setTimeout(() => {
-    console.log("Hey your confirmation has been received successfully " + name);
-    callback();
-  }, 2000);
-}
-
-function afterConfirmation() {
-  console.log("Now you may proceed. ✅");
-}
-
-wait("Saad", afterConfirmation); 

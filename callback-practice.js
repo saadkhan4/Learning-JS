@@ -12,6 +12,7 @@ function greet(callback) {
 
 greet(sayHello);
 
+
 // 2.
 function onStart() {
     console.log("Start now!");
@@ -108,7 +109,7 @@ function download() {
 
 file("index.html", download);
 
-9.
+// 9.
 
 const entrance = (age, callback) => {
     setTimeout(() => {
@@ -136,3 +137,88 @@ const serveFood = () => {
 }
 
 orderFood("Pasta", serveFood);
+// 11.
+function receive() {
+    console.log("You will receive shortly.");
+}
+function dispatch(callback) {
+    console.log("Your parcel has been dispatched");
+    callback();
+}
+
+dispatch(receive);
+// 12.
+function greet(gender, callback) {
+    setTimeout(() => {
+        console.log("What's your gender? " + gender); 
+        callback();
+    }, 2000);
+}
+
+function sayHello() {
+    console.log("You can go into male section.");
+}
+
+greet("Male", sayHello);
+// 13.
+const makeCoffee = (type, callback) => {
+    setTimeout(() => {
+        console.log("Which type of coffee do you want? " + type);
+        callback();
+    }, 2000);
+}
+
+const serveCoffee = () => {
+    console.log("Here is your coffee sir.");
+}
+
+makeCoffee("Espresso", serveCoffee);
+
+
+// 14. 
+const opening = (fileName, callback) => {
+    console.log("Which file is opening? " + fileName);
+    callback();
+}
+
+const closing = () => {
+    console.log("file is opened");
+}
+
+opening("index.html", closing)
+// 15.
+const bookTicket = (movieName, callback) => {
+    setTimeout(() => {
+        console.log("Booking your ticket for " + movieName);
+        callback();
+    }, 2000);
+}
+
+const showTicket = () => {
+    console.log("Here is your ticket sir.");
+}
+
+bookTicket("JAWS", showTicket);
+//16.
+function giveName() {
+    return "Charlotte";
+  }
+  
+  function sayHello(callback) {
+    let name = callback(); 
+    console.log("Hello " + name); 
+  }
+  
+sayHello(giveName); 
+  
+
+function giveName() {
+    return "Bob";
+}
+
+function sayHello(callback) {
+    let name = callback();
+    console.log("Hello " + name);
+}
+
+sayHello(giveName);
