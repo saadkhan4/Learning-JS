@@ -47,7 +47,7 @@ do {
 // 6. FOR EACH LOOP
 let x = [1, 2, 3, 4, 5, 6, 7]
 
-x.forEach(element => {                       // efficient loop for using array.
+x.forEach(element => {                       // efficient loop for using an array.
     console.log(element)
 });
 
