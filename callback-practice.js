@@ -289,16 +289,103 @@
 
 // onStart("Female", onFinish);
 
-const bookTicket = (movieName, callback) => {
+// const bookTicket = (movieName, callback) => {
+//     setTimeout(() => {
+//         console.log("Which ticket do you want sir? " + movieName);
+//         callback();
+//     }, 3000);
+// }
+
+// const showTicket = () => {
+//     console.log("Here is your ticket.");
+// }
+
+// bookTicket("Final Destination", showTicket);
+    
+// function onGo() {
+//     console.log("Start from here.");
+// }
+
+// function inProcess(callback) {
+//     console.log("Processing...");
+//     callback();
+// }
+
+// inProcess(onGo);
+
+// function onFail() {
+//     console.log("Operation Failed.")
+// }
+
+// function onTry(callback) {
+//     console.log("Operation processing...")
+//     callback();
+// }
+
+// setTimeout(() => {
+//     onTry(onFail); 
+// }, 2000);
+
+// function registerUser(userName, callback) {
+//     setTimeout(() => {
+//         console.log("Registering user: ", userName);
+//         callback();
+//     }, 3000);
+// }
+
+// function welcomeUser() {
+//     console.log("Welcome ! Your user has been created.")
+// }
+
+// registerUser("Eve", welcomeUser);
+
+
+// function shipAddress(address, callback) {
+//     setTimeout(() => {
+//         console.log("Shipping package to: " + address);
+//         callback();
+//     }, 3000);
+// }
+
+// function destination() {
+//     console.log("Your package has been delivered.");
+// }
+
+// shipAddress("45 Avenue Brooklyn NY", destination);
+
+// const readBook = (bookName, callback) => {
+//     setTimeout(() => {
+//         console.log("Starting to read: " + bookName);
+//         callback();
+//     }, 3000);
+// }
+
+// const finishBook = () => {
+//     console.log("I finished reading this one.");
+// }
+
+// readBook("Elm's Street", finishBook);
+
+// const onPlay = () => {
+//     console.log("Noticed by Lil Mosey");
+// }
+
+// const onPause = (callback) => {
+//     console.log("Playing the track..");
+//     callback();
+// }
+
+// onPause(onPlay);
+
+const bookFlight = (destination, callback) => {
     setTimeout(() => {
-        console.log("Which ticket do you want sir? " + movieName);
+        console.log("Booking flight to: " + destination);
         callback();
     }, 3000);
 }
 
-const showTicket = () => {
-    console.log("Here is your ticket.");
+const confirmBooking = () => {
+    console.log("Your booking has been confirmed.")
 }
 
-bookTicket("Final Destination", showTicket);
-    
+bookFlight("Korea", confirmBooking);
