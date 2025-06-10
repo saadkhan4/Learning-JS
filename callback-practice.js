@@ -377,15 +377,149 @@
 
 // onPause(onPlay);
 
-const bookFlight = (destination, callback) => {
-    setTimeout(() => {
-        console.log("Booking flight to: " + destination);
-        callback();
-    }, 3000);
+// const bookFlight = (destination, callback) => {
+//     setTimeout(() => {
+//         console.log("Booking flight to: " + destination);
+//         callback();
+//     }, 3000);
+// }
+
+// const confirmBooking = () => {
+//     console.log("Your booking has been confirmed.")
+// }
+
+// bookFlight("Korea", confirmBooking);
+
+
+// function sayHello() {
+//     console.log("hi hamza");
+// }
+
+// function say(callback) {
+//     console.log("processing...");
+//     callback();
+// }
+
+// say(sayHello)
+
+
+
+// function onSuccess() {
+//     console.log("You are now succeed");
+// }
+
+// function onProgress(callback) {
+//     console.log("In progress..");
+//     callback();
+// }
+
+// setTimeout(() => {
+//     onProgress(onSuccess); 
+// }, 2000);
+
+
+// function onResult(order, callback) {
+//     setTimeout(() => {
+//         console.log("What is your order sir? " + order);
+//         callback();
+//     }, 2000);
+// }
+
+// function onDone() {
+//     console.log("Here is your order");
+// }
+
+// onResult("Spaghetti", onDone);
+
+
+// function file(fileName, callback) {
+//     setTimeout(() => {
+//         console.log("What's your file name? : " + fileName);
+//         callback();
+//     }, 3000);
+// }
+
+// function download() {
+//     console.log("Downloading your file");
+// }
+
+// file("main.js", download);
+
+
+// function entrance(age, callback) {
+//     setTimeout(() => {
+//         console.log("What's your age? " + age);
+//         callback();
+//     }, 2000);
+// }
+
+// function exit() {
+//     console.log("You can go.");
+// }
+
+// entrance("21", exit);
+
+// function orderFood(foodItem, callback) {
+//     setTimeout(() => {
+//         console.log("What do you want to order? " + foodItem);
+//         callback();
+//     }, 4000);
+// }
+
+// function serveFood() {
+//     console.log("Here is your order sir.");
+// }
+
+// orderFood("Pasta", serveFood);
+
+// const makeCoffee = (type, callback) => {
+//     setTimeout(() => {
+//         console.log("Which type of coffee do you want sir? " + type);
+//         callback();
+//     }, 3000);
+// }
+
+// const serveCoffee = () => {
+//     console.log("Enjoy your coffee sir.");
+// }
+
+// makeCoffee("Espresso", serveCoffee);
+
+
+// const bookTicket = (movieNAme, callback) => {
+//     setTimeout(() => {
+//         console.log("Which movie ticket do you want ? " + movieNAme);
+//         callback();
+//     }, 3000);
+// }
+
+// const showTicket = () => {
+//     console.log("Here is your ticket sir.");
+// }
+
+// bookTicket("Ballerina", showTicket);
+
+// const bookFlight = (destination, callback) => {
+//     setTimeout(() => {
+//         console.log("Where do you to go sir? " + destination);
+//         callback();
+//     }, 3000);
+// }
+
+// const showTicket = () => {
+//     console.log("Enjoy your flight sir.");
+// }
+
+// bookFlight("America", showTicket);
+
+const greet = () => {
+    console.log("hello");
 }
 
-const confirmBooking = () => {
-    console.log("Your booking has been confirmed.")
+const say = (callback) => {
+    console.log("processing...");
+    callback();
 }
 
-bookFlight("Korea", confirmBooking);
+say(greet);
+
