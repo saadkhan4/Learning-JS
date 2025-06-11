@@ -31,15 +31,27 @@
 
 
 
-function file(fileName, callback) {
-  const pick = "What's your file name? " + fileName;
-  console.log(pick);
-  callback();
-}
+// function file(fileName, callback) {
+//   const pick = "What's your file name? " + fileName;
+//   console.log(pick);
+//   callback();
+// }
 
-function download() {
-  const pick = "Downloading...";
-  console.log(pick);
-}
+// function download() {
+//   const pick = "Downloading...";
+//   console.log(pick);
+// }
 
-file("main.js", download);
+// file("main.js", download);
+
+// var old js hai or is ki value ko hum reassign or redeclare kr sakte hai.
+// let scope block hota hai or is ki value ko hum reassign kr sakte hain but redecalre nhi kar sakte.
+// const bhi scope block hota hai is ki value ko hum reassign nhi kar sakte or na hi redeclare.
+
+
+// hum ek function dete hain or woh execute hojyega jb woh action complete hoga.
+setTimeout(() => {
+  console.log("hello");
+}, 8000);
+
+

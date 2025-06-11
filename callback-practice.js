@@ -512,14 +512,36 @@
 
 // bookFlight("America", showTicket);
 
-const greet = () => {
-    console.log("hello");
+// const greet = () => {
+//     console.log("hello");
+// }
+
+// const say = (callback) => {
+//     console.log("processing...");
+//     callback();
+// }
+
+// say(greet);
+
+// function greet(message) {
+//     console.log(message);
+//   }
+  
+//   function getStudentName(name, callback) {
+//     let result = "Hello " + name;
+//     callback(result); // <- calling the callback here
+//   }
+  
+// getStudentName("Saad", greet); // <- passing greet as callback
+  
+
+function greet(message) {
+    console.log(message);
 }
 
-const say = (callback) => {
-    console.log("processing...");
-    callback();
+function getStudentName(name, callback) {
+    let result = "Hello " + name;
+    callback(result);
 }
 
-say(greet);
-
+getStudentName("Hamza", greet);

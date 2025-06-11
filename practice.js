@@ -2,162 +2,139 @@
 
 // 1. assignment operator
 
-let c = 4;
-c = c += 4;
-console.log(c);
+// let p = 4;
+// p += 3;
+// console.log(p);
 
-let p = 3;
-p = p *= 4;
-console.log(p)
+// let l = 3;
+// l -= 4;
+// console.log(l);
 
-let z = 2;
-z = z -= 9;
-console.log(z)
+// let s = 7;
+// s *= 3;
+// console.log(s);
+
+// let c = 2;
+// c /= 4;
+// console.log(c);
 
 // 2. assignment operator in conditional statements
 
-let age = 18;
+// let age = 18;
 
-if (age >= 18) {
-    console.log("You can vote.");
-}
+// if (age >= 12) {
+//     console.log("You can enter.");
+// } else {
+//     console.log("You cannot enter.");
+// }
 
+// let temperature = 45;
 
-let age = 25;
-
-if (age >= 20) {
-    console.log("You can vote.");
-} else {
-    console.log("You can't vote.")
-}
-
-let temperature = 21;
-
-if (temperature >= 35) {
-    console.log("It's very hot today.")
-} else if (temperature >= 20) {
-    console.log("It's moderate today.")
-} else {
-    console.log("It's cold today.")
-}
+// if (temperature >= 35) {
+//     console.log("It's hot today.");
+// } else if (temperature >= 25){
+//     console.log("It's moderate today.");
+// } else {
+//     console.log("It's cold today.")
+// }
 
 
-let price = 70;
+let price = 2;
 
 if (price >= 50) {
-    console.log(`It's expensive $${price}`);
-} else if (price >= 25) {
-    console.log(`It's not expensive $${price}`);
+    console.log(`"It's expensive $${price}"`);
+} else if (price >= 30) {
+    console.log(`"It's not expensive $${price}"`);
 } else {
-    console.log(`It's cheap $${price}`);
-}
-
-let day = 4;
-
-switch (day) {
-    case 1:
-        console.log("Monday");
-        break
-    case 2:
-        console.log("Tuesday");
-        break
-    case 3:
-        console.log("Wednesday");
-        break
-    case 4:
-        console.log("Thursday");
-        break
-    default:
-        console.log("It's just another day")
-        
+    console.log(`"It's very cheap $${price}"`);
 }
 
 // 4. Logical operator.
 
-let hasID = false;
-let hasAge = 22;
+// let hasID = false;
+// let hasAge = 22;
 
-if (hasAge >= 19 && hasID) {
-    console.log("You can go.");
-} else {
-    console.log("You can't go.");
-}
+// if (hasAge >= 19 && hasID) {
+//     console.log("You can go.");
+// } else {
+//     console.log("You can't go.");
+// }
 
-let isWeekend = true;
-let isHoliday = false;
+// let isWeekend = true;
+// let isHoliday = false;
 
-if (isWeekend || isHoliday) {
-    console.log("You can relax");
-} else {
-    console.log("You can't relax");
-}
+// if (isWeekend || isHoliday) {
+//     console.log("You can relax");
+// } else {
+//     console.log("You can't relax");
+// }
 
-let condition = true;
+// let condition = true;
 
-if (condition !== true) {
-    console.log("That's true");
-} else {
-    console.log("That's not true");
-}
+// if (condition !== true) {
+//     console.log("That's true");
+// } else {
+//     console.log("That's not true");
+// }
 
-let isRaining = true;
+// let isRaining = true;
 
-if (!isRaining) {
-    console.log("You'll need an umbrella.")
-} else {
-    console.log("You don't need an umbrella.")
-}
+// if (!isRaining) {
+//     console.log("You'll need an umbrella.")
+// } else {
+//     console.log("You don't need an umbrella.")
+// }
 
-let firstName = "Stellar";
-let lastName = "Blade";
-let age = 24;
+// let firstName = "Stellar";
+// let lastName = "Blade";
+// let age = 24;
 
-console.log(`My name is ${firstName} ${lastName} and I'am ${age}`);
+// console.log(`My name is ${firstName} ${lastName} and I'am ${age}`);
 
-LOOPS
+// LOOPS
 
-for (i = 0; i < 3; i++){
-    console.log("This is for loop.")
-}
+// for (i = 0; i < 3; i++){
+//     console.log("This is for loop.")
+// }
 
-let x = [1, 4, 2, 4, 12];
+// let x = [1, 4, 2, 4, 12];
 
-for (const element of x) {
-    console.log(element);
-}
+// for (const element of x) {
+//     console.log(element);
+// }
 
-for (const element of "Manipulation") {
-    console.log(element);
-}
+// for (const element of "Manipulation") {
+//     console.log(element);
+// }
 
-let player = {
-    Name: "Glenn Maxwell",
-    Team: "Australia",
-    Age: 38
-}
+// let player = {
+//     Name: "Glenn Maxwell",
+//     Team: "Australia",
+//     Age: 38
+// }
 
-for (const key in player) {
-    const element = player[key];
-    console.log(element, key);
+// for (const key in player) {
+//     const element = player[key];
+//     console.log(element, key);
             
-}
+// }
 
-let s = 0;
+// let s = 0;
 
-while (s < 5) {
-    console.log("this is while loop");
-    s++;
-}
+// while (s < 5) {
+//     console.log("this is while loop");
+//     s++;
+// }
 
-let o = 0;
+// let o = 0;
 
-do {
-    console.log("this is do while loop.")
-    o++;
-} while (o < 3);
+// do {
+//     console.log("this is do while loop.")
+//     o++;
+// } while (o < 3);
 
-let h = [32, 54, 2, 31, 43, 123, 56, 87, 3];
+// let h = [32, 54, 2, 31, 43, 123, 56, 87, 3];
 
-h.forEach(element => {
-    console.log(element);
-});
+// h.forEach(element => {
+//     console.log(element);
+// });
