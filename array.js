@@ -21,7 +21,7 @@
 
 //3. NEW ARRAY
 
-// const fruits = new Array(1);
+// const fruits = new Array("apple","banana");
 
 // console.log(fruits);
 
@@ -98,4 +98,16 @@
 // console.log(students.concat("Bob"));
 
 
-//11. slice () 
+//11. slice ()  
+
+// const numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+// let part = numbers.slice(2);
+// console.log(part);
+
+
+// const cake = ["Slice1", "Slice2", "Slice3", "Slice4", "Slice5"];
+
+// let my_slice = cake.slice(2,4);
+// console.log(my_slice);
+
