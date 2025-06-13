@@ -39,15 +39,15 @@
 // }
 
 
-let price = 2;
+// let price = 2;
 
-if (price >= 50) {
-    console.log(`"It's expensive $${price}"`);
-} else if (price >= 30) {
-    console.log(`"It's not expensive $${price}"`);
-} else {
-    console.log(`"It's very cheap $${price}"`);
-}
+// if (price >= 50) {
+//     console.log(`"It's expensive $${price}"`);
+// } else if (price >= 30) {
+//     console.log(`"It's not expensive $${price}"`);
+// } else {
+//     console.log(`"It's very cheap $${price}"`);
+// }
 
 // 4. Logical operator.
 
@@ -138,3 +138,89 @@ if (price >= 50) {
 // h.forEach(element => {
 //     console.log(element);
 // });
+
+
+// const bikes = ["suzuki", "honda", "yamaha"];
+
+// console.log(bikes);
+
+
+// const cars = [];
+
+// cars[0] = "BMW";
+// cars[1] = 12;
+// cars[2] = "AUDI";
+
+// console.log(cars);
+
+
+// const names = new Array("Ali","Joel","Sarah");
+
+// console.log(names);
+
+
+// const names = ["Ali", "Sara", "Hamza"];
+
+// // console.log(names.length);
+
+// names.length = 2;
+// console.log(names);
+
+// const fruits = [];
+
+// fruits[0] = "Apple";
+// fruits[1] = "Pear";
+// fruits[2] = "Banana";
+
+// console.log(fruits.toString());
+
+
+// const vegetables = ["Tomato", "Capsicum", "Carrot"];
+
+// console.log(vegetables.at(2));
+
+
+
+// const bikes = ["Suzuki", "Honda", "Yamaha"];
+
+// console.log(bikes.join(" @ "));
+
+// const cars = ["Volvo", "BMW", "AUDI"];
+
+// console.log(cars.pop(1));
+// console.log(cars);
+
+
+// const heroes = ["Matt", "Tony", "Chris"];
+
+// (heroes.push("Natasha"));
+// console.log(heroes);
+
+// const villans = ["Kingpin", "Doom", "Electro"];
+
+// villans.shift(1);
+// console.log(villans);
+
+
+// const fruits = ["apple", "pear", "watermelon"];
+
+// fruits.unshift("banana");
+// console.log(fruits);
+
+// const drinks = ["Coke", "Fanta", "Pepsi"];
+
+// delete drinks[2];
+// console.log(drinks);
+
+// const cities = new Array("London", "Boston", "Karachi");
+
+// delete cities[1];
+// console.log(cities);
+
+
+const boys = ["Ali", "Hamza", "Ahmed"];
+const girls = ["Amna", "Sarah", "Marium"];
+
+const students = boys.concat(girls);
+console.log(students);
+
