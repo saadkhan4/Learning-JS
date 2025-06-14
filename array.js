@@ -36,7 +36,7 @@
 
 // names.length = 2;
 
-// console.log(names)
+// console.log(names);
 
 //2. toString (convert into single string)
 
@@ -98,7 +98,7 @@
 // console.log(students.concat("Bob"));
 
 
-//11. slice ()  
+//11. slice ()  slice out a part of an array
 
 // const numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 
@@ -111,3 +111,15 @@
 // let my_slice = cake.slice(2,4);
 // console.log(my_slice);
 
+
+//12. Splice()  
+// const colors = ["Red", "Blue","Black"];
+// colors.splice(1, 0, "Rose");
+// console.log(colors);
+
+//13. toSpliced() just like splice but it does not change original array it returns new array.
+
+const cars = ["BMW", "BENZ", "VOLVO", "OPEL"];
+let driver = cars.toSpliced(1, 0, "AUDI");
+console.log(cars);
+console.log(driver);
