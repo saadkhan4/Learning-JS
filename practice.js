@@ -218,9 +218,139 @@
 // console.log(cities);
 
 
-const boys = ["Ali", "Hamza", "Ahmed"];
-const girls = ["Amna", "Sarah", "Marium"];
+// const boys = ["Ali", "Hamza", "Ahmed"];
+// const girls = ["Amna", "Sarah", "Marium"];
 
-const students = boys.concat(girls);
-console.log(students);
+// const students = boys.concat(girls);
+// console.log(students);
 
+
+// const animals = ["Cat", "Dog", "Panther", "Tiger", "Cheetah"];
+// animals.splice(2, 0, "Elephant");
+// console.log(animals);
+
+
+// const fruits = ["Apple", "Banana", "Strawberry", "Watermelon"];
+// fruits.splice(1, 2);
+// console.log(fruits);
+
+
+// const cars = ["BMW", "VOLVO", "AUDI", "OPEL"];
+
+// console.log(cars.length);
+
+// cars.length = 3;
+
+// console.log(cars)
+
+// let names = ["Ali", "Numair", "Qaim"];
+// console.log(names.toString());
+
+
+// let fruits = ["Apple", "Banana", "Pear"];
+// console.log(fruits.at(2));
+
+// const cars = ["BMW", "VOLVO", "OPEL"];
+// console.log(cars);
+
+
+// let names = [];
+
+// names[0] = "Ron";
+// names[1] = "Jesse";
+// names[2] = "Walt";
+
+// console.log(names);
+
+// const fruits = new Array("Apple", "Banana", "Pear");
+// console.log(fruits);
+
+// const cars = ["OPEL", "NISSAN", "HONDA"];
+
+// console.log(cars.length);
+
+// cars.length = 2;
+// console.log(cars);
+
+// let numbers = ["Rhodes","Cody","Charlotte"];
+// console.log(numbers.toString());
+
+// let bikes = ["Honda", "Suzuki", "BMW", "Yamaha"];
+// console.log(bikes.at(1));
+
+// let games = [];
+// games[0] = "Resident evil";
+// games[1] = "Stellar Blade";
+// games[2] = "Silent hill";
+
+// console.log(games.join(" $ "));
+
+// let drinks = ["Coke", "Pepsi", "Sprite", "Fanta"];
+
+// console.log(drinks.pop());
+// console.log(drinks);
+
+// let bikes = ["Honda", "BMW", "Suzuki",];
+// console.log(bikes.push("Yamaha"));
+// console.log(bikes);
+
+
+// let fruits = ["Banana", "Apple", "Pear", "Strawberry"];
+// console.log(fruits.shift());
+// console.log(fruits);
+
+// let vegetables = [];
+
+// vegetables[0] = "Cucumber";
+// vegetables[1] = "Carrot";
+// vegetables[2] = "Capsicum";
+// vegetables[3] = "Tomato";
+
+// console.log(vegetables.unshift("Cabbage"));
+// console.log(vegetables);
+
+// let names = ["Joel", "Miller", "Sasha", "Jill"];
+
+// delete names[2];
+// console.log(names);
+
+
+// let boys = ["Joel", "Bill", "Ali"];
+// let girls = ["Jessica", "Jennifer", "Britney"];
+
+// let students = boys.concat(girls);
+// console.log(students);
+
+
+// let cities = ["London", "Washington", "Tokyo", "Toronto", "Paris"];
+
+// let list = cities.slice(2, 4);
+// console.log(list);
+
+
+// let numbers = [23, 43, 13, 412, 43, 124, 54, 65];
+// let my_list = numbers.slice(3, 6);
+// console.log(my_list);
+
+
+// let chocolates = ["Snickers", "Bounty", "Twix", "Mars", "Kit-Kat"];
+// chocolates.splice(1, 3,"Dairy-milk");
+// console.log(chocolates);
+
+// let clothes = ["Shirt", "Jacket", "Hoodie", "Pants"];
+
+// clothes.splice(2, 0, "Shorts");
+// console.log(clothes);
+
+// let cars = ["BMW", "NISSAN", "HONDA", "TOYOTA", "MAZDA"];
+// cars.splice(2, 4, "AUDI");
+// console.log(cars);
+
+// let fruits = ["Watermelon", "Pine-apple", "Guava", "Apple", "Pear", "Orange"];
+// fruits.splice(2, 3, "Mango");
+// console.log(fruits);
+
+
+let names = ["Ali", "Sara", "Hamza", "Numair", "Amna", "Joel","Subhan","Eman"];
+names.splice(2, 4, "Charlotte");
+console.log(names);
