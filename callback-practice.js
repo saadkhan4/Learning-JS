@@ -535,13 +535,79 @@
 // getStudentName("Saad", greet); // <- passing greet as callback
   
 
-function greet(message) {
-    console.log(message);
-}
+// function greet(message) {
+//     console.log(message);
+// }
 
-function getStudentName(name, callback) {
-    let result = "Hello " + name;
-    callback(result);
-}
+// function getStudentName(name, callback) {
+//     let result = "Hello " + name;
+//     callback(result);
+// }
 
-getStudentName("Hamza", greet);
+// getStudentName("Hamza", greet);
+
+
+// function greet() {
+//     console.log("Hello");
+// }
+
+// function meet(callback) {
+//     console.log("Processing...");
+//     callback();
+// }
+
+// meet(greet);
+
+// function start() {
+//     console.log("Start now.");
+// }
+
+// function begin(callback) {
+//     console.log("Begins in moments");
+//     callback();
+// }
+
+// setTimeout(() => {
+//     begin(start); 
+// }, 2000);
+
+
+// function giveOrder(order, callback) {
+//     setTimeout(() => {
+//         console.log("What's your order? " + order);
+//         callback();
+//     }, 3000);
+// }
+
+// function takeOrder() {
+//     console.log("Here is order sir!");
+// }
+
+// giveOrder("Fries", takeOrder);
+
+
+// function bookTicket(movieName, callback) {
+//     setTimeout(() => {
+//         console.log("Which ticket do you want sir? " + movieName);
+//         callback()
+//     }, 5000);
+// }
+
+// function showTicket() {
+//     console.log("Here is your ticket sir.");
+// }
+
+// bookTicket("Fantastic 4", showTicket);
+
+// const orderFood = (giveOrder, callback) => {
+//     setTimeout(() => {
+//         console.log("What do you want to order sir? " + giveOrder);
+//         callback();
+//     }, 3000);
+// }
+
+// const takeOrder = () => {
+//     console.log("Here is your order sir.");
+// }
+
+// orderFood("Spaghetti",takeOrder);
