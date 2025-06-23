@@ -1,63 +1,74 @@
-// Practice file of JS.
+// 1. Arithmetic operators
 
-// 1. assignment operator
+// let sum = 5 + 3;
+// console.log(sum); 
 
-// let p = 4;
-// p += 3;
+//2. assignment operators.
+
+// p = 4 + 2;
+// p = p += 4;
 // console.log(p);
 
-// let l = 3;
-// l -= 4;
-// console.log(l);
+// q = 5 - 3;
+// q = q -= 5;
+// console.log(q);
 
-// let s = 7;
-// s *= 3;
-// console.log(s);
+// a = 5 * 2;
+// a = a *= 4;
+// console.log(a);
 
-// let c = 2;
-// c /= 4;
-// console.log(c);
+// f = 4 / 2;
+// f /= 5;
+// console.log(f);
 
-// 2. assignment operator in conditional statements
+//3. Comparison operators and in conditional statements.
 
-// let age = 18;
+// console.log(5 == "5");
+// console.log(5 === "5");
+// console.log(4 != 5);
+// console.log(5 != 5);
 
-// if (age >= 12) {
-//     console.log("You can enter.");
-// } else {
-//     console.log("You cannot enter.");
-// }
+// let temperature = 10;
 
-// let temperature = 45;
-
-// if (temperature >= 35) {
-//     console.log("It's hot today.");
-// } else if (temperature >= 25){
+// if (temperature >= 40) {
+//     console.log("It's very hot today.");
+// } else if (temperature >= 15) {
 //     console.log("It's moderate today.");
 // } else {
 //     console.log("It's cold today.")
 // }
 
 
-// let price = 2;
+// let signal = "Yellow";
 
-// if (price >= 50) {
+// if (signal == "Red") {
+//     console.log("Stop!");
+// } else if (signal == "Yellow") {
+//     console.log("Start your engines.");
+// } else if (signal == "Green") {
+//     console.log("Go.")
+// }
+
+// let price = 40;
+
+// if (price >= 90) {
 //     console.log(`"It's expensive $${price}"`);
-// } else if (price >= 30) {
+// }
+// else if(price >= 25){
 //     console.log(`"It's not expensive $${price}"`);
 // } else {
 //     console.log(`"It's very cheap $${price}"`);
 // }
 
-// 4. Logical operator.
+//4. Logical operators.
 
-// let hasID = false;
-// let hasAge = 22;
+// let hasID = true;
+// let age = 12;
 
-// if (hasAge >= 19 && hasID) {
-//     console.log("You can go.");
+// if (age >= 12 && hasID) {
+//     console.log("you can vote.");
 // } else {
-//     console.log("You can't go.");
+//     console.log("You cannot vote.");
 // }
 
 // let isWeekend = true;
@@ -66,15 +77,7 @@
 // if (isWeekend || isHoliday) {
 //     console.log("You can relax");
 // } else {
-//     console.log("You can't relax");
-// }
-
-// let condition = true;
-
-// if (condition !== true) {
-//     console.log("That's true");
-// } else {
-//     console.log("That's not true");
+//     console.log("You cannot relax");
 // }
 
 // let isRaining = true;
@@ -85,272 +88,89 @@
 //     console.log("You don't need an umbrella.")
 // }
 
-// let firstName = "Stellar";
-// let lastName = "Blade";
-// let age = 24;
+// let firstName = "Joel";
+// let lastName = "Miller";
+// let age = 43;
 
-// console.log(`My name is ${firstName} ${lastName} and I'am ${age}`);
+// console.log(`"I'am ${firstName} ${lastName} and I'm ${age} years old."`)
 
 // LOOPS
 
-// for (i = 0; i < 3; i++){
-//     console.log("This is for loop.")
+//1. For Loop
+
+// for (i = 0; i < 3; i++) {
+//     console.log("This is for loop");
 // }
 
-// let x = [1, 4, 2, 4, 12];
+//2. For off-loop
 
-// for (const element of x) {
+// for (const element of "Destruction") {
 //     console.log(element);
 // }
-
-// for (const element of "Manipulation") {
-//     console.log(element);
-// }
-
-// let player = {
-//     Name: "Glenn Maxwell",
-//     Team: "Australia",
-//     Age: 38
-// }
-
-// for (const key in player) {
-//     const element = player[key];
-//     console.log(element, key);
-            
-// }
-
-// let s = 0;
-
-// while (s < 5) {
-//     console.log("this is while loop");
-//     s++;
-// }
-
-// let o = 0;
-
-// do {
-//     console.log("this is do while loop.")
-//     o++;
-// } while (o < 3);
-
-// let h = [32, 54, 2, 31, 43, 123, 56, 87, 3];
-
-// h.forEach(element => {
-//     console.log(element);
-// });
-
-
-// const bikes = ["suzuki", "honda", "yamaha"];
-
-// console.log(bikes);
-
-
-// const cars = [];
-
-// cars[0] = "BMW";
-// cars[1] = 12;
-// cars[2] = "AUDI";
-
-// console.log(cars);
-
-
-// const names = new Array("Ali","Joel","Sarah");
-
-// console.log(names);
-
-
-// const names = ["Ali", "Sara", "Hamza"];
-
-// // console.log(names.length);
-
-// names.length = 2;
-// console.log(names);
-
-// const fruits = [];
-
-// fruits[0] = "Apple";
-// fruits[1] = "Pear";
-// fruits[2] = "Banana";
-
-// console.log(fruits.toString());
-
-
-// const vegetables = ["Tomato", "Capsicum", "Carrot"];
-
-// console.log(vegetables.at(2));
-
-
-
-// const bikes = ["Suzuki", "Honda", "Yamaha"];
-
-// console.log(bikes.join(" @ "));
-
-// const cars = ["Volvo", "BMW", "AUDI"];
-
-// console.log(cars.pop(1));
-// console.log(cars);
-
-
-// const heroes = ["Matt", "Tony", "Chris"];
-
-// (heroes.push("Natasha"));
-// console.log(heroes);
-
-// const villans = ["Kingpin", "Doom", "Electro"];
-
-// villans.shift(1);
-// console.log(villans);
-
-
-// const fruits = ["apple", "pear", "watermelon"];
-
-// fruits.unshift("banana");
-// console.log(fruits);
-
-// const drinks = ["Coke", "Fanta", "Pepsi"];
-
-// delete drinks[2];
-// console.log(drinks);
-
-// const cities = new Array("London", "Boston", "Karachi");
-
-// delete cities[1];
-// console.log(cities);
-
-
-// const boys = ["Ali", "Hamza", "Ahmed"];
-// const girls = ["Amna", "Sarah", "Marium"];
-
-// const students = boys.concat(girls);
-// console.log(students);
-
-
-// const animals = ["Cat", "Dog", "Panther", "Tiger", "Cheetah"];
-// animals.splice(2, 0, "Elephant");
-// console.log(animals);
-
-
-// const fruits = ["Apple", "Banana", "Strawberry", "Watermelon"];
-// fruits.splice(1, 2);
-// console.log(fruits);
-
-
-// const cars = ["BMW", "VOLVO", "AUDI", "OPEL"];
-
-// console.log(cars.length);
-
-// cars.length = 3;
-
-// console.log(cars)
-
-// let names = ["Ali", "Numair", "Qaim"];
-// console.log(names.toString());
 
 
 // let fruits = ["Apple", "Banana", "Pear"];
-// console.log(fruits.at(2));
 
-// const cars = ["BMW", "VOLVO", "OPEL"];
-// console.log(cars);
+// for (const element of fruits) {
+//     console.log(element);
+// }
 
+//3. for IN-loop
 
-// let names = [];
+// let obj = {
+//     Name: "Frank Castle",
+//     Age: 34,
+//     Company: "Marvel INC"
+// }
 
-// names[0] = "Ron";
-// names[1] = "Jesse";
-// names[2] = "Walt";
+// for (const key in obj) {
+//     const element = obj[key];
+//     console.log(element,key);
+        
+// }
 
-// console.log(names);
+// let game = {
+//     Name: "Resident Evil",
+//     Platform: "Playstation 5",
+//     Company: "CapCom INC"
+// }
 
-// const fruits = new Array("Apple", "Banana", "Pear");
-// console.log(fruits);
+// for (const key in game) {
+//     const element = game[key];
+//     console.log(element, key);
+        
+// }
 
-// const cars = ["OPEL", "NISSAN", "HONDA"];
+//4 . while loop
 
-// console.log(cars.length);
+// let s = 0;
 
-// cars.length = 2;
-// console.log(cars);
+// while (s < 3) {
+//     console.log("This is while loop");
+//     s++;
+// }
 
-// let numbers = ["Rhodes","Cody","Charlotte"];
-// console.log(numbers.toString());
+// let f = 0;
 
-// let bikes = ["Honda", "Suzuki", "BMW", "Yamaha"];
-// console.log(bikes.at(1));
-
-// let games = [];
-// games[0] = "Resident evil";
-// games[1] = "Stellar Blade";
-// games[2] = "Silent hill";
-
-// console.log(games.join(" $ "));
-
-// let drinks = ["Coke", "Pepsi", "Sprite", "Fanta"];
-
-// console.log(drinks.pop());
-// console.log(drinks);
-
-// let bikes = ["Honda", "BMW", "Suzuki",];
-// console.log(bikes.push("Yamaha"));
-// console.log(bikes);
-
-
-// let fruits = ["Banana", "Apple", "Pear", "Strawberry"];
-// console.log(fruits.shift());
-// console.log(fruits);
-
-// let vegetables = [];
-
-// vegetables[0] = "Cucumber";
-// vegetables[1] = "Carrot";
-// vegetables[2] = "Capsicum";
-// vegetables[3] = "Tomato";
-
-// console.log(vegetables.unshift("Cabbage"));
-// console.log(vegetables);
-
-// let names = ["Joel", "Miller", "Sasha", "Jill"];
-
-// delete names[2];
-// console.log(names);
+// while (f < 4) {
+//     console.log("This is while loop");
+//     f++;
+// }
 
 
-// let boys = ["Joel", "Bill", "Ali"];
-// let girls = ["Jessica", "Jennifer", "Britney"];
+//5. Do while loop
+// let g = 0;
 
-// let students = boys.concat(girls);
-// console.log(students);
+// do {
+//     console.log("This is do while loop");
+//     g++;
+// } while (g < 4);
 
+//6 for each loop
 
-// let cities = ["London", "Washington", "Tokyo", "Toronto", "Paris"];
+// const cars = ["BMW", "VOLVO", "CHRYSLER"];
 
-// let list = cities.slice(2, 4);
-// console.log(list);
+// cars.forEach(element => {
+//     console.log(element);
+// });
 
-
-// let numbers = [23, 43, 13, 412, 43, 124, 54, 65];
-// let my_list = numbers.slice(3, 6);
-// console.log(my_list);
-
-
-// let chocolates = ["Snickers", "Bounty", "Twix", "Mars", "Kit-Kat"];
-// chocolates.splice(1, 3,"Dairy-milk");
-// console.log(chocolates);
-
-// let clothes = ["Shirt", "Jacket", "Hoodie", "Pants"];
-
-// clothes.splice(2, 0, "Shorts");
-// console.log(clothes);
-
-// let cars = ["BMW", "NISSAN", "HONDA", "TOYOTA", "MAZDA"];
-// cars.splice(2, 4, "AUDI");
-// console.log(cars);
-
-// let fruits = ["Watermelon", "Pine-apple", "Guava", "Apple", "Pear", "Orange"];
-// fruits.splice(2, 3, "Mango");
-// console.log(fruits);
-
-
-let names = ["Ali", "Sara", "Hamza", "Numair", "Amna", "Joel","Subhan","Eman"];
-names.splice(2, 4, "Charlotte");
-console.log(names);
