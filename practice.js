@@ -1,9 +1,9 @@
-// 1. Arithmetic operators
+// // 1. Arithmetic operators
 
 // let sum = 5 + 3;
 // console.log(sum); 
 
-//2. assignment operators.
+// // 2. assignment operators.
 
 // p = 4 + 2;
 // p = p += 4;
@@ -21,7 +21,7 @@
 // f /= 5;
 // console.log(f);
 
-//3. Comparison operators and in conditional statements.
+// // 3. Comparison operators and in conditional statements.
 
 // console.log(5 == "5");
 // console.log(5 === "5");
@@ -60,7 +60,7 @@
 //     console.log(`"It's very cheap $${price}"`);
 // }
 
-//4. Logical operators.
+// // 4. Logical operators.
 
 // let hasID = true;
 // let age = 12;
@@ -94,15 +94,15 @@
 
 // console.log(`"I'am ${firstName} ${lastName} and I'm ${age} years old."`)
 
-// LOOPS
+// // LOOPS
 
-//1. For Loop
+// // 1. For Loop
 
 // for (i = 0; i < 3; i++) {
 //     console.log("This is for loop");
 // }
 
-//2. For off-loop
+// // 2. For off-loop
 
 // for (const element of "Destruction") {
 //     console.log(element);
@@ -115,7 +115,7 @@
 //     console.log(element);
 // }
 
-//3. for IN-loop
+// // 3. for IN-loop
 
 // let obj = {
 //     Name: "Frank Castle",
@@ -141,7 +141,7 @@
         
 // }
 
-//4 . while loop
+// // 4 . while loop
 
 // let s = 0;
 
@@ -158,7 +158,7 @@
 // }
 
 
-//5. Do while loop
+// // 5. Do while loop
 // let g = 0;
 
 // do {
@@ -166,7 +166,7 @@
 //     g++;
 // } while (g < 4);
 
-//6 for each loop
+// // 6 for each loop
 
 // const cars = ["BMW", "VOLVO", "CHRYSLER"];
 
@@ -174,3 +174,87 @@
 //     console.log(element);
 // });
 
+
+// function sayHello() {
+//     console.log("Hello");
+// }
+
+// function greet(callback) {
+//     console.log("Processing...")
+//     callback();
+// }
+
+
+// greet(sayHello);
+
+// function onComplete() {
+//     console.log("It is now Completed");
+// }
+
+// function inProcess(callback) {
+//     console.log("In Process");
+//     callback();
+// }
+
+// setTimeout(() => {
+//    inProcess(onComplete) 
+// }, 3000);
+
+
+// function bookFlight(destination, callback) {
+//     setTimeout(() => {
+//         console.log("Where do you want to go sir? " + destination);
+//         callback();
+//     }, 2000);
+// }
+
+// function bookTicket() {
+//     console.log("Here is your ticket sir.");
+// }
+
+// bookFlight("Japan", bookTicket);
+
+// function takeOrder(foodItem, callback) {
+//     setTimeout(() => {
+//         console.log("What food item do you want sir? " + foodItem);
+//         callback(); 
+//     }, 3000);
+// }
+
+// function serveOrder() {
+//     console.log("Here is order sir.");
+// }
+
+// takeOrder("Pasta", serveOrder);
+
+
+// const booking = (bookTicket, callback) => {
+//     setTimeout(() => {
+//         console.log("Which movie do you want to see sir? " + bookTicket);
+//         callback(bookTicket);
+//     }, 3000);
+// }
+
+// const confirmBooking = (ticket) => {
+//     console.log(`"Here is ${ticket} ticket sir."`)
+// }
+
+// booking("F1", confirmBooking);
+
+
+// Callback function ko argument pass karte hain jab humein us function
+// ke andar kisi value ki zarurat hoti hai.
+
+
+const file = (fileName, callback) => {
+    setTimeout(() => {
+        console.log("What's your file name? " + fileName);
+        callback();
+    }, 4000);
+}
+
+const downloading = () => {
+    console.log("Your file is downloading..");
+}
+
+file("main.js", downloading);
