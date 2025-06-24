@@ -611,3 +611,21 @@
 // }
 
 // orderFood("Spaghetti",takeOrder);
+
+
+// const booking = (bookTicket, callback) => {
+//     setTimeout(() => {
+//         console.log("Which movie do you want to see sir? " + bookTicket);
+//         callback(bookTicket);
+//     }, 3000);
+// }
+
+// const confirmBooking = (ticket) => {
+//     console.log(`"Here is ${ticket} ticket sir."`)
+// }
+
+// booking("F1", confirmBooking);
+
+
+// Callback function ko argument pass karte hain jab humein us function
+// ke andar kisi value ki zarurat hoti hai.

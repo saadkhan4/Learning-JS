@@ -1,0 +1,21 @@
+
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  th, td {
+    border: 1px solid #555;
+    padding: 10px;
+  }
+
+  thead {
+    background-color: lightgreen;
+  }
+
+  tfoot {
+    background-color: lightgray;
+    font-weight: bold;
+  }
