@@ -246,15 +246,132 @@
 // ke andar kisi value ki zarurat hoti hai.
 
 
-const file = (fileName, callback) => {
-    setTimeout(() => {
-        console.log("What's your file name? " + fileName);
-        callback();
-    }, 4000);
-}
+// const file = (fileName, callback) => {
+//     setTimeout(() => {
+//         console.log("What's your file name? " + fileName);
+//         callback();
+//     }, 4000);
+// }
 
-const downloading = () => {
-    console.log("Your file is downloading..");
-}
+// const downloading = () => {
+//     console.log("Your file is downloading..");
+// }
 
-file("main.js", downloading);
+// file("main.js", downloading);
+
+
+
+// let cars = ["VOLVO", "BMW", "JAGUAR", "HONDA"];
+
+// console.log(cars[3]);
+
+
+// let names = [];
+
+// names[0] = "Joel";
+// names[1] = "Ellie";
+// names[2] = "Skye";
+// names[3] = "Midas";
+
+// console.log(names)
+
+
+// const fruits = new Array(21);
+// console.log(fruits);
+
+// let fruits = [];
+
+// fruits[0] = "Apple";
+// fruits[1] = "Banana";
+// fruits[2] = "Pear";
+// fruits[3] = "Berry";
+
+// console.log(fruits.length);
+
+// fruits.length = 2;
+// console.log(fruits);
+
+
+// let bikes = ["suzuki", "honda", "yamaha", "BMW"];
+
+// console.log(bikes.toString());
+
+// const names = new Array("Sarah", "Hamza", "Jess", "Bill");
+
+// console.log(names.at(2));
+
+
+// const vegetables = ["Tomato", "Onion", "Cabbage", "Carrot"];
+
+// console.log(vegetables.join(" ^ "));
+
+// let drinks = ["Sprite", "Cola", "Pepsi"];
+
+// drinks.pop();
+// console.log(drinks);
+
+
+// const numbers = [2, 3, 4, 5, 6, 7, 8, 9];
+
+// numbers.push(10);
+// console.log(numbers);
+
+// let phones = ["Apple", "Xiaomi", "Samsung"];
+
+// phones.shift();
+// console.log(phones);
+
+// let phones = ["Apple", "Xiaomi", "Samsung", "Sony"];
+
+// phones.unshift("Google");
+// console.log(phones);
+
+// let boys = ["Joel", "Miller", "Bill", "John"];
+// let girls = ["Jess", "Jennifer", "Ellie", "Fanning"];
+
+// let students = boys.concat(girls);
+// console.log(students);
+
+// const numbers = [];
+
+// numbers[0] = 2;
+// numbers[1] = 3;
+// numbers[2] = 4;
+// numbers[3] = 5;
+
+
+// delete numbers [2];
+// console.log(numbers);
+
+// let pizza = ["Slice1", "Slice2", "Slice3", "Slice4", "Slice5", "Slice6", "Slice6", "Slice7"];
+
+// let bite = pizza.slice(2, 6);
+// console.log(bite);
+
+
+// let fruits = [];
+
+// fruits[0] = "Apple";
+// fruits[1] = "Banana";
+// fruits[2] = "Pear";
+// fruits[3] = "Cherry";
+// fruits[4] = "Orange";
+// fruits[5] = "Peach";
+// fruits[6] = "Lychee";;
+
+
+// fruits.splice(2, 3, "Papaya");
+// console.log(fruits);
+
+
+
+// let names = ["Hamza", "Iqbal", "Hasseb", "Owais", "Qaim", "Mesum", "Zain"];
+
+// names.splice(2, 4, "Bilal");
+// console.log(names);
+
+// let cars = ["AUDI", "JAGUAR", "VOLVO", "TOYOTA", "MITSUBISHI", "HONDA"];
+
+// let driver = cars.toSpliced(2, 0, "OPEL");
+// console.log(cars);
+// console.log(driver);
