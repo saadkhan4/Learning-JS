@@ -31,6 +31,7 @@ table.appendChild(tbody);
 const tb_row = document.createElement("tr");
 tbody.appendChild(tb_row);
 
+
 const t_data = document.createElement("td");
 t_data.innerHTML = "Ali";
 tb_row.appendChild(t_data);
@@ -58,6 +59,24 @@ const t_data6 = document.createElement("td");
 t_data6.innerHTML = 95;
 tb_row2.appendChild(t_data6);
 
+const tb_row3 = document.createElement("tr");
+tbody.appendChild(tb_row3);
+
+const t_data7 = document.createElement("td");
+t_data7.innerHTML = "Hamza";
+tb_row3.appendChild(t_data7);
+
+
+const t_data8 = document.createElement("td");
+t_data8.innerHTML = "VIII";
+tb_row3.appendChild(t_data8);
+
+const t_data9 = document.createElement("td");
+t_data9.innerHTML = 78;
+tb_row3.appendChild(t_data9);
+
+
+
 // TABLE FOOTER
 
 const tfoot = document.createElement("tfoot");
@@ -66,14 +85,17 @@ table.appendChild(tfoot);
 const tf_row = document.createElement("tr");
 tfoot.appendChild(tf_row);
 
-const tf_data = document.createElement("td");
-tf_data.innerHTML = "Hamza";
-tf_row.appendChild(tf_data);
+const tf_row2 = document.createElement("tr");
+tfoot.appendChild(tf_row2);
 
-const tf_data2 = document.createElement("td");
-tf_data2.innerHTML = "VIII";
-tf_row.appendChild(tf_data2);
+const tf_data4 = document.createElement("td");
+tf_data4.innerHTML = "Total Marks";
+tf_row2.appendChild(tf_data4);
 
-const tf_data3 = document.createElement("td");
-tf_data3.innerHTML = 78;
-tf_row.appendChild(tf_data3);
+const tf_data5 = document.createElement("td");
+tf_data5.innerHTML = "";
+tf_row2.appendChild(tf_data5);
+
+const tf_data6 = document.createElement("td");
+tf_data6.innerHTML = 218;
+tf_row2.appendChild(tf_data6);
