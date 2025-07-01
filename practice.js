@@ -377,3 +377,23 @@
 // console.log(driver);
 
 
+
+// let cars = ["AUDI", "JAGUAR", "VOLVO", "TOYOTA", "MITSUBISHI", "HONDA"];
+// let driver = cars.toSpliced(2, 3, "BMW");
+// console.log(cars);
+// console.log(driver);
+
+
+
+function bookFlight(destination, callback) {
+    setTimeout(() => {
+        console.log("Where do you want to go sir? " + destination);
+        callback();
+    }, 2000);
+}
+
+function confirmBooking() {
+    console.log("Here is your ticket sir.");
+}
+
+bookFlight("America",confirmBooking)

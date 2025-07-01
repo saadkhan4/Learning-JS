@@ -629,3 +629,43 @@
 
 // Callback function ko argument pass karte hain jab humein us function
 // ke andar kisi value ki zarurat hoti hai.
+
+// function sayHello() {
+//     console.log("hello");
+// }
+
+// function greet(callback) {
+//     console.log("processing...");
+//     callback();
+// }
+
+// greet(sayHello);
+
+function file(fileName, callback) {
+    setTimeout(() => {
+        console.log("What's your filename? " + fileName)
+        callback(); 
+    }, 3000);
+}
+
+function downloading() {
+    console.log("Downloading your file...")
+}
+
+file("main.js", downloading);
+
+
+
+const bookTicket = (movieName, callback) => {
+    setTimeout(() => {
+        console.log("Which movie do you want to see sir? " + movieName);
+        callback(movieName);
+    }, 3000);
+}
+
+const showTicket = (ticket) => {
+    console.log(`"Here is your ${ticket} ticket sir."`);
+}
+
+bookTicket("F1", showTicket);
+
