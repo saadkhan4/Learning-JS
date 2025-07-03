@@ -163,12 +163,64 @@
 
 
 
-class MathTool{
-  static double(n) {
-    return n * 2;
+// class MathTool{
+//   static double(n) {
+//     return n * 2;
+//   }
+// }
+
+// const result = MathTool.double(3);
+// console.log(result);
+
+// class Book{
+//   constructor(title, author) {
+//     this.title = title;
+//     this.author = author;
+//   }
+//   details() {
+//     console.log(`${this.title} is written by ${this.author}`);
+//   }
+// }
+
+// const b1 = new Book("Pride & Prejudice", "Jane Austin");
+// b1.details();
+
+// class Movie{
+//   constructor(title, releaseYear) {
+//     this.title = title;
+//     this.releaseYear = releaseYear;
+//   }
+//   getAge() {
+//     const date = new Date().getFullYear() - this.releaseYear;
+//     let result = `${this.title} is ${date} years old.`;
+//     return result;
+//   }
+// }
+
+// const m1 = new Movie("Avengers Endgame", 2018);
+// console.log(m1.getAge());
+
+
+// class Person{
+//   constructor(name, birthYear) {
+//     this.name = name;
+//     this.birthYear = birthYear;
+//   }
+//   getDetails(){
+//     const date = new Date().getFullYear() - this.birthYear;
+//     let result = (`My name is ${this.name} and I'm ${date} years old.`);
+//     return result;
+//   }
+// }
+
+// const p1 = new Person("Joel Miller", 1995);
+// console.log(p1.getDetails());
+
+
+class Subtraction{
+  static subtract(x, y) {
+    return x - y
   }
 }
-
-const result = MathTool.double(3);
-console.log(result);
+console.log(Subtraction.subtract(3, 1));
 
