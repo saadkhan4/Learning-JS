@@ -64,25 +64,10 @@
 
 //   getAge() {
 //     const age = new Date().getFullYear() - this.year;
-//     return age; // 👈 Return kar raha hai value
+//     return age; //  Return kar raha hai value
 //   }
 // }
 
-// // 🔸 Instance banaya
-// const myCar = new Car("Ford", 2014);
-
-// // 🔹 Method call + return value use
-// const carAge = myCar.getAge();
-
-// // 🔸 Ab console.log method ke bahar likh rahe hain
-// console.log(`My car is ${carAge} years old.`);
-
-
-// class Car{
-//   constructor() {
-//     console.log("Hello from constructor");
-//   }
-// }
 
 // const c1 = new Car();
 
@@ -201,26 +186,141 @@
 // console.log(m1.getAge());
 
 
+class Person{
+  constructor(name, birthYear) {
+    this.name = name;
+    this.birthYear = birthYear;
+  }
+  getDetails(){
+    const date = new Date().getFullYear() - this.birthYear;
+    let result = (`My name is ${this.name} and I'm ${date} years old.`);
+    return result;
+  }
+}
+
+const p1 = new Person("Joel Miller", 1995);
+console.log(p1.getDetails());
+
+
+// class Subtraction{
+//   static subtract(x, y) {
+//     return x - y
+//   }
+// }
+// console.log(Subtraction.subtract(3, 1));
+
+
+// class Greet{
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   details() {
+//     console.log(`My name is ${this.name} and I'm ${this.age} years old.`);
+//   }
+// }
+
+// const g1 = new Greet("Sansa Stark", 29);
+// g1.details();
+
+// class Car{
+//   constructor(brand, model) {
+//     this.brand = brand;
+//     this.model = model;
+//   }
+//   getDetails() {
+//     console.log(`${this.brand} made ${this.model} in 2016`);
+//   }
+// }
+
+// const c1 = new Car("Honda", "Civic");
+// c1.getDetails();
+
+class Movie{
+  constructor(title, releaseYear) {
+    this.title = title;
+    this.releaseYear = releaseYear;
+  }
+  getDetails() {
+    const date = new Date().getFullYear() - this.releaseYear;
+    console.log(`${this.title} is ${date} years old`);
+  }
+}
+
+const m1 = new Movie("Transformers", 2007);
+m1.getDetails();
+
+// class Student{
+//   constructor(name, marks) {
+//     this.name = name;
+//     this.marks = marks;
+//   }
+//   result() {
+//     if (this.marks >= 40) {
+//       console.log("Passed");
+//     } else {
+//       console.log("Failed");
+//     }
+//   }
+// }
+
+// const s1 = new Student("Sam Witwicky", 50);
+// s1.result();
+
+// class ShoppingCart{
+//   constructor(item1, item2, item3) {
+//     this.item1 = item1;
+//     this.item2 = item2;
+//     this.item3 = item3;
+//   }
+
+//   getTotal() {
+//     return this.item1 + this.item2 + this.item3;
+//   }
+// }
+
+// const cart = new ShoppingCart(122, 677, 455);
+// const total = cart.getTotal();
+// console.log(`Your total is $${total}`);
+
+
+// class StudentMarks{
+//   constructor(maths, english, science) {
+//     this.english = english;
+//     this.maths = maths;
+//     this.science = science;
+//   }
+//   getTotalMarks() {
+//     return this.english + this.maths + this.science;
+//   }
+// }
+
+// const s1 = new StudentMarks(50, 67, 89);
+// const total = s1.getTotalMarks()
+// console.log(`Total marks are ${total}`);
+
+
 // class Person{
 //   constructor(name, birthYear) {
 //     this.name = name;
 //     this.birthYear = birthYear;
 //   }
-//   getDetails(){
+
+//   getDetails() {
 //     const date = new Date().getFullYear() - this.birthYear;
 //     let result = (`My name is ${this.name} and I'm ${date} years old.`);
 //     return result;
 //   }
 // }
 
-// const p1 = new Person("Joel Miller", 1995);
-// console.log(p1.getDetails());
+// const p1 = new Person("Sansa Stark", 1998);
+// console.log(p1.getDetails())
 
 
-class Subtraction{
-  static subtract(x, y) {
-    return x - y
+class Multiplication{
+  static multiply(x,y) {
+    return x * y;
   }
 }
-console.log(Subtraction.subtract(3, 1));
 
+console.log(Multiplication.multiply(3 ,6));
