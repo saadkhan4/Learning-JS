@@ -163,26 +163,49 @@
 // }
 // security();
 
-const classEntry = new Promise((resolve, reject) => {
-    let isStudent = true;
-    let hasValidID = true;
+// const classEntry = new Promise((resolve, reject) => {
+//     let isStudent = true;
+//     let hasValidID = true;
+
+//     setTimeout(() => {
+//         if (isStudent === true && hasValidID === false) {
+//             resolve("Welcome to class");
+//         } else {
+//             reject("Entry denied. Show your ID.")
+//         }
+//     }, 3000);
+// })
+
+// async function checkID() {
+//     try {
+//         const message = await classEntry;
+//         console.log("Message",message);
+//     } catch (error) {
+//         console.log("Error",error);
+//     }
+// }
+
+// checkID();
+
+const checkBattery = new Promise((resolve, reject) => {
+    let batteryLevel = 19;
 
     setTimeout(() => {
-        if (isStudent === true && hasValidID === false) {
-            resolve("Welcome to class");
+        if (batteryLevel > 20) {
+            resolve("Laptop is starting.")
         } else {
-            reject("Entry denied. Show your ID.")
+            reject("Battery too low. Please charge.")
         }
-    }, 3000);
+    }, 2000);
 })
 
-async function checkID() {
+async function bootLaptop() {
     try {
-        const message = await classEntry;
+        const message = await checkBattery;
         console.log("Message",message);
     } catch (error) {
         console.log("Error",error);
     }
 }
 
-checkID();
+bootLaptop();

@@ -11,6 +11,27 @@ firstPromise.then((response) => {
     console.log("It's response", response);
 })
 
+// using resolve and reject to solve promise.
+const orderPizza = new Promise((resolve, reject) => {
+  let pizzaShopOpen = false;
+
+  setTimeout(() => {
+    if (pizzaShopOpen) {
+      resolve("It's open");
+    } else {
+      reject("It's closed");
+    }
+  }, 2000);
+});
+
+orderPizza
+  .then((message) => {
+    console.log("Success", message);
+  })
+  .catch((error) => {
+    console.log("Failure", error);
+  });
+
 // using await method to solve promise.
 
 const secondPromise = new Promise(function (resolve, reject) {
@@ -41,3 +62,5 @@ async function makeTea() {
 }
 
 makeTea();
+
+
