@@ -186,20 +186,20 @@
 // console.log(m1.getAge());
 
 
-class Person{
-  constructor(name, birthYear) {
-    this.name = name;
-    this.birthYear = birthYear;
-  }
-  getDetails(){
-    const date = new Date().getFullYear() - this.birthYear;
-    let result = (`My name is ${this.name} and I'm ${date} years old.`);
-    return result;
-  }
-}
+// class Person{
+//   constructor(name, birthYear) {
+//     this.name = name;
+//     this.birthYear = birthYear;
+//   }
+//   getDetails(){
+//     const date = new Date().getFullYear() - this.birthYear;
+//     let result = (`My name is ${this.name} and I'm ${date} years old.`);
+//     return result;
+//   }
+// }
 
-const p1 = new Person("Joel Miller", 1995);
-console.log(p1.getDetails());
+// const p1 = new Person("Joel Miller", 1995);
+// console.log(p1.getDetails());
 
 
 // class Subtraction{
@@ -236,19 +236,19 @@ console.log(p1.getDetails());
 // const c1 = new Car("Honda", "Civic");
 // c1.getDetails();
 
-class Movie{
-  constructor(title, releaseYear) {
-    this.title = title;
-    this.releaseYear = releaseYear;
-  }
-  getDetails() {
-    const date = new Date().getFullYear() - this.releaseYear;
-    console.log(`${this.title} is ${date} years old`);
-  }
-}
+// class Movie{
+//   constructor(title, releaseYear) {
+//     this.title = title;
+//     this.releaseYear = releaseYear;
+//   }
+//   getDetails() {
+//     const date = new Date().getFullYear() - this.releaseYear;
+//     console.log(`${this.title} is ${date} years old`);
+//   }
+// }
 
-const m1 = new Movie("Transformers", 2007);
-m1.getDetails();
+// const m1 = new Movie("Transformers", 2007);
+// m1.getDetails();
 
 // class Student{
 //   constructor(name, marks) {
@@ -317,10 +317,25 @@ m1.getDetails();
 // console.log(p1.getDetails())
 
 
-class Multiplication{
-  static multiply(x,y) {
-    return x * y;
+// class Multiplication{
+//   static multiply(x,y) {
+//     return x * y;
+//   }
+// }
+
+// console.log(Multiplication.multiply(3 ,6));
+
+
+class Person{
+  constructor(name, birthYear) {
+    this.name = name;
+    this.birthYear = birthYear;
+  }
+  getDetails() {
+    const date = new Date().getFullYear() - this.birthYear;
+    console.log(`I'm ${this.name} and I'm ${date} years old.`);
   }
 }
 
-console.log(Multiplication.multiply(3 ,6));
+const p1 = new Person("Joel", 1987);
+p1.getDetails();
