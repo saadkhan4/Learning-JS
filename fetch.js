@@ -25,17 +25,43 @@
 
 // getData()
 
-async function getData() {
-    try {
-        const response = await fetch("data.json");
-    const data = await response.json();
-    data.forEach(element => {
-        console.log(element.grade)
+// async function getData() {
+//     try {
+//         const response = await fetch("data.json");
+//     const data = await response.json();
+//     data.forEach(element => {
+//         console.log(element.grade)
         
-    });
-    } catch (error){
-        console.log("Error",error);
+//     });
+//     } catch (error){
+//         console.log("Error",error);
         
-    }
-}
-getData();
+//     }
+// }
+// getData();
+
+// async function getData() {
+//     try {
+//         const response = await fetch("data.json");
+//         const data = await response.json();
+//         console.log(data);
+//     } catch (error) {
+//         console.log("Error",error);
+//     }
+// }
+
+// getData();
+
+
+// async function getData() {
+//     try {
+//         const response = await fetch("data.json");
+//         const data = await response.json();
+//         data.forEach(element => {
+//             console.log(element.name);
+//         });
+//     } catch (error) {
+//         console.log("Error",error);
+//     }
+// }
+// getData();

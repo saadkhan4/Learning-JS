@@ -326,16 +326,18 @@
 // console.log(Multiplication.multiply(3 ,6));
 
 
-class Person{
-  constructor(name, birthYear) {
-    this.name = name;
-    this.birthYear = birthYear;
-  }
-  getDetails() {
-    const date = new Date().getFullYear() - this.birthYear;
-    console.log(`I'm ${this.name} and I'm ${date} years old.`);
-  }
-}
+// class Person{
+//   constructor(name, birthYear) {
+//     this.name = name;
+//     this.birthYear = birthYear;
+//   }
+//   getDetails() {
+//     const date = new Date().getFullYear() - this.birthYear;
+//     let result = (`I'm ${this.name} and I'm ${date} years old.`)
+//     return result;
+//   }
+// }
 
-const p1 = new Person("Joel", 1987);
-p1.getDetails();
+// const p1 = new Person("John Snow", 1988);
+// console.log(p1.getDetails());
+

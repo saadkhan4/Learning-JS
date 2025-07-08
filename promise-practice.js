@@ -187,25 +187,94 @@
 
 // checkID();
 
-const checkBattery = new Promise((resolve, reject) => {
-    let batteryLevel = 19;
+// const checkBattery = new Promise((resolve, reject) => {
+//     let batteryLevel = 19;
 
-    setTimeout(() => {
-        if (batteryLevel > 20) {
-            resolve("Laptop is starting.")
-        } else {
-            reject("Battery too low. Please charge.")
-        }
-    }, 2000);
-})
+//     setTimeout(() => {
+//         if (batteryLevel > 20) {
+//             resolve("Laptop is starting.")
+//         } else {
+//             reject("Battery too low. Please charge.")
+//         }
+//     }, 2000);
+// })
 
-async function bootLaptop() {
-    try {
-        const message = await checkBattery;
-        console.log("Message",message);
-    } catch (error) {
-        console.log("Error",error);
-    }
-}
+// async function bootLaptop() {
+//     try {
+//         const message = await checkBattery;
+//         console.log("Message",message);
+//     } catch (error) {
+//         console.log("Error",error);
+//     }
+// }
 
-bootLaptop();
+// bootLaptop();
+
+
+// const BurgerShopOpen = new Promise((resolve, reject) => {
+//     let shopOpen = true;
+//     setTimeout(() => {
+//        if(shopOpen){
+//            resolve("Burger shop is open.");
+//        } else {
+//            reject("Burger shop is closed.")
+//        } 
+//     }, 2000);
+// })
+
+// BurgerShopOpen
+//     .then(success => {
+//     console.log("Success",success);
+//     })
+//     .catch(failure => {
+//         console.log("Failure",failure);
+//     })
+
+    
+
+
+// const baking = new Promise((resolve, reject) => {
+//     let ovenOn = true;
+//     let temperature = 180;
+
+//     setTimeout(() => {
+//         if (ovenOn === true && temperature >= 180) {
+//             resolve("Cake is baking");
+//         } else {
+//             reject("Cannot bake cake. Please check the temperature of oven.")
+//         }
+//     }, 2000);
+// })
+
+// baking
+//     .then(success => {
+//     console.log("Success",success);
+//     })
+//     .catch(failure => {
+//         console.log("failure", failure);
+// })
+
+
+// const bookingRide = new Promise((resolve, reject) => {
+//     let driverAvailable = true;
+//     let locationEnabled = true;
+
+//     setTimeout(() => {
+//         if (driverAvailable === true && locationEnabled === true) {
+//             resolve("Ride confirmed. Driver is on the way!")
+//         } else {
+//             reject("Booking failed. Please check driver or location settings.");
+//         }
+//     }, 2000);
+// })
+
+// async function startBooking() {
+//     try {
+//         const message = await bookingRide;
+//         console.log("Success",message);
+//     } catch (error) {
+//         console.log("Failure");
+//     }
+// }
+
+// startBooking();
