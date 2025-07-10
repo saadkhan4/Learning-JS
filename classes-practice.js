@@ -341,3 +341,5 @@
 // const p1 = new Person("John Snow", 1988);
 // console.log(p1.getDetails());
 
+
+

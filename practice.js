@@ -426,3 +426,125 @@
 // }
 
 // getData()
+
+
+// class Movie{
+//     constructor(title, release) {
+//         this.title = title;
+//         this.release = release;
+//     } 
+//     details() {
+//         const date = new Date().getFullYear() - this.release;
+//         let result = (`${this.title} was ${date} years old`);
+//         return result;
+//     }
+// }
+
+// const m1 = new Movie("Transforms", 2007);
+// console.log(m1.details());
+
+// class ShoppingCart{
+//     constructor(item1, item2, item3) {
+//         this.item1 = item1;
+//         this.item2 = item2;
+//         this.item3 = item3;
+//     }
+//     details() {
+//         return this.item1 + this.item2 + this.item3;
+//     }
+// }
+
+// const cart = new ShoppingCart(222, 543, 677);
+// const total = cart.details();
+// console.log(`Your total bill is $${total}`);
+
+// class Person{
+//     constructor(name, birthYear) {
+//         this.name = name;
+//         this.birthYear = birthYear;
+//     }
+//     details() {
+//         const date = new Date().getFullYear() - this.birthYear;
+//         let result = (`My name is ${this.name} and I'm ${date} years old.`);
+//         return result;
+//     }
+// }
+
+// const p1 = new Person("Robert Pattinson", 1997);
+// console.log(p1.details());
+
+
+// async function getData() {
+//     try{
+//         const response = await fetch("data.json");
+//         const data = await response.json();
+//         console.log(data);
+//     } catch (error) {
+//         console.log("Error",error);
+//     }
+// }
+
+// getData()
+
+// const response = new Promise((resolve, reject) => {
+//     let shopOpen = true;
+
+//     setTimeout(() => {
+//         if (shopOpen) {
+//             resolve("Shop is open");
+//         } else {
+//             reject("Shop is closed");
+//         }
+//     }, 2000);
+// })
+
+// response.
+//     then(success => {
+//     console.log("Success",success);
+//     })
+//     .catch(failure => {
+//     console.log("Failure",failure);
+//     })
+
+
+// const music = new Promise((resolve, reject) => {
+//     let pressesPlay = true;
+
+//     setTimeout(() => {
+//         if (pressesPlay) {
+//            resolve("Song is playing");
+//         } else {
+//             reject("No internet. Can't play song");
+//        }
+//     }, 3000);
+// })
+
+// music.
+// then(success => {
+//     console.log("Success",success);
+// })
+//     .catch(failure => {
+//     console.log("Failure",failure);
+
+//  })
+
+const electric = new Promise((resolve, reject) => {
+    let power = true;
+
+    if (power) {
+        resolve("The light is ON.");
+    } else {
+        reject("No electricity. Light is OFF.");
+    }
+})
+
+async function powerAvailable() {
+    try {
+        const e1 = await electric;
+        console.log("Success",e1);
+    } catch (error) {
+        console.log("Failure",error);
+    }
+    
+}
+powerAvailable();
