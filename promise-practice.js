@@ -278,3 +278,112 @@
 // }
 
 // startBooking();
+
+// const pizzaShopOpen = new Promise((resolve, reject) => {
+//     let shopOpen = true;
+//     setTimeout(() => {
+//         if (shopOpen) {
+//             resolve("Pizza shop is open now.")
+//         } else {
+//             reject("Pizza shop is closed now.")
+//         }
+//     }, 3000);
+// })
+
+// pizzaShopOpen.
+//     then(success => {
+//     console.log("Success",success);
+//     }) 
+//     .catch(Failure => {
+//         console.log("Failure",failure);
+// })    
+
+// const delivery = new Promise((resolve, reject) => {
+//     let packageArrived = true;
+//     setTimeout(() => {
+//         if (packageArrived) {
+//            resolve("Your Package has arrived.")
+//         } else {
+//             reject("Delivery rejected.")
+//        }
+//     }, 2000);
+// })
+
+// delivery.
+//     then(success => {
+//     console.log("Success",success);
+//     })
+//     .catch(failure => {
+//     console.log("Failure",failure);
+// })
+
+// const charge = new Promise((resolve, reject) => {
+//     let batteryLevel = 100;
+//     let charging = true;
+
+//     setTimeout(() => {
+//         if (charging === true && batteryLevel >= 100){
+//         resolve("Battery Fully charged.")
+//         } else {
+//             reject("Battery is still charging.");
+//        }
+//     }, 3000);
+// })
+
+// async function details() {
+//     try {
+//     const message = await charge;
+//     console.log("Message",message);
+    
+//     } catch (error) {
+//         console.log("Error",error);
+//     }
+// }
+
+// details();
+
+
+// const OrderFood = new Promise((resolve, reject) => {
+//     let giveOrder = true;
+//     let isOrdered = false;
+
+//     setTimeout(() => {
+//         if (giveOrder == true || isOrdered == false) {
+//             resolve("Order received.")
+//         } else {
+//             reject("restaurant closed")
+//         }
+//     }, 2000);
+// })
+
+// async function food() {
+//     try {
+//         const message = await OrderFood;
+//         console.log("Success",message);
+//     } catch (error) {
+//         console.log("Error",error);
+//     }
+// }
+// food()
+
+const boot = new Promise((resolve, reject) => {
+    let computerBoot = true;
+    setTimeout(() => {
+        if (computerBoot) {
+           resolve("Computer booted up.")
+        } else {
+            reject("No power source.")
+       }
+    }, 3000);
+})
+
+async function source() {
+    try {
+        const message = await boot;
+        console.log("Success",message);
+    } catch (error) {
+        console.log("Error",error);
+    }
+}
+
+source();
