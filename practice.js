@@ -528,23 +528,86 @@
 
 //  })
 
-const electric = new Promise((resolve, reject) => {
-    let power = true;
+// const electric = new Promise((resolve, reject) => {
+//     let power = true;
 
-    if (power) {
-        resolve("The light is ON.");
-    } else {
-        reject("No electricity. Light is OFF.");
-    }
-})
+//     if (power) {
+//         resolve("The light is ON.");
+//     } else {
+//         reject("No electricity. Light is OFF.");
+//     }
+// })
 
-async function powerAvailable() {
-    try {
-        const e1 = await electric;
-        console.log("Success",e1);
-    } catch (error) {
-        console.log("Failure",error);
-    }
+// async function powerAvailable() {
+//     try {
+//         const e1 = await electric;
+//         console.log("Success",e1);
+//     } catch (error) {
+//         console.log("Failure",error);
+//     }
     
-}
-powerAvailable();
+// }
+// powerAvailable();
+
+
+// async function getData() {
+//     try {
+//         const response = await fetch("data.json");
+//         const data = await response.json();
+//         console.log(data);
+//     } catch (error){
+//         console.log("Error",error);
+//     }
+// }
+
+// getData()
+
+
+
+// async function details() {
+//     try {
+//         const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//         const data = await response.json();
+//         console.log(data);
+//     } catch (error) {
+//         console.log("Error",error);
+//     }
+// }
+// details();
+
+// async function formed() {
+//     try {
+//         const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//         const data = await response.json();
+//         data.forEach(element => {
+//             console.log(element.email);
+//         });
+//     } catch (error) {
+//         console.log("Error",error);
+//     }
+// }
+
+// formed();
+
+// async function getData() {
+//     try {
+//         const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//         const data = await response.json();
+//         console.log(data);
+//     } catch (error) {
+//         console.log("Error",error);
+//     }
+// }
+// getData();
+
+// async function getData() {
+//     try {
+//         const response = await fetch("https://jsonplaceholder.typicode.com/users/5");
+//         const data = await response.json();
+//         console.log(data);
+//     } catch (error) {
+//         console.log("Error",error);
+//     }
+// }
+
+// getData();
