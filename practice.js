@@ -611,3 +611,131 @@
 // }
 
 // getData();
+
+// async function getData() {
+//     try {
+//         const response = await fetch("data.json");
+//         const data = await response.json();
+//         data.forEach(element => {
+//             console.log(element.name);
+//         });
+//     } catch (error) {
+//         console.log("Error",error);
+//     }
+// }
+
+// getData()
+
+
+//1. array literal 
+
+// const cars = ["Volvo", "Benz", "Honda"];
+
+// console.log(cars);
+
+//2 . indexing array
+
+// const fruits = []
+
+// fruits[0] = "Apple";
+// fruits[1] = "Banana";
+// fruits[2] = "Pear";
+
+// console.log(fruits[1]);
+
+//3 . new array 
+
+// const cars = new Array("Honda", "Civic");
+
+// console.log(cars);
+
+// METHODS OF ARRAY
+//1. length
+
+// const cars = ["Jeep", "Range Rover", "Toyota"];
+
+// console.log(cars.length);
+
+// cars.length = 1;
+// console.log(cars);
+
+//2. toString()
+
+// const names = []
+
+// names[0] = "Joel";
+// names[1] = "Abby";
+// names[2] = "Jess";
+// names[3] = "Sansa Stark";
+
+// console.log(names.toString());
+
+
+
+// const drinks = ["Fanta", "Pepsi", "Coke", "Sprite"];
+
+// console.log(drinks.at(2));
+
+
+// const fruits = [];
+
+// fruits[0] = "Apple";
+// fruits[1] = "Pear";
+// fruits[2] = "Banana";
+// fruits[3] = "Papaya";
+
+// console.log(fruits.join(" | "));
+
+// const company = ["Apple", "Motorola", "Samsung", "Google"];
+
+// console.log(company.pop());
+// console.log(company);
+
+
+// const bikes = ["Honda", "Suzuki", "Yamaha"];
+
+// console.log(bikes.push("BMW"));
+// console.log(bikes);
+
+
+// const cars = ["Toyota", "Nissan", "Mitsubishi", "Mazda"];
+
+// cars.shift();
+// console.log(cars);
+
+
+// let numbers = [12, 43, 65, 123, 87, 12, 898, 12];
+
+// console.log(numbers.unshift(21));
+// console.log(numbers);
+
+// const subjects = ["Chemistry", "Biology", "Physics"];
+
+// delete subjects[2];
+// console.log(subjects);
+
+
+// const boys = ["John", "Jack", "Sawyer", "Sayid"];
+// const girls = ["Ana", "Kate", "Libby", "Jess"];
+
+// const students = boys.concat(girls);
+// console.log(students);
+
+// const numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+
+// let result = numbers.slice(2, 5);
+// console.log(result);
+
+// const pizza = ["Slice1", "Slice2", "Slice3", "Slice4", "Slice5", "Slice6"];
+
+// let result = pizza.slice(3, 5);
+// console.log(result);
+
+// const colors = ["Red", "Blue", "Black", "Green", "Magenta", "Pink"];
+
+// colors.splice(2, 0, "Rose");
+// console.log(colors);
+
+const foods = ["Spaghetti", "Fries", "Pasta", "Fish", "Burger", "Meat"];
+foods.splice(3, 1, "Rice");
+console.log(foods);

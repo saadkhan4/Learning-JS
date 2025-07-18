@@ -260,7 +260,7 @@
 //     let locationEnabled = true;
 
 //     setTimeout(() => {
-//         if (driverAvailable === true && locationEnabled === true) {
+//         if (driverAvailable === true && locationEnabled === false) {
 //             resolve("Ride confirmed. Driver is on the way!")
 //         } else {
 //             reject("Booking failed. Please check driver or location settings.");
@@ -273,7 +273,7 @@
 //         const message = await bookingRide;
 //         console.log("Success",message);
 //     } catch (error) {
-//         console.log("Failure");
+//         console.log("Failure",error);
 //     }
 // }
 
@@ -366,24 +366,69 @@
 // }
 // food()
 
-const boot = new Promise((resolve, reject) => {
-    let computerBoot = true;
+// const boot = new Promise((resolve, reject) => {
+//     let computerBoot = true;
+//     setTimeout(() => {
+//         if (computerBoot) {
+//            resolve("Computer booted up.")
+//         } else {
+//             reject("No power source.")
+//        }
+//     }, 3000);
+// })
+
+// async function source() {
+//     try {
+//         const message = await boot;
+//         console.log("Success",message);
+//     } catch (error) {
+//         console.log("Error",error);
+//     }
+// }
+
+// source();
+
+
+// const login = new Promise((resolve, reject) => {
+//     let username = "Admin";
+//     let password = "1234";
+
+//     setTimeout(() => {
+//         if (username === "Admin" && password === "1234") {
+//             resolve("Login Successful");
+//         } else {
+//             reject("Invalid Credentials");
+//        }
+//     }, 1000);
+// })
+
+// login.
+//     then(success => {
+//     console.log("Success",success);
+//     })
+//     .catch(failure => {
+//     console.log("Failure",failure);
+//     })
+
+
+const checkInternet = new Promise((resolve, reject) => {
+    let isConnected = true;
     setTimeout(() => {
-        if (computerBoot) {
-           resolve("Computer booted up.")
+        if (isConnected) {
+           resolve("Internet is connected.")
         } else {
-            reject("No power source.")
+            reject("Internet is disconnected.")
        }
-    }, 3000);
+    }, 2000);
 })
 
-async function source() {
-    try {
-        const message = await boot;
+async function check() {
+    try{
+        const message = await checkInternet;
         console.log("Success",message);
     } catch (error) {
         console.log("Error",error);
     }
 }
 
-source();
+check();

@@ -343,3 +343,72 @@
 
 
 
+// class Movie{
+//     constructor(title, releaseYear) {
+//         this.title = title;
+//         this.releaseYear = releaseYear;
+//     }
+
+//     getDetails() {
+//         const date = new Date().getFullYear() - this.releaseYear;
+//         let result = (`${this.title} is ${date} years old.`);
+//         return result;
+//     }
+// }
+
+// const m1 = new Movie("Insidious",2009);
+// console.log(m1.getDetails());
+
+
+// class Car{
+//     constructor(brand, model, year) {
+//         this.brand = brand;
+//         this.model = model;
+//         this.year = year;
+//     }
+//     getCarInfo() {
+//         let result = (`${this.brand} ${this.model} ${this.year}`);
+//         return result;
+//     }
+// }
+
+// const c1 = new Car("Mitsubishi", "Eclipse", 1997);
+// console.log(c1.getCarInfo());
+
+
+// class Student{
+//     constructor(name, grade, marks) {
+//         this.name = name;
+//         this.grade = grade;
+//         this.marks = marks;
+//     }
+
+//     getResult() {
+//         let marks = this.marks;
+
+//         if (marks >= 50) {
+//             console.log("Passed");   
+//         } else {
+//             console.log("Failed");
+//         }
+//     }
+// }
+
+// const s1 = new Student("Tony", "XII", 56);
+// s1.getResult();
+
+
+class Book{
+    constructor(title, author,year) {
+        this.title = title;
+        this.year = year;
+        this.author = author;
+    }
+    getSummary() {
+        const result = (`${this.title} by ${this.author} was published in ${this.year}`);
+        return result;
+    }
+}
+
+const m1 = new Book("The Hobbit", "J.R.R. Tolkien",1937);
+console.log(m1.getSummary());

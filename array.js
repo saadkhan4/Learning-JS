@@ -100,10 +100,10 @@
 
 //11. slice ()  slice out a part of an array
 
-const numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+// const numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 
-let part = numbers.slice(2,6);
-console.log(part);
+// let part = numbers.slice(2,6);
+// console.log(part);
 
 
 // const cake = ["Slice1", "Slice2", "Slice3", "Slice4", "Slice5", "Slice6"];
