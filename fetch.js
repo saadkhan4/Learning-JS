@@ -65,3 +65,19 @@
 //     }
 // }
 // getData();
+
+
+// async function getData() {
+//     try {
+//        const response = await fetch("data.json");
+//         const data = await response.json();
+//         data.forEach(element => {
+//             console.log(element.grade);
+//         });
+        
+//     } catch (error) {
+//         console.log("Error",error);
+// }
+// }
+
+// getData()
