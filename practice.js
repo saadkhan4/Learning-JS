@@ -736,6 +736,80 @@
 // colors.splice(2, 0, "Rose");
 // console.log(colors);
 
-const foods = ["Spaghetti", "Fries", "Pasta", "Fish", "Burger", "Meat"];
-foods.splice(3, 1, "Rice");
-console.log(foods);
+// const foods = ["Spaghetti", "Fries", "Pasta", "Fish", "Burger", "Meat"];
+// foods.splice(3, 1, "Rice");
+// console.log(foods);
+
+// const cars = ["BMW", "Audi", "Benz", "Toyota"];
+// console.log(cars.length);
+
+
+// const names = ["Robert", "Joel", "Bill", "Jess"];
+
+// console.log(names.toString());
+
+
+// const items = ["Chair", "Pen", "Trousers", "Phone"];
+
+// console.log(items.at());
+
+// const subjects = ["Eng", "Phy", "Chem", "Isl"];
+// console.log(subjects.join(" | "));
+
+// const vehicle = ["Cars", "Bikes", "Boats", "Cycles"];
+
+// vehicle.pop();
+// console.log(vehicle);
+
+
+// const stationary = ["Pen", "Pencil", "Eraser", "Remover", "Card Sheet"];
+
+// stationary.push("Diary");
+// console.log(stationary);
+
+// const phones = ["Iphone", "Samsung", "Motorola", "Pixel"];
+
+// phones.shift()
+// console.log(phones);
+
+// const laptop = ["Mac", "Dell", "Hp", "Lenovo"];
+
+// laptop.unshift("Acer");
+// console.log(laptop);
+
+// const colors = ["Blue", "Mlue", "Yellow", "Black"];
+
+// delete colors [2];
+// console.log(colors);
+
+// const boys = ["Jason", "Bill", "Tyler", "Charlie"];
+// const girls = ["Kate", "Charlotte", "Ellie", "Jess"];
+
+// const students = boys.concat(girls);
+// console.log(students);
+
+
+// const cake = ["Slice1", "Slice2", "Slice3", "Slice4", "Slice5", "Slice6", "Slice7", "Slice8"];
+
+// let getSlice = cake.slice(2, 5);
+// console.log(getSlice);
+
+
+// const numbers = [11, 22, 33, 44, 55, 66, 77, 88, 99, 100];
+
+// numbers.splice(2, 3, "Hello");
+// console.log(numbers);
+
+// const games = ["Nfs", "Re4", "Red Dead", "Fortnite", "Stellar Blade", "Cyberpunk 2077", "Apex"];
+
+// games.splice(3, 5, "Witcher");
+// console.log(games);
+
+
+// const fruits = ["Apple", "Banana", "Pear", "Blueberry", "Raspberry"];
+
+// let result = fruits.toSpliced(2, 3, "Cherry");
+// console.log(fruits);
+// console.log(result);
+
+
