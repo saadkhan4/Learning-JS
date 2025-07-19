@@ -6,7 +6,7 @@
 
 // firstPromise.then((response) => {
 //     console.log("It's response",response);
-    
+
 // })
 
 // const orderPizza = new Promise((resolve, reject) => {
@@ -15,7 +15,7 @@
 //     setTimeout(() => {
 //        if (pizzaShopOpen) {
 //         resolve("It's open");
-        
+
 //        } else {
 //         reject("It's closed");
 //        } 
@@ -49,7 +49,7 @@
 //     })
 //     .catch((failure) => {
 //     console.log("Failure",failure);
-    
+
 // })
 
 
@@ -112,7 +112,7 @@
 //     })
 //     .catch((failure) => {
 //     console.log("Failure",failure);
-    
+
 // })
 
 // const foodDelivery = new Promise((resolve, reject) => {
@@ -158,7 +158,7 @@
 //         console.log("Message: ",message);
 //     } catch (error) {
 //         console.log("Error: ",error);
-        
+
 //     }
 // }
 // security();
@@ -230,7 +230,7 @@
 //         console.log("Failure",failure);
 //     })
 
-    
+
 
 
 // const baking = new Promise((resolve, reject) => {
@@ -334,7 +334,7 @@
 //     try {
 //     const message = await charge;
 //     console.log("Message",message);
-    
+
 //     } catch (error) {
 //         console.log("Error",error);
 //     }
@@ -411,24 +411,69 @@
 //     })
 
 
-const checkInternet = new Promise((resolve, reject) => {
-    let isConnected = true;
-    setTimeout(() => {
-        if (isConnected) {
-           resolve("Internet is connected.")
-        } else {
-            reject("Internet is disconnected.")
-       }
-    }, 2000);
-})
+// const checkInternet = new Promise((resolve, reject) => {
+//     let isConnected = true;
+//     setTimeout(() => {
+//         if (isConnected) {
+//            resolve("Internet is connected.")
+//         } else {
+//             reject("Internet is disconnected.")
+//        }
+//     }, 2000);
+// })
 
-async function check() {
-    try{
-        const message = await checkInternet;
-        console.log("Success",message);
-    } catch (error) {
-        console.log("Error",error);
-    }
-}
+// async function check() {
+//     try{
+//         const message = await checkInternet;
+//         console.log("Success",message);
+//     } catch (error) {
+//         console.log("Error",error);
+//     }
+// }
+// check();
 
-check();
+
+// const login = new Promise((resolve, reject) => {
+//     let username = "Admin";
+//     let password = "1234";
+
+//     setTimeout(() => {
+//         if (username === "Admin" && password === "1234") {
+//             resolve("Welcome user")
+//         } else {
+//             reject("Access denied")
+//        }
+//     }, 2000);
+// })
+
+// login.
+//     then(success => {
+//     console.log("Success",success);
+//     })
+//     .catch(failure => {
+//     console.log("Failure",failure);
+// })
+
+
+// const shopOpen = new Promise((resolve, reject) => {
+//     let pizzaShopOpen = true;
+//     setTimeout(() => {
+//         if (pizzaShopOpen) {
+//            resolve("It's open")
+//         } else {
+//             reject("It's closed");
+//        }
+//     }, 2000);
+// })
+
+// async function check() {
+//     try {
+//         const data = await shopOpen;
+//         console.log("Success",data);
+        
+//     } catch (error) {
+//         console.log("Failure",error);
+//     }
+// }
+
+// check();
