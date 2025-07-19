@@ -398,17 +398,66 @@
 // s1.getResult();
 
 
-class Book{
-    constructor(title, author,year) {
-        this.title = title;
-        this.year = year;
-        this.author = author;
-    }
-    getSummary() {
-        const result = (`${this.title} by ${this.author} was published in ${this.year}`);
-        return result;
-    }
-}
+// class Book{
+//     constructor(title, author,year) {
+//         this.title = title;
+//         this.year = year;
+//         this.author = author;
+//     }
+//     getSummary() {
+//         const result = (`${this.title} by ${this.author} was published in ${this.year}`);
+//         return result;
+//     }
+// }
 
-const m1 = new Book("The Hobbit", "J.R.R. Tolkien",1937);
-console.log(m1.getSummary());
+// const m1 = new Book("The Hobbit", "J.R.R. Tolkien",1937);
+// console.log(m1.getSummary());
+
+
+// class Person{
+//     constructor(name, birthYear) {
+//         this.name = name;
+//         this.birthYear = birthYear;
+//     }
+//     moreDetails() {
+//         const date = new Date().getFullYear() - this.birthYear;
+//         const result = (`My name is ${this.name} and I'm ${date} years old.`);
+//         return result;
+//     }
+// }
+
+// const p1 = new Person("Robert Pattinson", 1995);
+// console.log(p1.moreDetails());
+
+
+// class ShoppingCart{
+//     constructor(item1, item2, item3) {
+//         this.item1 = item1;
+//         this.item2 = item2;
+//         this.item3 = item3;
+//     }
+//     details() {
+//         const result = this.item1 + this.item2 + this.item3;
+//         return result;
+//     }
+// }
+
+// const s1 = new ShoppingCart(122, 99, 45);
+// console.log(s1.details());
+
+// class Car{
+//     constructor(name, modelYear) {
+//         this.name = name;
+//         this.modelYear = modelYear;
+//     }
+//     getDetails() {
+//         const date = new Date().getFullYear() - this.modelYear;
+//         const result = (`${this.name} is ${date} years old.`);
+//         return result;
+//     }
+
+// }
+
+// const c1 = new Car("BMW M4 GTS", 2018);
+// console.log(c1.getDetails());
+
