@@ -641,31 +641,58 @@
 
 // greet(sayHello);
 
-function file(fileName, callback) {
-    setTimeout(() => {
-        console.log("What's your filename? " + fileName)
-        callback(); 
-    }, 3000);
-}
+// function file(fileName, callback) {
+//     setTimeout(() => {
+//         console.log("What's your filename? " + fileName)
+//         callback(); 
+//     }, 3000);
+// }
 
-function downloading() {
-    console.log("Downloading your file...")
-}
+// function downloading() {
+//     console.log("Downloading your file...")
+// }
 
-file("main.js", downloading);
+// file("main.js", downloading);
 
 
 
-const bookTicket = (movieName, callback) => {
-    setTimeout(() => {
-        console.log("Which movie do you want to see sir? " + movieName);
-        callback(movieName);
-    }, 3000);
-}
+// const bookTicket = (movieName, callback) => {
+//     setTimeout(() => {
+//         console.log("Which movie do you want to see sir? " + movieName);
+//         callback(movieName);
+//     }, 3000);
+// }
 
-const showTicket = (ticket) => {
-    console.log(`"Here is your ${ticket} ticket sir."`);
-}
+// const showTicket = (ticket) => {
+//     console.log(`"Here is your ${ticket} ticket sir."`);
+// }
 
-bookTicket("F1", showTicket);
+// bookTicket("F1", showTicket);
 
+
+// const bookFlight = (movieName, callback) => {
+//     setTimeout(() => {
+//        console.log("Which movie do you want to see sir? " + movieName);
+//         callback();
+//     }, 2000);
+// }
+
+// const showTicket = () => {
+//     console.log("Here is your ticket sir.");
+// }
+
+// bookFlight("Superman",showTicket)
+
+
+// const orderFood = (foodItem, callback) => {
+//     setTimeout(() => {
+//        console.log("What do you want to eat sir? " + foodItem);
+//         callback();
+//     }, 2000);
+// }
+
+// const serveFood = () => {
+//     console.log("Here is your order sir.");
+// }
+
+// orderFood("Pizza",serveFood)
