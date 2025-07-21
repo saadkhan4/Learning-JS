@@ -455,25 +455,25 @@
 // })
 
 
-// const shopOpen = new Promise((resolve, reject) => {
-//     let pizzaShopOpen = true;
-//     setTimeout(() => {
-//         if (pizzaShopOpen) {
-//            resolve("It's open")
-//         } else {
-//             reject("It's closed");
-//        }
-//     }, 2000);
-// })
+const shopOpen = new Promise((resolve, reject) => {
+    let pizzaShopOpen = true;
+    setTimeout(() => {
+        if (pizzaShopOpen) {
+           resolve("It's open")
+        } else {
+            reject("It's closed");
+       }
+    }, 2000);
+})
 
-// async function check() {
-//     try {
-//         const data = await shopOpen;
-//         console.log("Success",data);
+async function check() {
+    try {
+        const data = await shopOpen;
+        console.log("Success",data);
         
-//     } catch (error) {
-//         console.log("Failure",error);
-//     }
-// }
+    } catch (error) {
+        console.log("Failure",error);
+    }
+}
 
-// check();
+check();

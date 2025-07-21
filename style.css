@@ -12,10 +12,10 @@
   }
 
   thead {
-    background-color: rgba(15, 226, 64, 0.876);
+    background-color: green
   }
 
   tfoot {
-    background-color: rgb(3, 175, 228);
+    background-color: blue;
     font-weight: bold;
   }
