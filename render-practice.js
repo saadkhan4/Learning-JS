@@ -1,4 +1,4 @@
-function renderTable(data, id) {
+function renderTable(id, data) {
   const body = document.getElementById(id);
   const table = document.createElement("table");
 
@@ -15,10 +15,9 @@ function renderTable(data, id) {
 
   for (const key in data[0]) {
     const t_heading = document.createElement("th");
-    t_heading.innerText = key;
+    t_heading.innerHTML = key;
     th_row.appendChild(t_heading);
   }
-
   data.forEach((element) => {
     const tb_row = document.createElement("tr");
     tbody.appendChild(tb_row);
@@ -33,10 +32,7 @@ function renderTable(data, id) {
 async function getData() {
   const response = await fetch("data.json");
   const data = await response.json();
-  return data;
-
+  renderTable("demo", data);
 }
 
-getData().then((data) => {
-  renderTable(data, "demo");
-})
+getData();

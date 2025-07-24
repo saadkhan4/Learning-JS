@@ -24,9 +24,9 @@ async function getData() {
     const tb_row = document.createElement("tr");
     tbody.appendChild(tb_row);
     for (const key in element) {
-      const t_heading = document.createElement("th");
-      t_heading.innerHTML = element[key];
-      tb_row.appendChild(t_heading);
+      const t_data = document.createElement("td");
+      t_data.innerHTML = element[key];
+      tb_row.appendChild(t_data);
     }
   });
 }
