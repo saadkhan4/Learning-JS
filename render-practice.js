@@ -1,4 +1,4 @@
-function renderTable(id, data) {
+function renderTable(data, id) {
   const body = document.getElementById(id);
   const table = document.createElement("table");
 
@@ -15,7 +15,7 @@ function renderTable(id, data) {
 
   for (const key in data[0]) {
     const t_heading = document.createElement("th");
-    t_heading.innerHTML = key;
+    t_heading.innerText = key;
     th_row.appendChild(t_heading);
   }
   data.forEach((element) => {
@@ -23,16 +23,18 @@ function renderTable(id, data) {
     tbody.appendChild(tb_row);
     for (const key in element) {
       const t_data = document.createElement("td");
-      t_data.innerHTML = element[key];
+      t_data.innerText = element[key];
       tb_row.appendChild(t_data);
     }
   });
 }
 
-async function getData() {
+async function fetchData() {
   const response = await fetch("data.json");
   const data = await response.json();
-  renderTable("demo", data);
+  return data;
 }
-
-getData();
+// .then is liye use hoa jb promise resolve hojaye tu yh kaam kro.
+fetchData().then((data) => {
+  renderTable(data, "demo");
+});

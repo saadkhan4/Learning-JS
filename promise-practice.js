@@ -1,6 +1,6 @@
 // const firstPromise = new Promise(function (resolve, reject) {
 //     setTimeout(() => {
-//         resolve("It's resolved"); 
+//         resolve("It's resolved");
 //     }, 3000);
 // })
 
@@ -18,7 +18,7 @@
 
 //        } else {
 //         reject("It's closed");
-//        } 
+//        }
 //     }, 2000);
 // })
 
@@ -30,7 +30,6 @@
 //         console.log("Failure", error);
 //     })
 
-
 // const brewCoffee = new Promise((resolve, reject) =>{
 //     let hasBean = true;
 
@@ -39,7 +38,7 @@
 //           resolve("Coffee is ready.");
 //         } else {
 //           reject("Out of beans.");
-//         } 
+//         }
 //     }, 2000);
 // })
 
@@ -51,7 +50,6 @@
 //     console.log("Failure",failure);
 
 // })
-
 
 // const wifiOn = new Promise((resolve, reject) => {
 //     let checkConnection = true;
@@ -124,7 +122,7 @@
 //           resolve("Order Accepted");
 //         } else {
 //           reject("Order Rejected");
-//         } 
+//         }
 //     }, 2000);
 // })
 
@@ -210,7 +208,6 @@
 
 // bootLaptop();
 
-
 // const BurgerShopOpen = new Promise((resolve, reject) => {
 //     let shopOpen = true;
 //     setTimeout(() => {
@@ -218,7 +215,7 @@
 //            resolve("Burger shop is open.");
 //        } else {
 //            reject("Burger shop is closed.")
-//        } 
+//        }
 //     }, 2000);
 // })
 
@@ -229,9 +226,6 @@
 //     .catch(failure => {
 //         console.log("Failure",failure);
 //     })
-
-
-
 
 // const baking = new Promise((resolve, reject) => {
 //     let ovenOn = true;
@@ -253,7 +247,6 @@
 //     .catch(failure => {
 //         console.log("failure", failure);
 // })
-
 
 // const bookingRide = new Promise((resolve, reject) => {
 //     let driverAvailable = true;
@@ -293,10 +286,10 @@
 // pizzaShopOpen.
 //     then(success => {
 //     console.log("Success",success);
-//     }) 
+//     })
 //     .catch(Failure => {
 //         console.log("Failure",failure);
-// })    
+// })
 
 // const delivery = new Promise((resolve, reject) => {
 //     let packageArrived = true;
@@ -341,7 +334,6 @@
 // }
 
 // details();
-
 
 // const OrderFood = new Promise((resolve, reject) => {
 //     let giveOrder = true;
@@ -388,7 +380,6 @@
 
 // source();
 
-
 // const login = new Promise((resolve, reject) => {
 //     let username = "Admin";
 //     let password = "1234";
@@ -409,7 +400,6 @@
 //     .catch(failure => {
 //     console.log("Failure",failure);
 //     })
-
 
 // const checkInternet = new Promise((resolve, reject) => {
 //     let isConnected = true;
@@ -432,7 +422,6 @@
 // }
 // check();
 
-
 // const login = new Promise((resolve, reject) => {
 //     let username = "Admin";
 //     let password = "1234";
@@ -454,26 +443,24 @@
 //     console.log("Failure",failure);
 // })
 
-
 const shopOpen = new Promise((resolve, reject) => {
-    let pizzaShopOpen = true;
-    setTimeout(() => {
-        if (pizzaShopOpen) {
-           resolve("It's open")
-        } else {
-            reject("It's closed");
-       }
-    }, 2000);
-})
+  let pizzaShopOpen = true;
+  setTimeout(() => {
+    if (pizzaShopOpen) {
+      resolve("It's open");
+    } else {
+      reject("It's closed");
+    }
+  }, 2000);
+});
 
 async function check() {
-    try {
-        const data = await shopOpen;
-        console.log("Success",data);
-        
-    } catch (error) {
-        console.log("Failure",error);
-    }
+  try {
+    const data = await shopOpen;
+    console.log("Success", data);
+  } catch (error) {
+    console.log("Failure", error);
+  }
 }
 
 check();
