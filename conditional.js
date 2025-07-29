@@ -48,3 +48,4 @@ switch (day) {           //switch statement check karta hai ke day ki value kis 
     default:            //Agar koi case match na ho, to ye run hota hai.
         console.log("Another day");
 }
+

@@ -445,20 +445,20 @@
 // const s1 = new ShoppingCart(122, 99, 45);
 // console.log(s1.details());
 
-class Car{
-    constructor(name, modelYear) {
-        this.name = name;
-        this.modelYear = modelYear;
-    }
-    getDetails() {
-        const date = new Date().getFullYear() - this.modelYear;
-        const result = (`${this.name} is ${date} years old.`);
-        return result;
-    }
+// class Car{
+//     constructor(name, modelYear) {
+//         this.name = name;
+//         this.modelYear = modelYear;
+//     }
+//     getDetails() {
+//         const date = new Date().getFullYear() - this.modelYear;
+//         const result = (`${this.name} is ${date} years old.`);
+//         return result;
+//     }
 
-}
+// }
 
-const c1 = new Car("BMW M4 GTS", 2018);
+// const c1 = new Car("BMW M4 GTS", 2018);
 
 
 // console.log(c1.getDetails());

@@ -50,8 +50,20 @@
 
 
 // hum ek function dete hain or woh execute hojyega jb woh action complete hoga.
-setTimeout(() => {
-  console.log("hello");
-}, 8000);
+// setTimeout(() => {
+//   console.log("hello");
+// }, 8000);
 
+// function bookFlight(destination, callback) {
+//   setTimeout(() => {
+//     console.log("Where do you want to go sir? " + destination);
+//     callback();
+//   }, 2000);
+// }
+
+// function getFlight() {
+//   console.log("Here is your ticket sir.");
+// }
+
+// bookFlight("United Kingdom", getFlight);
 

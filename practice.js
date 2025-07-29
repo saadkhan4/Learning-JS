@@ -813,3 +813,10 @@
 // console.log(result);
 
 
+
+// const cars = ["Volvo", "BMW", "Nissan", "Audi"];
+// console.log(cars.toString())
+
+
+// const drinks = ["Fanta", "Pepsi", "Coke", "Sprite"];
+// console.log(drinks.at(2));
