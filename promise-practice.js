@@ -443,24 +443,69 @@
 //     console.log("Failure",failure);
 // })
 
-const shopOpen = new Promise((resolve, reject) => {
-  let pizzaShopOpen = true;
+// const shopOpen = new Promise((resolve, reject) => {
+//   let pizzaShopOpen = true;
+//   setTimeout(() => {
+//     if (pizzaShopOpen) {
+//       resolve("It's open");
+//     } else {
+//       reject("It's closed");
+//     }
+//   }, 2000);
+// });
+
+// async function check() {
+//   try {
+//     const data = await shopOpen;
+//     console.log("Success", data);
+//   } catch (error) {
+//     console.log("Failure", error);
+//   }
+// }
+
+// check();
+
+// const login = new Promise((resolve, reject) => {
+//   let username = "admin";
+//   let password = "1234";
+
+//   setTimeout(() => {
+//     if (username === "admin" && password === "1234") {
+//       resolve("Access granted");
+//     } else {
+//       reject("Access denied");
+//     }
+//   }, 2000);
+// });
+
+// login.
+//   then((success) => {
+//   console.log("success",success);
+//   })
+//   .catch((failure) => {
+//   console.log("failure",failure);
+//   })
+
+const OrderFood = new Promise((resolve, reject) => {
+  let giveOrder = true;
+  let isOrdered = false;
+
   setTimeout(() => {
-    if (pizzaShopOpen) {
-      resolve("It's open");
+    if (giveOrder == true || isOrdered == false) {
+      resolve("Order received");
     } else {
-      reject("It's closed");
+      reject("Restaurant is closed");
     }
   }, 2000);
 });
 
 async function check() {
   try {
-    const data = await shopOpen;
-    console.log("Success", data);
+    const data = await OrderFood;
+    console.log("success", data);
   } catch (error) {
-    console.log("Failure", error);
+    console.log("error", error);
   }
 }
 
-check();
+check()

@@ -1,40 +1,70 @@
-function renderTable(data, id) {
-  const body = document.getElementById(id);
-  const table = document.createElement("table");
+function renderTable(id, data) {
+  // Validate inputs
+  // This is called guard clause
+  // is.array is a built-in function that checks if the data is an array format
+  // data.length will check if the data is empty
+  if (!id || !data || !Array.isArray(data) || data.length === 0) {
+    console.error("Invalid data provided to renderTable");
+    return;
+  }
 
+  const body = document.getElementById(id);
+  if (!body) {
+    console.error(`Element with id "${id}" not found`);
+    return;
+  }
+
+  const table = document.createElement("table");
   body.appendChild(table);
 
   const thead = document.createElement("thead");
   table.appendChild(thead);
 
-  const th_row = document.createElement("tr");
-  thead.appendChild(th_row);
+  const headerRow = document.createElement("tr");
+  thead.appendChild(headerRow);
 
   const tbody = document.createElement("tbody");
   table.appendChild(tbody);
 
+  // Create headers from first data object
   for (const key in data[0]) {
-    const t_heading = document.createElement("th");
-    t_heading.innerText = key;
-    th_row.appendChild(t_heading);
+    const tableHeading = document.createElement("th");
+    tableHeading.innerText = key;
+    headerRow.appendChild(tableHeading);
   }
+
+  // Create table rows
   data.forEach((element) => {
-    const tb_row = document.createElement("tr");
-    tbody.appendChild(tb_row);
+    const tableRow = document.createElement("tr");
+    tbody.appendChild(tableRow);
     for (const key in element) {
-      const t_data = document.createElement("td");
-      t_data.innerText = element[key];
-      tb_row.appendChild(t_data);
+      const tableData = document.createElement("td");
+      tableData.innerText = element[key];
+      tableRow.appendChild(tableData);
     }
   });
 }
 
 async function fetchData() {
-  const response = await fetch("data.json");
-  const data = await response.json();
-  return data;
+  try {
+    const response = await fetch("data.json");
+    // .ok will check if HTTP is successful
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const result = await response.json();
+    return result;
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    // if the data is not found, return null
+    return null;
+  }
 }
-// .then is liye use hoa jb promise resolve hojaye tu yh kaam kro.
-fetchData().then((data) => {
-  renderTable(data, "demo");
+
+fetchData().then((result) => {
+  if (result) {
+    renderTable("demo", result);
+  } else {
+    console.error("Failed to load data");
+  }
 });

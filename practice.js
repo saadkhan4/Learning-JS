@@ -817,6 +817,10 @@
 // const cars = ["Volvo", "BMW", "Nissan", "Audi"];
 // console.log(cars.toString())
 
+const animals = ["Dog", "Cat", "Elephant", "Lion"];
+console.log(animals);
 
-// const drinks = ["Fanta", "Pepsi", "Coke", "Sprite"];
-// console.log(drinks.at(2));
+const drinks = ["Fanta", "Pepsi", "Coke", "Sprite"];
+console.log(drinks.at(2));
+
+// throw new Error("This is an error");

@@ -24,7 +24,6 @@
 // const c1 = new Car("Honda" , "Civic");
 // c1.showDetails();
 
-
 // class Car{
 //     constructor(name, year) {
 //         this.name = name;
@@ -33,7 +32,7 @@
 //     getDetails() {
 //         const date = new Date().getFullYear() - this.year
 //         console.log(`This is ${this.name} and it's ${date} years old`);
-        
+
 //     }
 // }
 
@@ -68,7 +67,6 @@
 //   }
 // }
 
-
 // const c1 = new Car();
 
 // class Person{
@@ -101,7 +99,6 @@
 // const s1 = new Student("Hamza",75);
 // s1.result();
 
-
 // class Book{
 //   constructor(title, author) {
 //     this.title = title;
@@ -114,7 +111,6 @@
 
 // const b1 = new Book("Dune", "Dennis");
 // b1.details();
-
 
 // class Movie{
 //   constructor(name,releaseYear) {
@@ -130,7 +126,6 @@
 // const m1 = new Movie("John Wick", 2014);
 // m1.details();
 
-
 // class ShoppingCart{
 //   constructor(item1, item2, item3) {
 //     this.item1 = item1;
@@ -144,9 +139,7 @@
 
 // const cart = new ShoppingCart(100, 400, 600);
 // const total = cart.getTotal();
-// console.log(`Your total bill is ${total}`); 
-
-
+// console.log(`Your total bill is ${total}`);
 
 // class MathTool{
 //   static double(n) {
@@ -185,7 +178,6 @@
 // const m1 = new Movie("Avengers Endgame", 2018);
 // console.log(m1.getAge());
 
-
 // class Person{
 //   constructor(name, birthYear) {
 //     this.name = name;
@@ -201,14 +193,12 @@
 // const p1 = new Person("Joel Miller", 1995);
 // console.log(p1.getDetails());
 
-
 // class Subtraction{
 //   static subtract(x, y) {
 //     return x - y
 //   }
 // }
 // console.log(Subtraction.subtract(3, 1));
-
 
 // class Greet{
 //   constructor(name, age) {
@@ -283,7 +273,6 @@
 // const total = cart.getTotal();
 // console.log(`Your total is $${total}`);
 
-
 // class StudentMarks{
 //   constructor(maths, english, science) {
 //     this.english = english;
@@ -298,7 +287,6 @@
 // const s1 = new StudentMarks(50, 67, 89);
 // const total = s1.getTotalMarks()
 // console.log(`Total marks are ${total}`);
-
 
 // class Person{
 //   constructor(name, birthYear) {
@@ -316,7 +304,6 @@
 // const p1 = new Person("Sansa Stark", 1998);
 // console.log(p1.getDetails())
 
-
 // class Multiplication{
 //   static multiply(x,y) {
 //     return x * y;
@@ -324,7 +311,6 @@
 // }
 
 // console.log(Multiplication.multiply(3 ,6));
-
 
 // class Person{
 //   constructor(name, birthYear) {
@@ -340,8 +326,6 @@
 
 // const p1 = new Person("John Snow", 1988);
 // console.log(p1.getDetails());
-
-
 
 // class Movie{
 //     constructor(title, releaseYear) {
@@ -359,7 +343,6 @@
 // const m1 = new Movie("Insidious",2009);
 // console.log(m1.getDetails());
 
-
 // class Car{
 //     constructor(brand, model, year) {
 //         this.brand = brand;
@@ -375,7 +358,6 @@
 // const c1 = new Car("Mitsubishi", "Eclipse", 1997);
 // console.log(c1.getCarInfo());
 
-
 // class Student{
 //     constructor(name, grade, marks) {
 //         this.name = name;
@@ -387,7 +369,7 @@
 //         let marks = this.marks;
 
 //         if (marks >= 50) {
-//             console.log("Passed");   
+//             console.log("Passed");
 //         } else {
 //             console.log("Failed");
 //         }
@@ -396,7 +378,6 @@
 
 // const s1 = new Student("Tony", "XII", 56);
 // s1.getResult();
-
 
 // class Book{
 //     constructor(title, author,year) {
@@ -413,7 +394,6 @@
 // const m1 = new Book("The Hobbit", "J.R.R. Tolkien",1937);
 // console.log(m1.getSummary());
 
-
 // class Person{
 //     constructor(name, birthYear) {
 //         this.name = name;
@@ -428,7 +408,6 @@
 
 // const p1 = new Person("Robert Pattinson", 1995);
 // console.log(p1.moreDetails());
-
 
 // class ShoppingCart{
 //     constructor(item1, item2, item3) {
@@ -460,14 +439,28 @@
 
 // const c1 = new Car("BMW M4 GTS", 2018);
 
-
 // console.log(c1.getDetails());
 
 // class Car{
 //     static plus(x, y) {
 //         console.log(x + y);
-        
+
 //     }
 // }
 
 // Car.plus(3 + 5);
+
+class Car {
+  constructor(name, modelYear) {
+    this.name = name;
+    this.modelYear = modelYear;
+  }
+  getDetails() {
+      const date = new Date().getFullYear() - this.modelYear;
+      const result = (`${this.name} is ${date} years old.`)
+      return result;
+  }
+}
+
+const c1 = new Car("BMW M5 CS", 2019);
+console.log(c1.getDetails());
