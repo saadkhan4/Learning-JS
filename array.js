@@ -98,7 +98,7 @@
 // console.log(students.concat("Bob"));
 
 
-//11. slice ()  slice out a part of an array
+// 11. slice ()  slice out a part of an array
 
 // const numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 
@@ -126,5 +126,3 @@
 // let driver = cars.toSpliced(1, 0, "AUDI");
 // console.log(cars);
 // console.log(driver);
-
-

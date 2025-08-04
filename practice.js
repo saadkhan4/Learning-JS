@@ -817,10 +817,93 @@
 // const cars = ["Volvo", "BMW", "Nissan", "Audi"];
 // console.log(cars.toString())
 
-const animals = ["Dog", "Cat", "Elephant", "Lion"];
-console.log(animals);
+// const animals = ["Dog", "Cat", "Elephant", "Lion"];
+// console.log(animals);
 
-const drinks = ["Fanta", "Pepsi", "Coke", "Sprite"];
-console.log(drinks.at(2));
+// const drinks = ["Fanta", "Pepsi", "Coke", "Sprite"];
+// console.log(drinks.at(2));
 
 // throw new Error("This is an error");
+
+
+// const drinks = ["fanta", "pepsi", "coke"];
+
+// console.log(drinks.toString());
+
+// const color = ["black", "pink", "white","blue"];
+
+// console.log(color.length);
+
+// const cars = ["BMW", "AUDI", "BENZ", "VOLVO"];
+
+// console.log(cars.at(2));
+
+// const bikes = ["Honda", "SUZUKI", "BMW", "Yamaha"];
+
+// console.log(bikes.join(" | "));
+
+// const foods = ["Burger", "Spaghetti", "pasta", "maggi"];
+
+// console.log(foods.pop(2));
+// console.log(foods);
+
+// const cities = ["Karachi", "Lahore", "Pindi", "London"];
+
+// console.log(cities.push("Moscow"));
+// console.log(cities);
+
+// const countries = ["United Kingdom", "UAE", "Pakistan", "Japan"];
+
+// console.log(countries.shift());
+// console.log(countries);
+
+// const names = ["Ali", "Matt", "Tony", "Sarah"];
+
+// names.shift(2);
+// console.log(names);
+
+// const company = ["Samsung", "Apple", "Motorola", "Lenovo"];
+
+// company.unshift("HP");
+// console.log(company);
+
+
+// const fruits = ["Apple", "Banana", "Pear", "Watermelon", "Cherry"];
+
+// delete fruits[2];
+// console.log(fruits);
+
+// const boys = ["Matt", "Tony", "Banner", "Steve", "Rogers"];
+// const girls = ["Wanda", "Natasha", "Max", "Kat"];
+
+// const students = boys.concat(girls);
+// console.log(students);
+
+// const cake = ["Slice 1", "Slice 2", "Slice 3", "Slice 4", "Slice 5", "Slice 6"];
+
+// let part = cake.slice(2, 5);
+// console.log(part);
+
+
+// const numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+
+// let result = numbers.slice(3, 5);
+// console.log(result);
+
+
+// const color = ["Blue", "Black", "Grey", "Pink", "White", "Red", "Orange", "Magenta"];
+
+// color.splice(2, 0, "Rose");
+// console.log(color);
+
+// const color = ["Blue", "Black", "Grey", "Pink", "White", "Red", "Orange", "Magenta"];
+
+// color.splice(2, 4, "Rose");
+// console.log(color);
+
+function greet() {
+    var name = "Ali";
+    console.log(name);
+}
+
+greet()
