@@ -696,3 +696,29 @@
 // }
 
 // orderFood("Pizza",serveFood)
+
+function bookFlight(destination, callback) {
+    setTimeout(() => {
+        console.log("Where do you want to sir? ", destination);
+        callback();
+    }, 2000);
+}
+
+function getTicket() {
+    console.log("Here is your ticket sir.");
+}
+
+bookFlight("United Kingdom", getTicket);
+
+const orderFood = (foodItem, callback) => {
+    setTimeout(() => {
+       console.log("What do you want order sir? ",foodItem);
+        callback();
+    }, 3000);
+}
+
+const delivered = () => {
+    console.log("Here is your order sir.");
+}
+
+orderFood("Pasta", delivered);
