@@ -450,17 +450,54 @@
 
 // Car.plus(3 + 5);
 
-class Car {
-  constructor(name, modelYear) {
+// class Car {
+//   constructor(name, modelYear) {
+//     this.name = name;
+//     this.modelYear = modelYear;
+//   }
+//   getDetails() {
+//       const date = new Date().getFullYear() - this.modelYear;
+//       const result = (`${this.name} is ${date} years old.`)
+//       return result;
+//   }
+// }
+
+// const c1 = new Car("BMW M5 CS", 2019);
+// console.log(c1.getDetails());
+
+// class Person {
+//   constructor(name, birthYear) {
+//     this.name = name;
+//     this.birthYear = birthYear;
+//   }
+
+//   getDetails() {
+//     const date = new Date().getFullYear() - this.birthYear;
+//     const result = `My name is ${this.name} and I'm ${date} years old.`;
+//     return result;
+//   }
+// }
+
+// const p1 = new Person("Sansa Stark", 1995);
+// console.log(p1.getDetails());
+
+class Student {
+  constructor(name, grade, marks) {
     this.name = name;
-    this.modelYear = modelYear;
+    this.grade = grade;
+    this.marks = marks;
   }
-  getDetails() {
-      const date = new Date().getFullYear() - this.modelYear;
-      const result = (`${this.name} is ${date} years old.`)
-      return result;
+
+  getResult() {
+    let marks = this.marks;
+
+    if (marks >= 45) {
+      console.log("Passed");
+    } else {
+      console.log("Failed");
+    }
   }
 }
 
-const c1 = new Car("BMW M5 CS", 2019);
-console.log(c1.getDetails());
+const s1 = new Student("Steve", "XI", 30);
+s1.getResult();
