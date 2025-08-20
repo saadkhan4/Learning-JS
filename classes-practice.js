@@ -502,18 +502,64 @@
 // const s1 = new Student("Steve", "XI", 30);
 // s1.getResult();
 
-class Car {
-  constructor(name, birthYear) {
-    this.name = name;
-    this.birthYear = birthYear;
-  }
+// class Car {
+//   constructor(name, birthYear) {
+//     this.name = name;
+//     this.birthYear = birthYear;
+//   }
 
+//   getDetails() {
+//     const date = new Date().getFullYear() - this.birthYear;
+//     const result = [`My name is ${this.name} and I'm ${date} years old`];
+//     return result;
+//   }
+// }
+
+// const c1 = new Car("Alice", 1998);
+// console.log(c1.getDetails());
+
+// class Book{
+//   constructor(title, author,year) {
+//     this.title = title;
+//     this.year = year;
+//     this.author = author;
+//   }
+//   getSummary() {
+//     console.log(`${this.title} by ${this.author} was Published in ${this.year}`);
+//   }
+// }
+
+// const b1 = new Book("Dune", "Frank Herbert", 1965);
+// b1.getSummary()
+
+// class Book{
+//   constructor(title, author, year) {
+//     this.title = title;
+//     this.author = author;
+//     this.published = new Date(year);
+//   }
+//   getSummary() {
+//     const result = (`${this.title} by ${this.author} was published in ${this.published.getFullYear()}`);
+//     return result;
+//   }
+// }
+
+// const b1 = new Book("Dune", "Frank Herbert","1965");
+// console.log(b1.getSummary());
+
+class Movie{
+  constructor(title, releaseYear) {
+    this.title = title;
+    this.releaseYear = releaseYear;
+  }
   getDetails() {
-    const date = new Date().getFullYear() - this.birthYear;
-    const result = [`My name is ${this.name} and I'm ${date} years old`];
+    const date = new Date().getFullYear() - this.releaseYear;
+    const result = (`${this.title} is ${date} years old.`)
     return result;
   }
 }
 
-const c1 = new Car("Alice", 1998);
-console.log(c1.getDetails());
+const m1 = new Movie("John Wick", 2016);
+console.log(m1.getDetails());
+
+

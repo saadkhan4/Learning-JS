@@ -965,3 +965,4 @@
 const colors = ["Blue", "Red", "Black", "Pink", "Rose", "Silver", "Grey", "White"];
 colors.splice(2, 4, "Purple");
 console.log(colors);
+
