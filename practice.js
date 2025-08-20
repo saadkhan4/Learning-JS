@@ -901,9 +901,67 @@
 // color.splice(2, 4, "Rose");
 // console.log(color);
 
-function greet() {
-    var name = "Ali";
-    console.log(name);
-}
+// function greet() {
+//     var name = "Ali";
+//     console.log(name);
+// }
 
-greet()
+// greet()
+
+// const cars = ["Volvo", "BMW", "Audi", "Honda"];
+// // console.log(cars.length);
+
+// cars.length = [2];
+// console.log(cars);
+
+// const names = [];
+// names[0] = "Joel";
+// names[1] = "Abby";
+// names[2] = "Carlos";
+// names[3] = "Jill";
+
+// console.log(names.toString());
+
+// const fruits = ["Apple", "Banana", "Pear", "Guava"];
+// console.log(fruits.at(2));
+
+// const bikes = ["Honda", "Suzuki", "BMW", "Kawasaki"];
+// console.log(bikes.join(" | "));
+
+// const drinks = ["Pepsi", "Coke", "Dr Pepper", "Fanta",];
+// drinks.pop();
+// console.log(drinks);
+
+
+// const phones = ["Apple", "Samsung", "Motorolla", "Lenovo"];
+// phones.push("Sony");
+// console.log(phones);
+
+// const cars = new Array("BMW", "AUDI", "Honda", "Toyota");
+// cars.shift("Mitsubishi");
+// console.log(cars);
+
+// const clothes = ["Pants", "Torso", "Shirt", "Tie"];
+// clothes.unshift("T-shirt");
+// console.log(clothes);
+
+
+// const items = ["Cars", "tools", "Books", "Keys"];
+// delete items[2];
+// console.log(items);
+
+// const cake = ["Slice 1", "Slice 2", "Slice 3", "Slice 4", "Slice 5"];
+// let serve = cake.slice(2);
+// console.log(serve);
+
+// const numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+// let output = numbers.slice(3, 5);
+// console.log(output);
+
+// const pizza = ["Fajita", "Pepperoni", "Supreme", "Cheesy", "Plain", "Chicken"];
+// pizza.splice(2, 0, "Beef");
+// console.log(pizza);
+
+const colors = ["Blue", "Red", "Black", "Pink", "Rose", "Silver", "Grey", "White"];
+colors.splice(2, 4, "Purple");
+console.log(colors);

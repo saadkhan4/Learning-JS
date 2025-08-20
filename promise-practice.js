@@ -486,12 +486,36 @@
 //   console.log("failure",failure);
 //   })
 
-const OrderFood = new Promise((resolve, reject) => {
-  let giveOrder = true;
-  let isOrdered = false;
+// const OrderFood = new Promise((resolve, reject) => {
+//   let giveOrder = true;
+//   let isOrdered = false;
+
+//   setTimeout(() => {
+//     if (giveOrder == true || isOrdered == false) {
+//       resolve("Order received");
+//     } else {
+//       reject("Restaurant is closed");
+//     }
+//   }, 2000);
+// });
+
+// async function check() {
+//   try {
+//     const data = await OrderFood;
+//     console.log("success", data);
+//   } catch (error) {
+//     console.log("error", error);
+//   }
+// }
+
+// check()
+
+const foodDelivery = new Promise((resolve, reject) => {
+  let isOrdered = true;
+  let giveOrder = false;
 
   setTimeout(() => {
-    if (giveOrder == true || isOrdered == false) {
+    if (isOrdered || giveOrder) {
       resolve("Order received");
     } else {
       reject("Restaurant is closed");
@@ -501,11 +525,11 @@ const OrderFood = new Promise((resolve, reject) => {
 
 async function check() {
   try {
-    const data = await OrderFood;
-    console.log("success", data);
+    const data = await foodDelivery;
+    console.log("Success", data);
   } catch (error) {
-    console.log("error", error);
+    console.log("Failed",error);
   }
 }
 
-check()
+check();

@@ -481,23 +481,39 @@
 // const p1 = new Person("Sansa Stark", 1995);
 // console.log(p1.getDetails());
 
-class Student {
-  constructor(name, grade, marks) {
+// class Student {
+//   constructor(name, grade, marks) {
+//     this.name = name;
+//     this.grade = grade;
+//     this.marks = marks;
+//   }
+
+//   getResult() {
+//     let marks = this.marks;
+
+//     if (marks >= 45) {
+//       console.log("Passed");
+//     } else {
+//       console.log("Failed");
+//     }
+//   }
+// }
+
+// const s1 = new Student("Steve", "XI", 30);
+// s1.getResult();
+
+class Car {
+  constructor(name, birthYear) {
     this.name = name;
-    this.grade = grade;
-    this.marks = marks;
+    this.birthYear = birthYear;
   }
 
-  getResult() {
-    let marks = this.marks;
-
-    if (marks >= 45) {
-      console.log("Passed");
-    } else {
-      console.log("Failed");
-    }
+  getDetails() {
+    const date = new Date().getFullYear() - this.birthYear;
+    const result = [`My name is ${this.name} and I'm ${date} years old`];
+    return result;
   }
 }
 
-const s1 = new Student("Steve", "XI", 30);
-s1.getResult();
+const c1 = new Car("Alice", 1998);
+console.log(c1.getDetails());
