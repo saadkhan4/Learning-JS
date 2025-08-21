@@ -547,19 +547,32 @@
 // const b1 = new Book("Dune", "Frank Herbert","1965");
 // console.log(b1.getSummary());
 
-class Movie{
-  constructor(title, releaseYear) {
-    this.title = title;
-    this.releaseYear = releaseYear;
+// class Movie{
+//   constructor(title, releaseYear) {
+//     this.title = title;
+//     this.releaseYear = releaseYear;
+//   }
+//   getDetails() {
+//     const date = new Date().getFullYear() - this.releaseYear;
+//     const result = (`${this.title} is ${date} years old.`)
+//     return result;
+//   }
+// }
+
+// const m1 = new Movie("John Wick", 2016);
+// console.log(m1.getDetails());
+
+class Queue {
+  constructor(name, hours) {
+    this.name = name;
+    this.hours = hours;
   }
   getDetails() {
-    const date = new Date().getFullYear() - this.releaseYear;
-    const result = (`${this.title} is ${date} years old.`)
+    const hours = new Date().getHours() - this.hours;
+    const result = `${this.name} is stuck in the line for ${hours} hours.`;
     return result;
   }
 }
 
-const m1 = new Movie("John Wick", 2016);
-console.log(m1.getDetails());
-
-
+const q1 = new Queue("Leon",1);
+console.log(q1.getDetails());

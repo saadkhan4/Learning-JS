@@ -510,26 +510,108 @@
 
 // check()
 
-const foodDelivery = new Promise((resolve, reject) => {
-  let isOrdered = true;
-  let giveOrder = false;
+// const foodDelivery = new Promise((resolve, reject) => {
+//   let isOrdered = true;
+//   let giveOrder = false;
 
-  setTimeout(() => {
-    if (isOrdered || giveOrder) {
-      resolve("Order received");
-    } else {
-      reject("Restaurant is closed");
-    }
-  }, 2000);
+//   setTimeout(() => {
+//     if (isOrdered || giveOrder) {
+//       resolve("Order received");
+//     } else {
+//       reject("Restaurant is closed");
+//     }
+//   }, 2000);
+// });
+
+// async function check() {
+//   try {
+//     const data = await foodDelivery;
+//     console.log("Success", data);
+//   } catch (error) {
+//     console.log("Failed",error);
+//   }
+// }
+
+// check();
+
+// const login = new Promise((resolve, reject) => {
+//     let username = "Admin";
+//     let password = "1234";
+
+//     setTimeout(() => {
+//         if (username === "Admin" && password === "1234") {
+//             resolve("Welcome user")
+//         } else {
+//             reject("Access denied")
+//        }
+//     }, 2000);
+// })
+
+// login.
+//     then(success => {
+//     console.log("Success",success);
+//     })
+//     .catch(failure => {
+//     console.log("Failure",failure);
+// })
+
+// const login = new Promise((resolve, reject) => {
+//   let username = "Admin";
+//   let password = "12345";
+
+//   setTimeout(() => {
+//     if (username === "Admin" && password === "12345") {
+//       resolve("Access Granted");
+//     } else {
+//       reject("Access Denied");
+//     }
+//   }, 2000);
+// });
+
+// login
+//   .then((success) => {
+//     console.log("Success", success);
+//   })
+//   .catch((failure) => {
+//     console.log("Failure",failure);
+//   });
+
+// const download = new Promise((resolve, reject) => {
+//   let internet = true;
+
+//   setTimeout(() => {
+//     if (internet) {
+//       resolve("Downloading.");
+//     } else {
+//       reject("Internet issue.");
+//     }
+//   }, 2000);
+// });
+
+// download
+//   .then((success) => {
+//     console.log("Success", success);
+//   })
+//   .catch((failure) => {
+//     console.log("Failure", failure);
+//   });
+
+const dataFetch = new Promise((resolve, reject) => {
+  let serverOnline = true;
+  if (serverOnline) {
+    resolve("Fetching data from server");
+  } else {
+    reject("Server issues");
+  }
 });
 
-async function check() {
+async function getDetails() {
   try {
-    const data = await foodDelivery;
+    const data = await dataFetch;
     console.log("Success", data);
   } catch (error) {
-    console.log("Failed",error);
+    console.log("Error", error);
   }
 }
 
-check();
+getDetails();
