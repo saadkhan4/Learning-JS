@@ -562,17 +562,18 @@
 // const m1 = new Movie("John Wick", 2016);
 // console.log(m1.getDetails());
 
-class Queue {
-  constructor(name, hours) {
-    this.name = name;
-    this.hours = hours;
-  }
-  getDetails() {
-    const hours = new Date().getHours() - this.hours;
-    const result = `${this.name} is stuck in the line for ${hours} hours.`;
-    return result;
-  }
-}
+// class Queue {
+//   constructor(name, hours) {
+//     this.name = name;
+//     this.hours = hours;
+//   }
+//   getDetails() {
+//     const hours = new Date().getHours() - this.hours;
+//     const result = `${this.name} is stuck in the line for ${hours} hours.`;
+//     return result;
+//   }
+// }
 
-const q1 = new Queue("Leon",1);
-console.log(q1.getDetails());
+// const q1 = new Queue("Leon",1);
+// console.log(q1.getDetails());
+

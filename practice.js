@@ -1,7 +1,7 @@
 // // 1. Arithmetic operators
 
 // let sum = 5 + 3;
-// console.log(sum); 
+// console.log(sum);
 
 // // 2. assignment operators.
 
@@ -37,7 +37,6 @@
 // } else {
 //     console.log("It's cold today.")
 // }
-
 
 // let signal = "Yellow";
 
@@ -108,7 +107,6 @@
 //     console.log(element);
 // }
 
-
 // let fruits = ["Apple", "Banana", "Pear"];
 
 // for (const element of fruits) {
@@ -126,7 +124,7 @@
 // for (const key in obj) {
 //     const element = obj[key];
 //     console.log(element,key);
-        
+
 // }
 
 // let game = {
@@ -138,7 +136,7 @@
 // for (const key in game) {
 //     const element = game[key];
 //     console.log(element, key);
-        
+
 // }
 
 // // 4 . while loop
@@ -157,7 +155,6 @@
 //     f++;
 // }
 
-
 // // 5. Do while loop
 // let g = 0;
 
@@ -174,7 +171,6 @@
 //     console.log(element);
 // });
 
-
 // function sayHello() {
 //     console.log("Hello");
 // }
@@ -183,7 +179,6 @@
 //     console.log("Processing...")
 //     callback();
 // }
-
 
 // greet(sayHello);
 
@@ -197,9 +192,8 @@
 // }
 
 // setTimeout(() => {
-//    inProcess(onComplete) 
+//    inProcess(onComplete)
 // }, 3000);
-
 
 // function bookFlight(destination, callback) {
 //     setTimeout(() => {
@@ -217,7 +211,7 @@
 // function takeOrder(foodItem, callback) {
 //     setTimeout(() => {
 //         console.log("What food item do you want sir? " + foodItem);
-//         callback(); 
+//         callback();
 //     }, 3000);
 // }
 
@@ -226,7 +220,6 @@
 // }
 
 // takeOrder("Pasta", serveOrder);
-
 
 // const booking = (bookTicket, callback) => {
 //     setTimeout(() => {
@@ -241,10 +234,8 @@
 
 // booking("F1", confirmBooking);
 
-
 // Callback function ko argument pass karte hain jab humein us function
 // ke andar kisi value ki zarurat hoti hai.
-
 
 // const file = (fileName, callback) => {
 //     setTimeout(() => {
@@ -259,12 +250,9 @@
 
 // file("main.js", downloading);
 
-
-
 // let cars = ["VOLVO", "BMW", "JAGUAR", "HONDA"];
 
 // console.log(cars[3]);
-
 
 // let names = [];
 
@@ -274,7 +262,6 @@
 // names[3] = "Midas";
 
 // console.log(names)
-
 
 // const fruits = new Array(21);
 // console.log(fruits);
@@ -291,7 +278,6 @@
 // fruits.length = 2;
 // console.log(fruits);
 
-
 // let bikes = ["suzuki", "honda", "yamaha", "BMW"];
 
 // console.log(bikes.toString());
@@ -299,7 +285,6 @@
 // const names = new Array("Sarah", "Hamza", "Jess", "Bill");
 
 // console.log(names.at(2));
-
 
 // const vegetables = ["Tomato", "Onion", "Cabbage", "Carrot"];
 
@@ -309,7 +294,6 @@
 
 // drinks.pop();
 // console.log(drinks);
-
 
 // const numbers = [2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -339,7 +323,6 @@
 // numbers[2] = 4;
 // numbers[3] = 5;
 
-
 // delete numbers [2];
 // console.log(numbers);
 
@@ -347,7 +330,6 @@
 
 // let bite = pizza.slice(2, 6);
 // console.log(bite);
-
 
 // let fruits = [];
 
@@ -359,11 +341,8 @@
 // fruits[5] = "Peach";
 // fruits[6] = "Lychee";;
 
-
 // fruits.splice(2, 3, "Papaya");
 // console.log(fruits);
-
-
 
 // let names = ["Hamza", "Iqbal", "Hasseb", "Owais", "Qaim", "Mesum", "Zain"];
 
@@ -376,14 +355,10 @@
 // console.log(cars);
 // console.log(driver);
 
-
-
 // let cars = ["AUDI", "JAGUAR", "VOLVO", "TOYOTA", "MITSUBISHI", "HONDA"];
 // let driver = cars.toSpliced(2, 3, "BMW");
 // console.log(cars);
 // console.log(driver);
-
-
 
 // function bookFlight(destination, callback) {
 //     setTimeout(() => {
@@ -398,14 +373,12 @@
 
 // bookFlight("America",confirmBooking)
 
-
-
 // async function getData() {
 //     try {
 //         const response = await fetch("https://dev-apis.explorebtk.com/api/v1/categories");
 //         const data = await response.json();
 //         console.log(data);
-        
+
 //     } catch (error) {
 //         console.log("Error",error);
 //     }
@@ -427,12 +400,11 @@
 
 // getData()
 
-
 // class Movie{
 //     constructor(title, release) {
 //         this.title = title;
 //         this.release = release;
-//     } 
+//     }
 //     details() {
 //         const date = new Date().getFullYear() - this.release;
 //         let result = (`${this.title} was ${date} years old`);
@@ -473,7 +445,6 @@
 // const p1 = new Person("Robert Pattinson", 1997);
 // console.log(p1.details());
 
-
 // async function getData() {
 //     try{
 //         const response = await fetch("data.json");
@@ -505,7 +476,6 @@
 //     .catch(failure => {
 //     console.log("Failure",failure);
 //     })
-
 
 // const music = new Promise((resolve, reject) => {
 //     let pressesPlay = true;
@@ -545,10 +515,9 @@
 //     } catch (error) {
 //         console.log("Failure",error);
 //     }
-    
+
 // }
 // powerAvailable();
-
 
 // async function getData() {
 //     try {
@@ -561,8 +530,6 @@
 // }
 
 // getData()
-
-
 
 // async function details() {
 //     try {
@@ -626,8 +593,7 @@
 
 // getData()
 
-
-//1. array literal 
+//1. array literal
 
 // const cars = ["Volvo", "Benz", "Honda"];
 
@@ -643,7 +609,7 @@
 
 // console.log(fruits[1]);
 
-//3 . new array 
+//3 . new array
 
 // const cars = new Array("Honda", "Civic");
 
@@ -670,12 +636,9 @@
 
 // console.log(names.toString());
 
-
-
 // const drinks = ["Fanta", "Pepsi", "Coke", "Sprite"];
 
 // console.log(drinks.at(2));
-
 
 // const fruits = [];
 
@@ -691,18 +654,15 @@
 // console.log(company.pop());
 // console.log(company);
 
-
 // const bikes = ["Honda", "Suzuki", "Yamaha"];
 
 // console.log(bikes.push("BMW"));
 // console.log(bikes);
 
-
 // const cars = ["Toyota", "Nissan", "Mitsubishi", "Mazda"];
 
 // cars.shift();
 // console.log(cars);
-
 
 // let numbers = [12, 43, 65, 123, 87, 12, 898, 12];
 
@@ -713,7 +673,6 @@
 
 // delete subjects[2];
 // console.log(subjects);
-
 
 // const boys = ["John", "Jack", "Sawyer", "Sayid"];
 // const girls = ["Ana", "Kate", "Libby", "Jess"];
@@ -743,11 +702,9 @@
 // const cars = ["BMW", "Audi", "Benz", "Toyota"];
 // console.log(cars.length);
 
-
 // const names = ["Robert", "Joel", "Bill", "Jess"];
 
 // console.log(names.toString());
-
 
 // const items = ["Chair", "Pen", "Trousers", "Phone"];
 
@@ -760,7 +717,6 @@
 
 // vehicle.pop();
 // console.log(vehicle);
-
 
 // const stationary = ["Pen", "Pencil", "Eraser", "Remover", "Card Sheet"];
 
@@ -788,12 +744,10 @@
 // const students = boys.concat(girls);
 // console.log(students);
 
-
 // const cake = ["Slice1", "Slice2", "Slice3", "Slice4", "Slice5", "Slice6", "Slice7", "Slice8"];
 
 // let getSlice = cake.slice(2, 5);
 // console.log(getSlice);
-
 
 // const numbers = [11, 22, 33, 44, 55, 66, 77, 88, 99, 100];
 
@@ -805,14 +759,11 @@
 // games.splice(3, 5, "Witcher");
 // console.log(games);
 
-
 // const fruits = ["Apple", "Banana", "Pear", "Blueberry", "Raspberry"];
 
 // let result = fruits.toSpliced(2, 3, "Cherry");
 // console.log(fruits);
 // console.log(result);
-
-
 
 // const cars = ["Volvo", "BMW", "Nissan", "Audi"];
 // console.log(cars.toString())
@@ -824,7 +775,6 @@
 // console.log(drinks.at(2));
 
 // throw new Error("This is an error");
-
 
 // const drinks = ["fanta", "pepsi", "coke"];
 
@@ -867,7 +817,6 @@
 // company.unshift("HP");
 // console.log(company);
 
-
 // const fruits = ["Apple", "Banana", "Pear", "Watermelon", "Cherry"];
 
 // delete fruits[2];
@@ -884,12 +833,10 @@
 // let part = cake.slice(2, 5);
 // console.log(part);
 
-
 // const numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90];
 
 // let result = numbers.slice(3, 5);
 // console.log(result);
-
 
 // const color = ["Blue", "Black", "Grey", "Pink", "White", "Red", "Orange", "Magenta"];
 
@@ -932,7 +879,6 @@
 // drinks.pop();
 // console.log(drinks);
 
-
 // const phones = ["Apple", "Samsung", "Motorolla", "Lenovo"];
 // phones.push("Sony");
 // console.log(phones);
@@ -944,7 +890,6 @@
 // const clothes = ["Pants", "Torso", "Shirt", "Tie"];
 // clothes.unshift("T-shirt");
 // console.log(clothes);
-
 
 // const items = ["Cars", "tools", "Books", "Keys"];
 // delete items[2];
@@ -962,7 +907,40 @@
 // pizza.splice(2, 0, "Beef");
 // console.log(pizza);
 
-const colors = ["Blue", "Red", "Black", "Pink", "Rose", "Silver", "Grey", "White"];
-colors.splice(2, 4, "Purple");
-console.log(colors);
+// const colors = ["Blue", "Red", "Black", "Pink", "Rose", "Silver", "Grey", "White"];
+// colors.splice(2, 4, "Purple");
+// console.log(colors);
+
+// for (let i = 0; i < 3; i++) {
+//   console.log("this is for loop");
+// }
+
+// for (const x of "Programming") {
+//   console.log(x);
+// }
+
+// let obj = {
+//   name: "Leon Kennedy",
+//   age: 25,
+//   company: "Umbrella Corporation",
+// };
+
+// for (const key in obj) {
+//   const element = obj[key];
+//   console.log(key,element);
+// }
+
+// let i = 0;
+
+// while (i < 3) {
+//     console.log("This is while loop");
+//     i++;
+// }
+
+// let p = 10;
+
+// do {
+//     console.log("this is do while loop");
+//     p++;
+// } while (p < 5);
 
