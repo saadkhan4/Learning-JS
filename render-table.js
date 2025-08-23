@@ -1,4 +1,4 @@
-function renderTable(data, id) {
+function renderTable(id, data) {
   const body = document.getElementById(id);
   const table = document.createElement("table");
 
@@ -22,21 +22,21 @@ function renderTable(data, id) {
   data.forEach((element) => {
     const tb_row = document.createElement("tr");
     tbody.appendChild(tb_row);
+
     for (const key in element) {
       const t_data = document.createElement("td");
-      t_data.innerHTML = element[key];
+      t_data.innerText = element[key];
       tb_row.appendChild(t_data);
     }
   });
 }
 
-async function getData() {
+async function fetchData() {
   const response = await fetch("data.json");
   const data = await response.json();
   return data;
-
 }
 
-getData().then((data) => {
-  renderTable(data, "demo");
-})
+fetchData().then((data) => {
+  renderTable("demo", data);
+});
