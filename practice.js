@@ -944,4 +944,11 @@
 //     p++;
 // } while (p < 5);
 
+let i = 0;
+
+while (i < 4) {
+    console.log("this is while loop");
+    i++;
+}
+
 
