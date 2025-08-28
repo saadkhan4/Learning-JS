@@ -596,18 +596,42 @@
 //     console.log("Failure", failure);
 //   });
 
-const dataFetch = new Promise((resolve, reject) => {
-  let serverOnline = true;
-  if (serverOnline) {
-    resolve("Fetching data from server");
-  } else {
-    reject("Server issues");
-  }
+// const dataFetch = new Promise((resolve, reject) => {
+//   let serverOnline = true;
+//   if (serverOnline) {
+//     resolve("Fetching data from server");
+//   } else {
+//     reject("Server issues");
+//   }
+// });
+
+// async function getDetails() {
+//   try {
+//     const data = await dataFetch;
+//     console.log("Success", data);
+//   } catch (error) {
+//     console.log("Error", error);
+//   }
+// }
+
+// getDetails();
+
+const login = new Promise((resolve, reject) => {
+  let username = "admin";
+  let password = "12345";
+
+  setTimeout(() => {
+    if (username === "admin" && password === "12345") {
+      resolve("Welcome user");
+    } else {
+      reject("Access denied");
+    }
+  }, 2000);
 });
 
 async function getDetails() {
   try {
-    const data = await dataFetch;
+    const data = await login;
     console.log("Success", data);
   } catch (error) {
     console.log("Error", error);
