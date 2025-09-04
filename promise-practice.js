@@ -616,26 +616,67 @@
 
 // getDetails();
 
-const login = new Promise((resolve, reject) => {
-  let username = "admin";
-  let password = "12345";
+// const login = new Promise((resolve, reject) => {
+//   let username = "admin";
+//   let password = "12345";
 
-  setTimeout(() => {
-    if (username === "admin" && password === "12345") {
-      resolve("Welcome user");
-    } else {
-      reject("Access denied");
-    }
-  }, 2000);
+//   setTimeout(() => {
+//     if (username === "admin" && password === "12345") {
+//       resolve("Welcome user");
+//     } else {
+//       reject("Access denied");
+//     }
+//   }, 2000);
+// });
+
+// async function getDetails() {
+//   try {
+//     const data = await login;
+//     console.log("Success", data);
+//   } catch (error) {
+//     console.log("Error", error);
+//   }
+// }
+
+// getDetails();
+
+// const trainArrival = new Promise((resolve, reject) => {
+//   let trainTime = 2;
+//   setTimeout(() => {
+//     if (trainTime === 2) {
+//       resolve("Train arrived")
+//     } else {
+//       reject("Train delayed")
+//     }
+//   }, 2000);
+// });
+
+// async function getData() {
+//   try {
+//     const data = await trainArrival;
+//     console.log("Success",data);
+//   } catch (failure) {
+//     console.log("Failure",failure);
+//   }
+// }
+
+// getData();
+
+const laptopOrder = new Promise((resolve, reject) => {
+  let inStock = true;
+  if (inStock === true) {
+    resolve("Laptop Shipped");
+  } else {
+    reject("Out of Stock");
+  }
 });
 
-async function getDetails() {
-  try {
-    const data = await login;
-    console.log("Success", data);
-  } catch (error) {
-    console.log("Error", error);
-  }
-}
+laptopOrder.
+  then((success) => {
+    console.log("success", success);
+  })
+  .catch((failure) => {
+    console.log("failure", failure);
+  });
 
-getDetails();
+  
