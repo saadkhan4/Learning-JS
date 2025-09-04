@@ -577,3 +577,41 @@
 // const q1 = new Queue("Leon",1);
 // console.log(q1.getDetails());
 
+// class Car{
+//     constructor(name, modelYear) {
+//         this.name = name;
+//         this.modelYear = modelYear;
+//     }
+
+//     getDetails() {
+//         const date = new Date().getFullYear() - this.modelYear
+//         const result = (`${this.name} is ${date} years old.`);
+//         return result;
+//     }
+// }
+
+// const c1 = new Car("Ford Mustang", 2015);
+// console.log(c1.getDetails());
+
+class Movie {
+    constructor(title, director, rating) {
+        this.title = title;
+        this.director = director;
+        this.rating = rating;
+    }
+    
+    getDetails() {
+        console.log(`${this.title} was directed by ${this.director} and it's current rating is ${this.rating}`);
+    }
+
+    updateRating(newRating) {
+        this.rating = newRating;
+        console.log(`Rating updated to ${this.rating}`);
+    }
+}
+
+const m1 = new Movie("Oppenheimer", "Christopher Nolan", 8.3);
+
+m1.getDetails();
+m1.updateRating(10);
+
