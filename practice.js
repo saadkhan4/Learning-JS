@@ -944,11 +944,18 @@
 //     p++;
 // } while (p < 5);
 
-let i = 0;
+// for (i = 0; i < 3; i++) {
+//   console.log("this is for loop.");
+// }
 
-while (i < 4) {
-    console.log("this is while loop");
-    i++;
+for (const x of "development") {
+  console.log(x);
 }
 
 
+let cars = ["Volvo", "BMW", "Audi", "Mercedes Benz"];
+
+for (const element of cars) {
+    console.log(element);
+    
+}
