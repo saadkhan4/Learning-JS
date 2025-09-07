@@ -948,14 +948,19 @@
 //   console.log("this is for loop.");
 // }
 
-for (const x of "development") {
-  console.log(x);
-}
+// for (const x of "development") {
+//   console.log(x);
+// }
 
 
-let cars = ["Volvo", "BMW", "Audi", "Mercedes Benz"];
+// let cars = ["Volvo", "BMW", "Audi", "Mercedes Benz"];
 
-for (const element of cars) {
+// for (const element of cars) {
+//     console.log(element);
+// }
+
+
+for (const element of "Programming") {
     console.log(element);
     
 }
