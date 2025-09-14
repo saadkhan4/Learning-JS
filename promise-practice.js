@@ -662,21 +662,66 @@
 
 // getData();
 
-const laptopOrder = new Promise((resolve, reject) => {
-  let inStock = true;
-  if (inStock === true) {
-    resolve("Laptop Shipped");
-  } else {
-    reject("Out of Stock");
-  }
+// const laptopOrder = new Promise((resolve, reject) => {
+//   let inStock = true;
+//   if (inStock === true) {
+//     resolve("Laptop Shipped");
+//   } else {
+//     reject("Out of Stock");
+//   }
+// });
+
+// laptopOrder.
+//   then((success) => {
+//     console.log("success", success);
+//   })
+//   .catch((failure) => {
+//     console.log("failure", failure);
+//   });
+
+// const login = new Promise((resolve, reject) => {
+//   let username = "Admin";
+//   let password = "12345";
+
+//   setTimeout(() => {
+//     if (username === "Admin" && password === "12345") {
+//       resolve("Access Granted");
+//     } else {
+//       reject("Access Denied");
+//     }
+//   }, 2000);
+// });
+
+// async function getData() {
+//   try {
+//     const data = await login;
+//     console.log("Success",data);
+//   } catch (error) {
+//     console.log("Error", error);
+//   }
+// }
+
+// getData()
+
+const giveOrder = new Promise((resolve, reject) => {
+  let inStock = false;
+
+  setTimeout(() => {
+    if (inStock === true) {
+      resolve("Order Received");
+    } else {
+      reject("Out of Stock");
+    }
+  }, 3000);
 });
 
-laptopOrder.
-  then((success) => {
-    console.log("success", success);
-  })
-  .catch((failure) => {
-    console.log("failure", failure);
-  });
+async function details() {
+  try {
+    const check = await giveOrder;
+    console.log("Success", check);
+  } catch (error) {
+    console.log("Error", error);
+  }
+}
 
-  
+details()
