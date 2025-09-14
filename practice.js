@@ -1013,3 +1013,63 @@
     
 // });
 
+// let cars = ["Volvo", "Benz", "BMW", "Ferrari", "Lamborghini"];
+
+// console.log(cars);
+
+// const names = [];
+
+// names[0] = "Joel";
+// names[1] = "Abby";
+// names[2] = "Ellie";
+// names[3] = "Tommy";
+
+// console.log(names[1]);
+
+// const fruits = new Array("Apple", "banana", "Orange", "Peach");
+// console.log(fruits);
+
+
+// const names = ["Joel", "Abby", "Tommy", "Leon"];
+// console.log(names.join(" | "));
+
+
+// const boys = ["Joel", "Tommy", "Tony", "Leon", "Alan"];
+// const girls = ["Ada", "Sarah", "Lily", "Kate"];
+
+// console.log(boys.concat(girls));
+
+// const cars = ["Volvo", "BMW", "Audi", "Toyota"];
+// console.log(cars.pop());
+// console.log(cars);
+
+
+// const cars = ["BMW", "Volvo", "Audi", "Benz"];
+// cars.push("BYD")
+// console.log(cars);
+
+// const cars = ["Volvo", "BMW", "Audi"];
+// cars.shift();
+// console.log(cars);
+
+// const bikes = ["BMW", "Honda", "Yamaha"];
+// bikes.unshift("Ducati");
+// console.log(bikes);
+
+
+// const pizza = ["Slice 1", "Slice 2", "Slice 3", "Slice 4", "Slice 5", "Slice 6", "Slice 7"];
+// let part = pizza.slice(2, 4);
+// console.log(part);
+
+
+// const numbers = [12, 32, 43, 54, 3, 4234, 54, 123];
+// let num = numbers.slice(3, 5);
+// console.log(num);
+
+// const cake = ["Slice 1", "Slice 2", "Slice 3", "Slice 4", "Slice 5", "Slice 6", "Slice 7"];
+// cake.splice(2, 0, "Slice 8");
+// console.log(cake);
+
+const names = ["Jess", "Tyler", "John", "Mack", "Ali", "Sarah", "Tim", "Buttler","Charlotte","Morgan"];
+names.splice(3, 4, "Salt");
+console.log(names);
