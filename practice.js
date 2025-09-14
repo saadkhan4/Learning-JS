@@ -952,15 +952,64 @@
 //   console.log(x);
 // }
 
-
 // let cars = ["Volvo", "BMW", "Audi", "Mercedes Benz"];
 
 // for (const element of cars) {
 //     console.log(element);
 // }
 
+// for (const element of "Programming") {
+// console.log(element);
 
-for (const element of "Programming") {
-    console.log(element);
+// }
+
+// for (i = 0; i < 3; i++) {
+//   console.log("This is for loop");
+// }
+
+// let digits = [23, 43, 123, 43, 12, 4123, 2];
+
+// for (const num of digits) {
+//     console.log(num);
+
+// }
+
+// for (const x of "Development") {
+//     console.log(x);
+
+// }
+
+// let obj = {
+//   Name: "Tim Cook",
+//   Company: "APPLE INC",
+//   Salary: "12,000$",
+// };
+
+// for (const key in obj) {
+//     const element = obj[key];
+//     console.log(key,element);
+
+// }
+
+// let i = 0;
+
+// while (i < 3) {
+//   console.log("this is while loop");
+//   i++;
+// }
+
+
+// let k = 10;
+
+// do {
+//     k++;
+//     console.log("This is do while loop");
+// } while (k < 3);
+
+
+// let o = [12, 43, 134, 54, 13, 4313, 12, 43];
+// o.forEach(element => {
+//     console.log(element);
     
-}
+// });
+
