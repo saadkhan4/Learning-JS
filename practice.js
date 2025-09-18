@@ -998,7 +998,6 @@
 //   i++;
 // }
 
-
 // let k = 10;
 
 // do {
@@ -1006,11 +1005,10 @@
 //     console.log("This is do while loop");
 // } while (k < 3);
 
-
 // let o = [12, 43, 134, 54, 13, 4313, 12, 43];
 // o.forEach(element => {
 //     console.log(element);
-    
+
 // });
 
 // let cars = ["Volvo", "Benz", "BMW", "Ferrari", "Lamborghini"];
@@ -1029,10 +1027,8 @@
 // const fruits = new Array("Apple", "banana", "Orange", "Peach");
 // console.log(fruits);
 
-
 // const names = ["Joel", "Abby", "Tommy", "Leon"];
 // console.log(names.join(" | "));
-
 
 // const boys = ["Joel", "Tommy", "Tony", "Leon", "Alan"];
 // const girls = ["Ada", "Sarah", "Lily", "Kate"];
@@ -1042,7 +1038,6 @@
 // const cars = ["Volvo", "BMW", "Audi", "Toyota"];
 // console.log(cars.pop());
 // console.log(cars);
-
 
 // const cars = ["BMW", "Volvo", "Audi", "Benz"];
 // cars.push("BYD")
@@ -1056,11 +1051,9 @@
 // bikes.unshift("Ducati");
 // console.log(bikes);
 
-
 // const pizza = ["Slice 1", "Slice 2", "Slice 3", "Slice 4", "Slice 5", "Slice 6", "Slice 7"];
 // let part = pizza.slice(2, 4);
 // console.log(part);
-
 
 // const numbers = [12, 32, 43, 54, 3, 4234, 54, 123];
 // let num = numbers.slice(3, 5);
@@ -1070,6 +1063,28 @@
 // cake.splice(2, 0, "Slice 8");
 // console.log(cake);
 
-const names = ["Jess", "Tyler", "John", "Mack", "Ali", "Sarah", "Tim", "Buttler","Charlotte","Morgan"];
-names.splice(3, 4, "Salt");
-console.log(names);
+// const names = ["Jess", "Tyler", "John", "Mack", "Ali", "Sarah", "Tim", "Buttler","Charlotte","Morgan"];
+// names.splice(3, 4, "Salt");
+// console.log(names);
+
+const giveOrder = new Promise((resolve, reject) => {
+  let inStock = true;
+  setTimeout(() => {
+    if (inStock === true) {
+      resolve("It's in stock");
+    } else {
+      reject("Out of Stock");
+    }
+  }, 2000);
+});
+
+async function getData() {
+  try {
+    const data = await giveOrder;
+    console.log("Success", data);
+  } catch (error) {
+    console.log("Error", error);
+  }
+}
+
+getData()
