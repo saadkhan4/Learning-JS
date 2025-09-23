@@ -1067,24 +1067,44 @@
 // names.splice(3, 4, "Salt");
 // console.log(names);
 
-const giveOrder = new Promise((resolve, reject) => {
-  let inStock = true;
-  setTimeout(() => {
-    if (inStock === true) {
-      resolve("It's in stock");
-    } else {
-      reject("Out of Stock");
-    }
-  }, 2000);
-});
+// const giveOrder = new Promise((resolve, reject) => {
+//   let inStock = true;
+//   setTimeout(() => {
+//     if (inStock === true) {
+//       resolve("It's in stock");
+//     } else {
+//       reject("Out of Stock");
+//     }
+//   }, 2000);
+// });
 
-async function getData() {
-  try {
-    const data = await giveOrder;
-    console.log("Success", data);
-  } catch (error) {
-    console.log("Error", error);
-  }
+// async function getData() {
+//   try {
+//     const data = await giveOrder;
+//     console.log("Success", data);
+//   } catch (error) {
+//     console.log("Error", error);
+//   }
+// }
+
+// getData()
+
+
+const fruits = ["Apple", "Banana", "Pear"];
+const [first, second] = fruits;
+
+console.log(first,second);
+
+const person = {
+  name: "Wayne",
+  company: "Apple INC",
+  age: 12
 }
 
-getData()
+const { name, company, age } = person;
+
+console.log(name);
+console.log(company);
+console.log(age);
+
+
