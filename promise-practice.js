@@ -703,25 +703,66 @@
 
 // getData()
 
-const giveOrder = new Promise((resolve, reject) => {
-  let inStock = false;
+// const giveOrder = new Promise((resolve, reject) => {
+//   let inStock = false;
+
+//   setTimeout(() => {
+//     if (inStock === true) {
+//       resolve("Order Received");
+//     } else {
+//       reject("Out of Stock");
+//     }
+//   }, 3000);
+// });
+
+// async function details() {
+//   try {
+//     const check = await giveOrder;
+//     console.log("Success", check);
+//   } catch (error) {
+//     console.log("Error", error);
+//   }
+// }
+
+// details()
+
+// const OrderFood = new Promise((resolve, reject) => {
+//   let isOrdered = true;
+//   setTimeout(() => {
+//     if (isOrdered) {
+//       resolve("Order Received");
+//     } else {
+//       reject("Order Failed");
+//     }
+//   }, 2000);
+// });
+
+// OrderFood.then((success) => {
+//   console.log("Success", success);
+// }).catch((failure) => {
+//   console.log("Failure", failure);
+// });
+
+const checkConnection = new Promise((resolve, reject) => {
+  let isConnected = false;
+  let isDisconnected = false;
 
   setTimeout(() => {
-    if (inStock === true) {
-      resolve("Order Received");
+    if (isConnected || isDisconnected) {
+      resolve("Internet Connected");
     } else {
-      reject("Out of Stock");
+      reject("Internet Disconnected");
     }
-  }, 3000);
+  }, 2000);
 });
 
-async function details() {
+async function getDetails() {
   try {
-    const check = await giveOrder;
-    console.log("Success", check);
+    const data = await checkConnection;
+    console.log("Access Granted: ", data);
   } catch (error) {
-    console.log("Error", error);
+    console.log("Access Denied: ", error);
   }
 }
 
-details()
+getDetails()
