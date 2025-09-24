@@ -1089,22 +1089,54 @@
 
 // getData()
 
+// const fruits = ["Apple", "Banana", "Pear"];
+// const [first, second] = fruits;
 
-const fruits = ["Apple", "Banana", "Pear"];
-const [first, second] = fruits;
+// console.log(first,second);
 
-console.log(first,second);
+// const person = {
+//   name: "Wayne",
+//   company: "Apple INC",
+//   age: 12
+// }
 
-const person = {
-  name: "Wayne",
-  company: "Apple INC",
-  age: 12
-}
+// const { name, company, age } = person;
 
-const { name, company, age } = person;
+// console.log(name);
+// console.log(company);
+// console.log(age);
 
-console.log(name);
-console.log(company);
-console.log(age);
+// const countries = ["US", "UK", "Spain", "Korea", "Japan", "France"];
+// const [one, two, three, four, five] = countries
+
+// console.log(one,four);
+
+// const carDetails = {
+//   model: "Nissan Skyline",
+//   year: 1999,
+//   country: "Japan",
+// };
+
+// const { model, year, country } = carDetails;
+
+// console.log(model, year);
 
 
+// const phoneDetails = {
+//   model: "Iphone 16 Pro",
+//   year: 2024,
+//   company: "Apple Inc",
+//   country: "US",
+//   color : "Desert Titanium"
+// }
+
+// const { model, year, company, country, color } = phoneDetails
+// console.log(color,company,country);
+
+
+
+// const games = ["Resident Evil", "CyberPunk 2077", "Fortnite", "Stellar Blade", "Call of Duty"];
+
+// let [one,two,three,four,five] = games
+
+// console.log(two,three);
