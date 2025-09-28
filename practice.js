@@ -1121,7 +1121,6 @@
 
 // console.log(model, year);
 
-
 // const phoneDetails = {
 //   model: "Iphone 16 Pro",
 //   year: 2024,
@@ -1133,10 +1132,25 @@
 // const { model, year, company, country, color } = phoneDetails
 // console.log(color,company,country);
 
-
-
 // const games = ["Resident Evil", "CyberPunk 2077", "Fortnite", "Stellar Blade", "Call of Duty"];
 
 // let [one,two,three,four,five] = games
 
 // console.log(two,three);
+
+// const cars = ["Audi", "BMW", "Porsche", "Toyota", "Nissan"];
+
+// const [list1, list2, list3, list4, list5] = cars
+
+// console.log(list1,list5);
+
+const movieDetails = {
+    title: "F1",
+    releaseDate: "21 September",
+    bugdet : "20000000",
+    
+}
+
+const { title, releaseDate, bugdet } = movieDetails
+
+console.log(title,bugdet);
