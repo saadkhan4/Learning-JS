@@ -599,7 +599,7 @@
 //         this.director = director;
 //         this.rating = rating;
 //     }
-    
+
 //     getDetails() {
 //         console.log(`${this.title} was directed by ${this.director} and it's current rating is ${this.rating}`);
 //     }
@@ -620,7 +620,7 @@
 //         this.name = name;
 //         this.modelYear = modelYear;
 //     }
-    
+
 //     getDetails() {
 //         const date = new Date().getFullYear() - this.modelYear;
 //         const result = (`${this.name} is ${date} years old.`);
@@ -632,26 +632,41 @@
 // const c1 = new Car("BMW M5 CS", 2017);
 // console.log(c1.getDetails());
 
+// class Movie{
+//     constructor(title, director, rating) {
+//         this.title = title;
+//         this.director = director;
+//         this.rating = rating;
+//     }
 
-class Movie{
-    constructor(title, director, rating) {
-        this.title = title;
-        this.director = director;
-        this.rating = rating;
-    }
+//     details() {
+//         console.log(`${this.title} was directed by ${this.director} and it's previous rating is ${this.rating}`);
+//     }
 
+//     updateRating(newRating) {
+//         this.rating = newRating;
+//         console.log(`Rating updated to ${this.rating}`);
+//     }
+
+// }
+
+// const m1 = new Movie("Transformers", "Micheal Bay", 7.9);
+// m1.details()
+// m1.updateRating(9.9)
+
+class Car {
+  constructor(model, modelYear) {
+    this.model = model;
+    this.modelYear = modelYear;
+  }
+    
     details() {
-        console.log(`${this.title} was directed by ${this.director} and it's previous rating is ${this.rating}`);  
+        const date = new Date().getFullYear() - this.modelYear;
+        const result = (`${this.model} is ${date} years old.`);
+        return result;
     }
-
-    updateRating(newRating) {
-        this.rating = newRating;
-        console.log(`Rating updated to ${this.rating}`);
-    }
- 
 }
 
-const m1 = new Movie("Transformers", "Micheal Bay", 7.9);
-m1.details()
-m1.updateRating(9.9)
 
+const c1 = new Car("Toyota Supra", 1999);
+console.log(c1.details());
