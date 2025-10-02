@@ -1,5 +1,5 @@
 // ARRAY IN JS.
-//There are 3 methods of an array :-
+//There are 3 methods to write an array :-
 //1. ARRAY LITERAL
 //2. EMPTY ARRAY + INDEX ASSIGNMENT
 //3. NEW ARRAY

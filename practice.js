@@ -1144,13 +1144,49 @@
 
 // console.log(list1,list5);
 
-const movieDetails = {
-    title: "F1",
-    releaseDate: "21 September",
-    bugdet : "20000000",
-    
+// const movieDetails = {
+//     title: "F1",
+//     releaseDate: "21 September",
+//     budget : "20000000",
+
+// }
+
+// const { title, releaseDate, budget } = movieDetails
+
+// console.log(title,budget);
+
+// const films = ["Dune", "F1", "Fast Five", "Iron Man", "Tron"];
+
+// const [one, two, three, four, five] = films;
+
+// console.log(one,two,five);
+
+// const person = {
+//   name: "Tyler",
+//   age: "21",
+//   company: "Apple INC",
+// }
+
+// const { name, age, company } = person;
+// console.log(name, company);
+
+
+// const cars = ["Audi", "Volvo", "BMW", "Honda", "Toyota"];
+
+// const [item1, item2, item3, item4, item5] = cars
+
+// console.log(item1,item4);
+
+
+let person = {
+  name: "Razor Callahan",
+  ride: "BMW M3 GTR",
+  city: "Rockport",
+  age: 34
+  
 }
 
-const { title, releaseDate, bugdet } = movieDetails
 
-console.log(title,bugdet);
+const { name, ride, city, age } = person
+
+console.log(name,ride,city);

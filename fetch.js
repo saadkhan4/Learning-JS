@@ -93,17 +93,17 @@
 
 // getData();
 
-async function getData() {
+async function getData(params) {
   try {
-    const response = await fetch("data.json");
+    const response = await fetch("movies.json")
     const data = await response.json()
     data.forEach(element => {
-      console.log(element.grade);
+      console.log(element.title);
     });
   } catch (error) {
     console.log("Error",error);
+    
   }
 }
 
-
-getData()
+getData();

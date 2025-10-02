@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "MCU Film Title",
+    "overview": "Text Description",
+    "release_date": "2020-05-01",
+    "days_until": 100,
+    "type": "Movie",
+    "poster_url": "https://image.tmdb.org/t/p/w500/path/to/poster.jpg",
+    "following_production": { "status": "In Production" }
+  }
+]
