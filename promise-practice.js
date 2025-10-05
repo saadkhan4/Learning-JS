@@ -743,26 +743,46 @@
 //   console.log("Failure", failure);
 // });
 
-const checkConnection = new Promise((resolve, reject) => {
-  let isConnected = false;
-  let isDisconnected = false;
+// const checkConnection = new Promise((resolve, reject) => {
+//   let isConnected = false;
+//   let isDisconnected = false;
+
+//   setTimeout(() => {
+//     if (isConnected || isDisconnected) {
+//       resolve("Internet Connected");
+//     } else {
+//       reject("Internet Disconnected");
+//     }
+//   }, 2000);
+// });
+
+// async function getDetails() {
+//   try {
+//     const data = await checkConnection;
+//     console.log("Access Granted: ", data);
+//   } catch (error) {
+//     console.log("Access Denied: ", error);
+//   }
+// }
+
+// getDetails()
+
+const OrderFood = new Promise((resolve, reject) => {
+  let isOrdered = true;
 
   setTimeout(() => {
-    if (isConnected || isDisconnected) {
-      resolve("Internet Connected");
+    if (isOrdered) {
+      resolve("Order Accepted");
     } else {
-      reject("Internet Disconnected");
+      reject("Order Cancelled");
     }
-  }, 2000);
+  }, 3000);
 });
 
-async function getDetails() {
-  try {
-    const data = await checkConnection;
-    console.log("Access Granted: ", data);
-  } catch (error) {
-    console.log("Access Denied: ", error);
-  }
-}
+OrderFood.then((success) => {
+  console.log("Success", success);
+});
 
-getDetails()
+OrderFood.catch((failure) => {
+  console.log("Failure", failure);
+});

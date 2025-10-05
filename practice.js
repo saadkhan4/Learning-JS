@@ -1178,15 +1178,31 @@
 // console.log(item1,item4);
 
 
-let person = {
-  name: "Razor Callahan",
-  ride: "BMW M3 GTR",
-  city: "Rockport",
-  age: 34
+// let person = {
+//   name: "Razor Callahan",
+//   ride: "BMW M3 GTR",
+//   city: "Rockport",
+//   age: 34
   
+// }
+
+
+// const { name, ride, city, age } = person
+
+// console.log(name,ride,city);
+
+// const phones = ["iPhone", "Samsung", "Moto", "Lenovo", "Google"];
+
+// const [item1, item2, item3, item4, item5, item6] = phones
+
+// console.log(item2,item1);
+
+const details = {
+  founder: "Steve Jobs",
+  company : "Apple INC",
+  year: "1999",
 }
 
+const { founder, company, year } = details
 
-const { name, ride, city, age } = person
-
-console.log(name,ride,city);
+console.log(founder,company);
