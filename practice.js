@@ -1197,12 +1197,40 @@
 
 // console.log(item2,item1);
 
-const details = {
-  founder: "Steve Jobs",
-  company : "Apple INC",
-  year: "1999",
-}
+// const details = {
+//   founder: "Steve Jobs",
+//   company : "Apple INC",
+//   year: "1999",
+// }
 
-const { founder, company, year } = details
+// const { founder, company, year } = details
 
-console.log(founder,company);
+// console.log(founder,company);
+
+
+// const cars = ["Audi", "BMW", "Ferrari", "Lamborghini"];
+
+// for (const x of cars) {
+//   console.log(x);
+  
+// }
+
+// let person = {
+//   name: "Tyler James",
+//   Age: "21",
+//   Company : "Apple INC"
+// }
+
+// for (const key in person) {
+//   const element = person[key];
+//   console.log(key,element);
+  
+  
+  
+// }
+
+const cars = ["Toyota", "Honda", "BMW", "Audi"];
+
+const [item1, item2, item3, item4] = cars;
+
+console.log(item1,item4);

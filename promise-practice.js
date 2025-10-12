@@ -767,22 +767,44 @@
 
 // getDetails()
 
-const OrderFood = new Promise((resolve, reject) => {
-  let isOrdered = true;
+// const OrderFood = new Promise((resolve, reject) => {
+//   let isOrdered = true;
 
+//   setTimeout(() => {
+//     if (isOrdered) {
+//       resolve("Order Accepted");
+//     } else {
+//       reject("Order Cancelled");
+//     }
+//   }, 3000);
+// });
+
+// OrderFood.then((success) => {
+//   console.log("Success", success);
+// });
+
+// OrderFood.catch((failure) => {
+//   console.log("Failure", failure);
+// });
+
+const Order = new Promise((resolve, reject) => {
+  let inStock = false;
   setTimeout(() => {
-    if (isOrdered) {
-      resolve("Order Accepted");
+    if (inStock) {
+      resolve("Order Confirmed")
     } else {
-      reject("Order Cancelled");
+      reject("Out of Stock")
     }
-  }, 3000);
-});
+  }, 2000);
+})
 
-OrderFood.then((success) => {
-  console.log("Success", success);
-});
+async function getDetails() {
+  try {
+    const data = await Order;
+    console.log("Success",data);
+  } catch (error) {
+    console.log("Failure",error);
+  }
+}
 
-OrderFood.catch((failure) => {
-  console.log("Failure", failure);
-});
+getDetails()
