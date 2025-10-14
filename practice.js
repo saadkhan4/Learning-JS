@@ -1170,22 +1170,19 @@
 // const { name, age, company } = person;
 // console.log(name, company);
 
-
 // const cars = ["Audi", "Volvo", "BMW", "Honda", "Toyota"];
 
 // const [item1, item2, item3, item4, item5] = cars
 
 // console.log(item1,item4);
 
-
 // let person = {
 //   name: "Razor Callahan",
 //   ride: "BMW M3 GTR",
 //   city: "Rockport",
 //   age: 34
-  
-// }
 
+// }
 
 // const { name, ride, city, age } = person
 
@@ -1207,12 +1204,11 @@
 
 // console.log(founder,company);
 
-
 // const cars = ["Audi", "BMW", "Ferrari", "Lamborghini"];
 
 // for (const x of cars) {
 //   console.log(x);
-  
+
 // }
 
 // let person = {
@@ -1224,13 +1220,90 @@
 // for (const key in person) {
 //   const element = person[key];
 //   console.log(key,element);
-  
-  
-  
+
 // }
 
-const cars = ["Toyota", "Honda", "BMW", "Audi"];
+// const cars = ["Toyota", "Honda", "BMW", "Audi"];
 
-const [item1, item2, item3, item4] = cars;
+// const [item1, item2, item3, item4] = cars;
 
-console.log(item1,item4);
+// console.log(item1,item4);
+
+// const cars = ["Audi", "BMW", "Ferrari", "Ford", "Honda"];
+
+// console.log(cars.length);
+
+// const cars = ["Audi", "BMW", "Ferrari", "Ford", "Honda"];
+
+// console.log(cars.toString());
+
+// const cars = ["Audi", "BMW", "Ferrari", "Ford", "Honda"];
+
+// console.log(cars.at(3));
+
+// const drinks = ["Fanta", "Coke", "Pepsi", "Dew", "Sprite"];
+
+// console.log(drinks.join(" | "));
+
+// const cars = ["Audi", "BMW", "Ferrari", "Ford", "Honda"];
+
+// console.log(cars.pop());
+// console.log(cars);
+
+// const cars = ["Audi", "BMW", "Ferrari", "Ford", "Honda"];
+
+// console.log(cars.push("Mitsubishi Motors"));
+
+// console.log(cars);
+
+// const drinks = ["Fanta", "Coke", "Pepsi", "Dew", "Sprite"];
+
+// drinks.push("Apple");
+
+// console.log(drinks);
+
+// const heros = ["Iron man", "Buck", "Natasha", "Cap", "Vision"];
+
+// heros.shift("Wanda")
+
+// console.log(heros);
+
+// const cars = ["Toyota", "Honda", "Suzuki", "Mazda", "Nissan"];
+
+// cars.unshift("Audi");
+
+// console.log(cars);
+
+// const cars = ["Toyota", "Honda", "Suzuki", "Mazda", "Nissan"];
+
+// delete cars[2];
+
+// console.log(cars);
+
+// const boys = ["Tyler", "Will", "Steve"];
+// const girls = ["Jess", "Nancy", "Max"];
+
+// const students = boys.concat(girls);
+
+// console.log(students);
+
+// const numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+// let part = numbers.slice(2, 6);
+
+// console.log(part);
+
+
+// const cake = ["Slice1", "Slice2", "Slice3", "Slice4", "Slice5", "Slice6"];
+
+// cake.splice(2, 0, "Slice7");
+
+// console.log(cake);
+
+
+const colors = ["Red", "Blue", "Green", "Black", "Orange", "Salmon Pink", "White"];
+
+colors.splice(3, 2, "Magenta");
+
+console.log(colors);
+
