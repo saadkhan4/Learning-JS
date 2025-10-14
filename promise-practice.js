@@ -787,24 +787,69 @@
 //   console.log("Failure", failure);
 // });
 
-const Order = new Promise((resolve, reject) => {
-  let inStock = false;
+// const Order = new Promise((resolve, reject) => {
+//   let inStock = false;
+//   setTimeout(() => {
+//     if (inStock) {
+//       resolve("Order Confirmed")
+//     } else {
+//       reject("Out of Stock")
+//     }
+//   }, 2000);
+// })
+
+// async function getDetails() {
+//   try {
+//     const data = await Order;
+//     console.log("Success",data);
+//   } catch (error) {
+//     console.log("Failure",error);
+//   }
+// }
+
+// getDetails()
+
+// const admin = new Promise((resolve, reject) => {
+//   let username = "Sansa Stark"
+//   let password = "Joyride12";
+
+//   setTimeout(() => {
+//     if (username === "Sansa Stark" && password === "Joyride12") {
+//       resolve("Access Granted");
+//     } else {
+//       reject("Access Denied");
+//     }
+//   }, 2000);
+// })
+
+// async function getData(params) {
+//   try {
+//     const data = await admin;
+//     console.log("Success",data);
+//   } catch (error) {
+//     console.log("Failure",error);
+//   }
+// }
+
+// getData();
+
+const giveOrder = new Promise((resolve, reject) => {
+  let inStock = true;
   setTimeout(() => {
     if (inStock) {
-      resolve("Order Confirmed")
+      resolve("Order Confirmed");
     } else {
-      reject("Out of Stock")
+      reject("Out of Stock");
     }
   }, 2000);
+});
+
+giveOrder.then((success) => {
+  console.log("Success",success);
 })
 
-async function getDetails() {
-  try {
-    const data = await Order;
-    console.log("Success",data);
-  } catch (error) {
-    console.log("Failure",error);
-  }
-}
+giveOrder.catch((failure) => {
+  console.log("Failure",failure);
+})
 
-getDetails()
+
