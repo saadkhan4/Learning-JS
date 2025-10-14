@@ -654,19 +654,101 @@
 // m1.details()
 // m1.updateRating(9.9)
 
-class Car {
-  constructor(model, modelYear) {
-    this.model = model;
-    this.modelYear = modelYear;
-  }
+// class Car {
+//   constructor(model, modelYear) {
+//     this.model = model;
+//     this.modelYear = modelYear;
+//   }
     
-    details() {
-        const date = new Date().getFullYear() - this.modelYear;
-        const result = (`${this.model} is ${date} years old.`);
-        return result;
-    }
+//     details() {
+//         const date = new Date().getFullYear() - this.modelYear;
+//         const result = (`${this.model} is ${date} years old.`);
+//         return result;
+//     }
+// }
+
+
+// const c1 = new Car("Toyota Supra", 1999);
+// console.log(c1.details());
+
+
+// class Movie{
+//   constructor(title, releaseYear) {
+//     this.title = title;
+//     this.releaseYear = releaseYear;
+//   }
+
+//   getDetails() {
+//     const date = new Date().getFullYear() - this.releaseYear;
+//     const result = (`${this.title} is ${date} years old.`);
+//     return result;
+//   }
+// }
+
+// const m1 = new Movie("Tron Legacy", 2010);
+
+// console.log(m1.getDetails());
+
+
+// class Movie {
+//   constructor(title, director, rating) {
+//     this.title = title;
+//     this.director = director;
+//     this.rating = rating;
+//   }
+
+//   details() {
+//     console.log(`${this.title} is directed by ${this.director} and it's rating is ${this.rating}`);
+//   }
+//   updateRating(newRating) {
+//     this.rating = newRating;
+//     console.log(`Rating updated to ${this.rating}`);
+//   }
+// }
+
+// const m1 = new Movie("Insidious", "James Wan", 6.9);
+
+// m1.details();
+// m1.updateRating(7.1);
+
+
+// class Car{
+//   constructor(model, modelYear) {
+//     this.model = model;
+//     this.modelYear = modelYear;
+//   }
+
+//   getDetails() {
+//     const date = new Date().getFullYear() - this.modelYear;
+//     const result = (`${this.model} is ${date} years old`);
+//     return result;
+//   }
+// }
+
+// const c1 = new Car("Nissan Skyline", 1999);
+
+// console.log(c1.getDetails());
+
+class Phone{
+  constructor(company, event, date) {
+    this.company = company;
+    this.event = event;
+    this.date = date;
+  }
+
+  details() {
+    console.log(`The event of ${this.company} ${this.event} will be held on ${this.date}`);
+  }
+
+  updateDate(newDate) {
+    this.date = newDate;
+    console.log(`New event date is ${newDate}`);
+  }
 }
 
+const p1 = new Phone("Apple Company", "WonderLust", "7 September");
 
-const c1 = new Car("Toyota Supra", 1999);
-console.log(c1.details());
+p1.details();
+p1.updateDate("9 September");
+
+
