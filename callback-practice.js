@@ -736,15 +736,29 @@
 
 // bookFlight("America", booked);
 
-const orderFood = (foodItem, callback) => {
+// const orderFood = (foodItem, callback) => {
+//     setTimeout(() => {
+//         console.log("What do you want to order sir? ", foodItem);
+//         callback();
+//     }, 3000);
+// }
+
+// const delivered = () => {
+//     console.log("Here is your order sir.");
+// }
+
+// orderFood("Pasta",delivered)
+
+
+const bookTicket = (destination,callback) => {
     setTimeout(() => {
-        console.log("What do you want to order sir? ", foodItem);
+        console.log("Where do you want to go sir? ", destination);
         callback();
-    }, 3000);
+    }, 2000);
 }
 
-const delivered = () => {
-    console.log("Here is your order sir.");
+const showTicket = () => {
+    console.log("Here is your ticket sir.");
 }
 
-orderFood("Pasta",delivered)
+bookTicket("United Kingdom", showTicket);
