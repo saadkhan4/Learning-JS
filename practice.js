@@ -1301,9 +1301,24 @@
 // console.log(cake);
 
 
-const colors = ["Red", "Blue", "Green", "Black", "Orange", "Salmon Pink", "White"];
+// const colors = ["Red", "Blue", "Green", "Black", "Orange", "Salmon Pink", "White"];
 
-colors.splice(3, 2, "Magenta");
+// colors.splice(3, 2, "Magenta");
 
-console.log(colors);
+// console.log(colors);
 
+
+// const cars = ["Audi", "BMW", "VOLVO", "SKODA", "BENZ"];
+
+// const [ item1, item2, item3, item4, item5 ] = cars
+
+// console.log(item1,item3);
+
+// const data = {
+//     name: "Julia",
+//     age: 21,
+//     company : "APPLE INC"
+// }
+
+// const { name, age } = data;
+// console.log(name,age);
