@@ -1293,20 +1293,17 @@
 
 // console.log(part);
 
-
 // const cake = ["Slice1", "Slice2", "Slice3", "Slice4", "Slice5", "Slice6"];
 
 // cake.splice(2, 0, "Slice7");
 
 // console.log(cake);
 
-
 // const colors = ["Red", "Blue", "Green", "Black", "Orange", "Salmon Pink", "White"];
 
 // colors.splice(3, 2, "Magenta");
 
 // console.log(colors);
-
 
 // const cars = ["Audi", "BMW", "VOLVO", "SKODA", "BENZ"];
 
@@ -1322,3 +1319,73 @@
 
 // const { name, age } = data;
 // console.log(name,age);
+
+// for (let i = 0; i < 3; i++){
+//     console.log("this is for loop");
+// }
+
+// for (const x of "Programming") {
+//     console.log(x);
+
+// }
+
+// const cars = ["Audi", "Benz", "BMW", "SKODA"];
+
+// for (const x of cars) {
+//     console.log(x);
+
+// }
+
+// const obj = {
+//     name: "Eric",
+//     age: 24,
+//     phone: "Iphone"
+// }
+
+// for (const key in obj) {
+//     const element = obj[key];
+//     console.log(element);
+
+// }
+
+// let i = 0;
+
+// while (i < 3) {
+//     console.log("this is while loop");
+//     i++;
+// }
+
+// let p = 10;
+
+// do {
+//     p++;
+//     console.log("this is do while loop");
+// } while (p < 3);
+
+
+// const cars = ["Audi", "Benz", "Skoda", "BMW"];
+
+// cars.forEach(element => {
+//     console.log(element);
+    
+// });
+
+// const movie = [
+//     { title: "Avengers", rating: 9 },
+//     { title: "TRON legacy", rating: 7.2 },
+//     { title: "Transformers", rating: 7.9 },
+//     {title : "John Wick", rating : 7.8}
+// ];
+
+// const goodMovies = movie.filter(movie => movie.rating < 8);
+// console.log(goodMovies);
+
+
+const items = [
+    { name: "Burger", price: 450 },
+    { name: "Pizza", price: 800 },
+    { name: "Roll",price : 300}
+]
+
+const price = items.filter(items => items.price < 600);
+console.log(price);
