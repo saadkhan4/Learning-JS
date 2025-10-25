@@ -1362,12 +1362,11 @@
 //     console.log("this is do while loop");
 // } while (p < 3);
 
-
 // const cars = ["Audi", "Benz", "Skoda", "BMW"];
 
 // cars.forEach(element => {
 //     console.log(element);
-    
+
 // });
 
 // const movie = [
@@ -1380,12 +1379,22 @@
 // const goodMovies = movie.filter(movie => movie.rating < 8);
 // console.log(goodMovies);
 
+// const items = [
+//     { name: "Burger", price: 450 },
+//     { name: "Pizza", price: 800 },
+//     { name: "Roll",price : 300}
+// ]
 
-const items = [
-    { name: "Burger", price: 450 },
-    { name: "Pizza", price: 800 },
-    { name: "Roll",price : 300}
-]
+// const price = items.filter(items => items.price < 600);
+// console.log(price);
 
-const price = items.filter(items => items.price < 600);
-console.log(price);
+// const games = [
+//   { name: "RE4", price: `$${67}` } ,
+//   { name: "Cyberpunk 2077", price: `$${50}` },
+//   { name: "Days Gone", price: `$${47}` },
+// ];
+
+// const exclusive = games.filter((games) => games.price < 50);
+// console.log(exclusive);
+
+
