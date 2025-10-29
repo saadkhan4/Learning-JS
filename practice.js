@@ -1389,12 +1389,64 @@
 // console.log(price);
 
 // const games = [
-//   { name: "RE4", price: `$${67}` } ,
+//   { name: "RE4", price: `$${67}` },
 //   { name: "Cyberpunk 2077", price: `$${50}` },
 //   { name: "Days Gone", price: `$${47}` },
 // ];
 
 // const exclusive = games.filter((games) => games.price < 50);
 // console.log(exclusive);
+
+// const movies = [
+//   { name: "John Wick", rating: 7.8 },
+//   { name: "Tron Legacy", rating: 6.5 },
+//   { name: "Cars", rating: 8.4 },
+// ];
+
+// const filtered = movies.filter((movies) => movies.rating < 7.0);
+// console.log(filtered);
+
+// const cars = ["Toyota", "BMW", "Audi", "Honda", "Ferrari", "Opel"];
+
+// const [item1, item2, item3, item4, item5, item6] = cars
+
+// console.log(item1,item4);
+
+// const person = {
+//   name: "Steve",
+//   age: 23,
+//   company : "Apple INC"
+// }
+
+// const { name, age, company } = person
+
+// console.log(name,age);
+
+// const items = [
+//     { name: "Burger", price: 450 },
+//     { name: "Pizza", price: 800 },
+//     { name: "Roll",price : 300}
+// ]
+
+// const price = items.filter(items => items.price < 600);
+// console.log(price);
+
+// const items = [
+//   { name: "Burger", price: 340 },
+//   { name: "Pizza", price: 400 },
+//   { name: "Roll", price: 120 },
+// ];
+
+// const price = items.filter(items => items.price < 600);
+// console.log(price);
+
+// const games = [
+//   { name: "RE4", price: 30 },
+//   { name: "CyberPunk 2077", price: 400 },
+//   { name: "Days Gone", price: 300 },
+// ];
+
+// const price = games.filter(items => items.price < 200);
+// console.log(price);
 
 

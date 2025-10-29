@@ -1,52 +1,52 @@
 // // Spread operator in Array.
 
-// const cars = ["Audi", "BMW", "Skoda", "Benz", "Chevrolet"];
+const cars = ["Audi", "BMW", "Skoda", "Benz", "Chevrolet"];
 
-// const automobiles = [...cars];
+const automobiles = [...cars];
 
-// console.log(automobiles);
+console.log(automobiles);
 
 // // Combining multiple arrays in spread operator.
 
-// const fruits = ["Apple", "Banana", "Cherry", "Guava", "Watermelon"];
-// const vegetables = ["Potato", "Carrot", "Tomato", "Cabbage"];
+const fruits = ["Apple", "Banana", "Cherry", "Guava", "Watermelon"];
+const vegetables = ["Potato", "Carrot", "Tomato", "Cabbage"];
 
-// const items = [...fruits, ...vegetables];
+const items = [...fruits, ...vegetables];
 
-// console.log(items);
+console.log(items);
 
 // // Immutable values in an array
 
-// const countries = ["Italy", "France", "Pakistan", "UAE", "United Kingdom"];
-// const cities = ["Monaco", "Paris", "Karachi", "Dubai", "England"];
+const countries = ["Italy", "France", "Pakistan", "UAE", "United Kingdom"];
+const cities = ["Monaco", "Paris", "Karachi", "Dubai", "England"];
 
-// // add values like this in array
-// const list = [...countries, ...cities, "United States", "Los Angeles"];
+// add values like this in array
+const list = [...countries, ...cities, "United States", "Los Angeles"];
 
-// console.log(list);
+console.log(list);
 
 // /// Spread Operator in OBJECTS.
 
-// const person = {
-//   name: "Charlotte",
-//   Age: 37,
-// };
+const person = {
+  name: "Charlotte",
+  Age: 37,
+};
 
-// const updatePerson = {
-//   ...person,
-//   city: "North Carolina",
-// };
+const updatePerson = {
+  ...person,
+  city: "North Carolina",
+};
 
-// console.log(updatePerson);
+console.log(updatePerson);
 
 // // Combining objects in spread operator
 
-// const user = { name: "John", age: 35 };
-// const account = { type: "Premium", balance: `$${500000}` };
+const use = { name: "John", age: 35 };
+const account = { type: "Premium", balance: `$${500000}` };
 
-// const profile = { ...user, ...account };
+const profile = { ...use, ...account };
 
-// console.log(profile);
+console.log(profile);
 
 // Nested objects.
 
