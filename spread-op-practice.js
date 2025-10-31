@@ -53,21 +53,41 @@
 
 // console.log(result);
 
-const user = {
-  name: "Matt",
-  age: 34,
-  address: {
-    city: "Las Vegas",
-    Country: "Unites States",
-  },
-};
+// const user = {
+//   name: "Matt",
+//   age: 34,
+//   address: {
+//     city: "Las Vegas",
+//     Country: "Unites States",
+//   },
+// };
 
-const updatePerson = {
-    ...user, address: {
-        ...user.address,
-        city : "New York"
-    }
-}
+// const updatePerson = {
+//     ...user, address: {
+//         ...user.address,
+//         city : "New York"
+//     }
+// }
 
 
-console.log(updatePerson);
+// console.log(updatePerson);
+
+// const cars = ["Honda", "Toyota", "Mitsubishi", "Ferrari", "BMW"];
+
+// const automobiles = [...cars];
+
+// console.log(automobiles);
+
+
+// const person = {
+//   name: "Jason",
+//   age: 12,
+//   city : "LA"
+// }
+
+// const updatePerson = {
+//   ...person
+// }
+
+// console.log(updatePerson);
+

@@ -1431,15 +1431,6 @@
 // const price = items.filter(items => items.price < 600);
 // console.log(price);
 
-// const items = [
-//   { name: "Burger", price: 340 },
-//   { name: "Pizza", price: 400 },
-//   { name: "Roll", price: 120 },
-// ];
-
-// const price = items.filter(items => items.price < 600);
-// console.log(price);
-
 // const games = [
 //   { name: "RE4", price: 30 },
 //   { name: "CyberPunk 2077", price: 400 },
@@ -1449,4 +1440,44 @@
 // const price = games.filter(items => items.price < 200);
 // console.log(price);
 
+// const foodItems = [
+//   { name: "Burger", price: 230 },
+//   { name: "Fries", price: 120 },
+//   { name: "Pizza", price: 350 },
+// ];
 
+// const total = foodItems.filter(foodItems => foodItems.price > 150);
+// console.log(total);
+
+// const cars = ["Audi", "BMW", "Chrysler", "Toyota", "Skoda"];
+
+// const [item1, item2, item3, item4, item5] = cars;
+
+// console.log(cars);
+
+// const person = {
+//   name: "Hamza Mughal",
+//   age: "25",
+//   country: "Ireland",
+// };
+
+// const { name, age, country } = person;
+
+// console.log(name,age);
+
+// const games = [
+//   { name: "RE4", price: 34 },
+//   { name: "CyberPunk 2077", price: 56 },
+//   { name: "Stellar Blade", price: 70 },
+// ];
+
+
+// const exclusive = games.filter(games => games.price > 50);
+// console.log(exclusive);
+
+
+const cars = ["Audi", "Skoda", "Benz", "Toyota"];
+const bikes = ["Yamaha", "Honda", "Suzuki", "Kawasaki"];
+
+const automobiles = [...cars,...bikes , "Mitsubishi Motors"];
+console.log(automobiles);
