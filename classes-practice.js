@@ -659,7 +659,7 @@
 //     this.model = model;
 //     this.modelYear = modelYear;
 //   }
-    
+
 //     details() {
 //         const date = new Date().getFullYear() - this.modelYear;
 //         const result = (`${this.model} is ${date} years old.`);
@@ -667,10 +667,8 @@
 //     }
 // }
 
-
 // const c1 = new Car("Toyota Supra", 1999);
 // console.log(c1.details());
-
 
 // class Movie{
 //   constructor(title, releaseYear) {
@@ -688,7 +686,6 @@
 // const m1 = new Movie("Tron Legacy", 2010);
 
 // console.log(m1.getDetails());
-
 
 // class Movie {
 //   constructor(title, director, rating) {
@@ -711,7 +708,6 @@
 // m1.details();
 // m1.updateRating(7.1);
 
-
 // class Car{
 //   constructor(model, modelYear) {
 //     this.model = model;
@@ -729,26 +725,47 @@
 
 // console.log(c1.getDetails());
 
-class Phone{
-  constructor(company, event, date) {
-    this.company = company;
-    this.event = event;
-    this.date = date;
+// class Phone{
+//   constructor(company, event, date) {
+//     this.company = company;
+//     this.event = event;
+//     this.date = date;
+//   }
+
+//   details() {
+//     console.log(`The event of ${this.company} ${this.event} will be held on ${this.date}`);
+//   }
+
+//   updateDate(newDate) {
+//     this.date = newDate;
+//     console.log(`New event date is ${newDate}`);
+//   }
+// }
+
+// const p1 = new Phone("Apple Company", "WonderLust", "7 September");
+
+// p1.details();
+// p1.updateDate("9 September");
+
+class Movie {
+  constructor(name, director, rating) {
+    this.name = name;
+    this.director = director;
+    this.rating = rating;
   }
 
-  details() {
-    console.log(`The event of ${this.company} ${this.event} will be held on ${this.date}`);
+  getDetails() {
+    console.log(
+      `${this.name} is Directed by ${this.director} and it's current rating is ${this.rating}`
+    );
   }
 
-  updateDate(newDate) {
-    this.date = newDate;
-    console.log(`New event date is ${newDate}`);
+  newRating(updateRating) {
+    this.newRating = updateRating;
+    console.log(`Rating updated to ${this.newRating}`);
   }
 }
 
-const p1 = new Phone("Apple Company", "WonderLust", "7 September");
-
-p1.details();
-p1.updateDate("9 September");
-
-
+const m1 = new Movie("Justice League", "Zack Snyder", 6.8);
+m1.getDetails();
+m1.newRating(7.4);
