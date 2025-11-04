@@ -1471,13 +1471,44 @@
 //   { name: "Stellar Blade", price: 70 },
 // ];
 
-
 // const exclusive = games.filter(games => games.price > 50);
 // console.log(exclusive);
 
+// const cars = ["Audi", "Skoda", "Benz", "Toyota"];
+// const bikes = ["Yamaha", "Honda", "Suzuki", "Kawasaki"];
 
-const cars = ["Audi", "Skoda", "Benz", "Toyota"];
-const bikes = ["Yamaha", "Honda", "Suzuki", "Kawasaki"];
+// const automobiles = [...cars,...bikes , "Mitsubishi Motors"];
+// console.log(automobiles);
 
-const automobiles = [...cars,...bikes , "Mitsubishi Motors"];
-console.log(automobiles);
+// const cars = ["Audi", "BMW", "Benz", "Skoda", "Toyota"];
+
+// const [item1, item2, item3, item4, item5] = cars
+// console.log(item1,item5);
+
+// const person = {
+//     name: "Ellie Fanning",
+//     age: 28,
+//     company : "Apple INC"
+// }
+
+// const { name, age, company } = person;
+// console.log(name,age);
+
+// const boys = ["Alan", "Mike", "Will", "Dustin"];
+// const girls = ["Nancy", "Joyce", "Max"];
+
+// const students = boys.concat(girls);
+// console.log(students);
+
+// const names = ["Ali", "Joe", "Jim", "Hamza", "Ellie"];
+// console.log(names.length);
+
+// const games = [
+//   { name: "Ghost Of Tushima", price: 50 },
+//   { name: "Resident Evil", price: 34 },
+//   { name: "Cyberpunk 2077", price: 45 },
+// ];
+
+// const exclusive = games.filter(games => games.price > 40);
+// console.log(exclusive);
+
