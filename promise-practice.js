@@ -873,23 +873,68 @@
 //   console.log("Failure", failure);
 // });
 
-const isConnected = new Promise((resolve, reject) => {
-  let internet = true;
+// const isConnected = new Promise((resolve, reject) => {
+//   let internet = true;
+//   setTimeout(() => {
+//     if (internet) {
+//       resolve("Internet is connected");
+//     } else {
+//       reject("Internet is disconnected");
+//     }
+//   }, 2000);
+// });
+
+// async function getData() {
+//   try {
+//     const data = await isConnected;
+//     console.log("Success", data);
+//   } catch (error) {
+//     console.log("Error", error);
+//   }
+// }
+// getData();
+
+// const order = new Promise((resolve, reject) => {
+//   const inStock = true;
+
+//   setTimeout(() => {
+//     if (inStock) {
+//       resolve("Order Confirmed");
+//     } else {
+//       reject("Out Of Stock");
+//     }
+//   }, 3000);
+// });
+
+// async function getDetails() {
+//   try {
+//     const data = await order;
+//     console.log("Success", data);
+//   } catch (error) {
+//     console.log("Error", error);
+//   }
+// }
+
+// getDetails()
+
+const internet = new Promise((resolve, reject) => {
+  let isConnected = true;
+
   setTimeout(() => {
-    if (internet) {
-      resolve("Internet is connected");
+    if (isConnected) {
+      resolve("Internet is Connected");
     } else {
-      reject("Internet is disconnected");
+      reject("Internet in Disconnected");
     }
-  }, 2000);
+  }, 3000);
 });
 
-async function getData() {
-  try {
-    const data = await isConnected;
-    console.log("Success", data);
-  } catch (error) {
-    console.log("Error", error);
-  }
-}
-getData();
+internet.then((success) => {
+  console.log("Success", success);
+});
+
+internet.catch((failure) => {
+  console.log("Failure", failure);
+});
+
+
