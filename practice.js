@@ -1512,3 +1512,118 @@
 // const exclusive = games.filter(games => games.price > 40);
 // console.log(exclusive);
 
+// const cars = ["BMW", "Alfa Romeo", "Ferrari", "Toyota"];
+
+// const automobiles = [...cars];
+// console.log(automobiles);
+
+// const cars = ["BMW", "Alfa Romeo", "Ferrari", "Toyota"];
+
+// const [item1, item2, item3, item4] = cars;
+
+// console.log(item1, item4);
+
+// const obj = {
+//   name: "Sadie Sink",
+//   show: "Stranger Things",
+//   release: "2015",
+// };
+
+// const { name, show, release } = obj
+
+// console.log(name,show);
+
+// const vegetables = ["Potato", "Cabbage", "Capsicum", "Radish", "Tomato"];
+// const fruits = ["Apple", "Banana", "Cherry", "Pear", "Guava"];
+
+// const price = [...vegetables, ...fruits, "Mango", "Bell pepper"];
+
+// console.log(price);
+
+// const person = {
+//   name: "Hamza Mughal",
+//   age: 25,
+//   country: "Republic of Ireland",
+// };
+
+// const irish = {
+//   ...person,
+//   city: "Dublin",
+// };
+
+// console.log(irish);
+
+// const games = [
+//     { name: "Ghost of Tushima", price: `$${59}` },
+//     { name: "Stellar Blade", price: `$${67}` },
+//     { name: "Spider-Man 2", price: `$${56}` },
+// ]
+
+// const exclusive = games.filter(games => games.price > `$${60}`);
+// console.log(exclusive);
+
+// const numbers = [3, 4, 6, 1, 7, 12, 67, 87];
+// const doubled = numbers.map(num => num * 2);
+// console.log(doubled);
+
+// const numbers = [4, 5, 7, 2, 9, 23, 7, 2, 7, 25];
+// const addition = numbers.map(function map(num) {
+//   return num + 20;
+// });
+
+// console.log(addition);
+
+// const consoles = [
+//   { model: "PlayStation 5", company: "Sony" },
+//   { model: "Xbox Series X", company: "Microsoft" },
+//   { model: "Switch 2", company: "Nintendo" },
+// ];
+
+// const expensive = consoles.map(exclusive => exclusive.model);
+// console.log(expensive);
+
+// for (let i = 0; i < 3; i++){
+//     console.log(i);
+
+// }
+
+// for (const x of "Programming") {
+//     console.log(x);
+// }
+
+// const obj = {
+//     name: "Steve",
+//     age: 24,
+//     country: "USA",
+// }
+
+// for (const key in obj) {
+//     const element = obj[key];
+//     console.log(element);
+
+// }
+
+// const details = {
+//     name: "Ashley",
+//     age: 35,
+//     country : "USA",
+// }
+
+// for (const key in details) {
+//     const element = details[key];
+//     console.log(element);
+// }
+
+// let o = 0;
+
+// while (o < 5) {
+//   console.log("This is while loop");
+//   o++;
+// }
+
+// let p = 0;
+
+// do {
+//   p++;
+//   console.log("This is Do-while loop");
+// } while (p < 3);
