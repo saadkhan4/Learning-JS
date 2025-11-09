@@ -69,7 +69,6 @@
 //     }
 // }
 
-
 // console.log(updatePerson);
 
 // const cars = ["Honda", "Toyota", "Mitsubishi", "Ferrari", "BMW"];
@@ -77,7 +76,6 @@
 // const automobiles = [...cars];
 
 // console.log(automobiles);
-
 
 // const person = {
 //   name: "Jason",
@@ -90,4 +88,22 @@
 // }
 
 // console.log(updatePerson);
+
+// const drinks = ["Red Bull", "Sprite", "Fanta", "Coke", "Pepsi"];
+// const bottles = [...drinks];
+
+// console.log(bottles);
+
+// const person = {
+//   name: "Brian",
+//   age: 23,
+//   car: "Nissan Skyline GTR34",
+// };
+
+// const bio = {
+//   ...person,
+//   city: "Los Angeles",
+// };
+
+// console.log(bio);
 

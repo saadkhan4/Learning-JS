@@ -1627,3 +1627,56 @@
 //   p++;
 //   console.log("This is Do-while loop");
 // } while (p < 3);
+
+// for (i = 0; i < 3; i++) {
+//   console.log("this is for loop");
+// }
+
+// const cars = ["BMW", "Audi", "Toyota", "Honda", "Skoda"];
+
+// console.log(cars.length);
+
+// const cars = ["BMW", "Audi", "Toyota", "Honda", "Skoda"];
+
+// const [item1, item2, item3, item4, item5] = cars;
+// console.log(item1,item5);
+
+// const person = {
+//   name: "John",
+//   age: 30,
+//   city: "New Jersey",
+// };
+
+// const { name, city, age } = person;
+
+// console.log(name,city);
+
+// const list = [
+//     { item: "Detergent", price: `$${50}` },
+//     { item: "Soap", price: `$${19}` },
+//     { item: "Brush", price: `$${12}` },
+//     { item: "Toothpaste", price: `$${25}` },
+// ]
+
+// const checkOut = list.filter(list => list.price <`$${20}`);
+// console.log(checkOut);
+
+// const names = ["Joel", "Ellie", "Tommy", "Jess", "Jonathan"];
+
+// const upperNames = names.map(name => name.toLocaleUpperCase());
+// console.log(upperNames);
+
+// const countries = [
+//   { name: "Ireland", capital: "Dublin" },
+//   { name: "USA", capital: "Washington DC" },
+//   { name: "Japan", capital: "Tokyo" },
+// ];
+
+// const tourist = countries.map(con => con.capital);
+// console.log(tourist);
+
+
+// const drinks = ["Fanta", "Coke", "Red Bull", "Pepsi"];
+
+// const pop = [...drinks, "Sprite"];
+// console.log(pop);
