@@ -1675,8 +1675,66 @@
 // const tourist = countries.map(con => con.capital);
 // console.log(tourist);
 
-
 // const drinks = ["Fanta", "Coke", "Red Bull", "Pepsi"];
 
 // const pop = [...drinks, "Sprite"];
 // console.log(pop);
+
+// const countries = [
+//   { name: "Canada", capital: "Ontario" },
+//   { name: "China", capital: "Beijing" },
+//   { name: "Italy", capital: "Rome" },
+// ];
+
+// const tourist = countries.map(con => con.capital);
+// console.log(tourist);
+
+
+// const automobiles = [
+//     { model: "M5 CS", company: "BMW" },
+//     { model: "LFA", company: "Lexus" },
+//     { model: "Mustang GTD", company: "Ford" },  
+// ];
+
+// const cars = automobiles.map(famous => famous.company);
+// console.log(cars);
+
+
+// const names = ["steve", "nancy", "max", "victor"];
+// const upperNames = names.map(famous => famous.toUpperCase());
+// console.log(upperNames);
+
+
+// const numbers = [3, 4, 5, 2, 5, 2, 4, 5, 2];
+// const multiply = numbers.map(function (num) {
+//     return num * 2;
+// })
+
+// console.log(multiply);
+
+// const cars = ["BMW", "Ferrari", "Lamborghini", "Skoda", "GMC"];
+
+// const automobiles = [...cars,"Audi"];
+// console.log(automobiles);
+
+// const vegetables = ["Tomato", "Capsicum", "Bell pepper", "Onion", "Carrot"];
+// const fruits = ["Apple", "Banana", "Guava", "Pear", "Orange"];
+
+// const expensive = [...vegetables, ...fruits, "Mango", "Pineapple"];
+// console.log(expensive);
+
+// const person = {
+//     name: "Hamza Mughal",
+//     age: 25,
+//     country: "Republic of Ireland",
+// };
+
+// const bio = {
+//     ...person,
+//     car : "Honda",
+// }
+
+
+// console.log(bio);
+
+

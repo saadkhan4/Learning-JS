@@ -27,7 +27,7 @@ const cars = [
     { model: "SKYLINE", company: "Nissan" },
 ];
 
-// we created exotic a arrow function
+// we created exotic an arrow function
 const automobiles = cars.map(exotic => exotic.model);
 console.log(automobiles);
 
